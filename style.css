@@ -1,8 +1,58 @@
 /*
- Theme Name:   Ignition Law
- Description:  Ignition Law theme
- Author:       Alexander Woolley
- Author URI:   http://twitter.com/alexwoolley4
- Template:     twentyfourteen
+Theme Name: Ignition Law
+Description: Ignition Law WordPress theme
+Version: 1
+Author: Alexander Woolley
+Author URI: http://twitter.com/alexwoolley4
 */
 
+/*#home {
+	position: absolute;
+	top: 60px;
+}*/
+
+#home h1 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+#home #addresses {
+	text-align: center;
+}
+
+.header_menu {
+  position:fixed;
+  background-color: black;
+  top:30px;
+  right:0;
+  left:0;
+  z-index:99;
+  list-style-type: none
+}
+
+.header_menu li {
+    float: left;
+}
+
+.header_menu a {
+    display: inline-block;
+    width: 60px;
+}
+
+.page-title {
+	text-align: center;
+	margin-top: 1.5em;
+	font-size: 3em;
+}
+
+.social-media-icons-white {
+	background-color: blue;
+}
+
+.il-footer {
+	background-color: black;
+	height: 100%;
+}
