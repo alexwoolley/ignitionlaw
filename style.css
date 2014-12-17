@@ -13,6 +13,8 @@ Author URI: http://twitter.com/alexwoolley4
 
 #home h1 {
 	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 20px;
 }
 
 h3 {
@@ -26,20 +28,21 @@ h3 {
 .header_menu {
   position:fixed;
   background-color: black;
-  top:30px;
+  top:0;
   right:0;
   left:0;
   z-index:99;
-  list-style-type: none
 }
 
 .header_menu li {
     float: left;
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
 }
 
-.header_menu a {
-    display: inline-block;
-    width: 60px;
+#wpadminbar {
+	display: none;
 }
 
 .page-title {
@@ -49,10 +52,21 @@ h3 {
 }
 
 .social-media-icons-white {
-	background-color: blue;
+	height: 30%;
+	width: 30%;
 }
 
 .il-footer {
 	background-color: black;
 	height: 100%;
+}
+
+.blue-background {
+	background-color: #0099CC;
+	color: white;
+}
+
+.white-background {
+	background-color: white;
+	color: #0099CC;
 }

@@ -12,6 +12,5 @@
 			<p>Space for extra links</p>
 		</div>
 		<?php wp_footer(); ?>
-
 	</body>
 </html>
