@@ -6,7 +6,14 @@ Template Name: Home
 <?php
 	if (have_posts()): ?>
 		<?php while (have_posts()): the_post(); ?>
-
+		<script type="text/javascript">
+			// Collapse menu on mobile view when user clicks on a link
+			$('.nav a').on('click', function(){
+			    if ($(document).width() <= 767){ 
+			 	$(".navbar-toggle").click();
+			    }
+			});
+		</script>
 		<div id="home">
 			<?php the_content(); ?>
 		</div>

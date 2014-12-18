@@ -6,12 +6,13 @@ get_header(); ?>
 	if (have_posts()): ?>
 	<!-- Start the Loop. -->
 		<?php while ( have_posts() ) : the_post(); ?>
-		
-			<div class="page-title">
-				<?php the_title(); ?>
+			<?php $postid = get_the_ID(); ?>
+			<div id="post_<?=$postid?>">		
+				<div class="page-title">
+					<?php the_title(); ?>
+				</div>
+				<?php the_content(); ?>
 			</div>
-			<?php the_content(); ?>
-
 		<?php endwhile;
 	endif; ?>
 
