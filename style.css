@@ -25,6 +25,11 @@ h3 {
 	text-align: center;
 }
 
+.navbar {
+	position: fixed;
+	/*float: right;*/
+}
+
 .header_menu {
   position:fixed;
   background-color: black;
