@@ -14,9 +14,7 @@ Template Name: Home
 			    }
 			});
 		</script>
-		<div id="home">
-			<?php the_content(); ?>
-		</div>
+		<?php the_content(); ?>
 
 		<?php endwhile; ?>
 	<?php endif; ?>

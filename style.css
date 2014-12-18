@@ -22,10 +22,10 @@ Author URI: http://twitter.com/alexwoolley4
 	font-family: "proxima-nova", sans-serif;
 }
 
-#home h1 {
+h1 {
 	text-align: center;
 	/*margin-top: 50px;*/
-	margin-bottom: 20px;
+	padding-bottom: 40px;
 	padding-top: 55px;
 }
 
@@ -33,16 +33,26 @@ h3 {
 	text-align: center;
 }
 
+#home h3 {
+	font-style: italic;
+}
+
 h4 {
 	text-align: center;
 }
 
-#home #addresses {
+#addresses {
 	text-align: center;
 }
 
 .navbar-collapse {
 	padding-bottom: 50px;
+}
+
+#topmost-social-media {
+   position: absolute;
+    right: 30px;
+    top: 60px;
 }
 
 /*.header_menu {
@@ -73,6 +83,7 @@ h4 {
 
 .il-footer {
 	background-color: #0099CC;
+	color: #0099CC;
 	height: 100%;
 }
 
