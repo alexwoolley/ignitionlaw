@@ -31,7 +31,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">Space for logo</a>
+		      <a class="navbar-brand" href="http://localhost/wordpress/ignitionlaw/">Space for logo</a>
 		    </div>
 		    <?php if (is_front_page()): ?>
 			    <!-- Collect the nav links, forms, and other content for toggling -->
