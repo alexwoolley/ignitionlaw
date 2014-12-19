@@ -11,20 +11,12 @@ Author URI: http://twitter.com/alexwoolley4
 	top: 60px;
 }*/
 
-@font-face {
-	font-family: 'proxima-nova';
-	src: url('http://localhost/wordpress/ignitionlaw/wp-content/themes/ignitionlaw/fonts/proximaNova/OpenTypeTTFStd/ProximaNova-Reg.ttf'),
-	format('truetype');
-}
-
-
 * {
-	font-family: "proxima-nova", sans-serif;
+	font-family: 'Carrois Gothic', sans-serif;
 }
-
 h1 {
 	text-align: center;
-	/*margin-top: 50px;*/
+	margin-top: 50px;
 	padding-bottom: 40px;
 	padding-top: 55px;
 }
@@ -123,9 +115,7 @@ h4 {
 	border-top: 4em;
 	border-top-style: solid;
 	border-top-color: #0099CC;
-	border-bottom: 4em;
-	border-bottom-style: solid;
-	border-bottom-color: #0099CC;
+	border-bottom: 0;
 }
 
 .page-title {

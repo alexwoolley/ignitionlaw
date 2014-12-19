@@ -17,6 +17,7 @@
 		<meta charset="utf-8">
 		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">-->
 		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
+		<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
 		<?php wp_head(); ?>
 	</head>
 	<body>
@@ -37,7 +38,7 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav navbar-right">
-			        <li class="active"><a href="#how-we-work">How we work<span class="sr-only">(current)</span></a></li>
+			        <li><a href="#how-we-work">How we work<span class="sr-only">(current)</span></a></li>
 			        <li><a href="#who-we-are">Who we are</a></li>
 			        <li><a href="#ignition-community">Ignition community</a></li>
 			        <li><a href="#contact">Contact</a></li>
