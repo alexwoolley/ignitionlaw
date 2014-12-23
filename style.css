@@ -6,14 +6,16 @@ Author: Alexander Woolley
 Author URI: http://twitter.com/alexwoolley4
 */
 
-/*#home {
-	position: absolute;
-	top: 60px;
-}*/
-
 * {
 	font-family: 'Carrois Gothic', sans-serif;
+	font-size: 15px;
 }
+
+a:link {
+
+}
+
+
 h1 {
 	text-align: center;
 	margin-top: 50px;
@@ -47,22 +49,6 @@ h4 {
     top: 60px;
 }
 
-/*.header_menu {
-  position:fixed;
-  background-color: black;
-  top:0;
-  right:0;
-  left:0;
-  z-index:99;
-}
-
-.header_menu li {
-    float: left;
-    list-style-type: none;
-    display: inline;
-    padding-right: 20px;
-}*/
-
 #wpadminbar {
 	display: none;
 }
@@ -92,12 +78,39 @@ h4 {
 	border-bottom-color: #0099CC;
 }
 
+.blue-background a:link {
+	color: white;
+	text-decoration: underline;
+}
+
+.blue-background a:visited {
+	color: white;
+	text-decoration: underline;
+}
+
 .white-background {
 	background-color: white;
 	color: #0099CC;
 	margin-bottom: 40px;
 }
 
+.white-background a:link {
+	color: #0099CC;
+	text-decoration: underline;
+}
+
+.white-background a:visited {
+    color: #0099CC;
+    text-decoration: underline;
+}
+
+.white-background pre {
+	background-color: white;
+	color: #0099CC;
+	font-family: 'Carrois Gothic', sans-serif;
+	font-size: 15px;
+	border: none;
+}
 .who-we-are-image {
 	padding-top: 30px;
 	padding-bottom: 30px;
