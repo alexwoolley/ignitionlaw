@@ -116,6 +116,25 @@ h4 {
 	padding-bottom: 30px;
 }
 
+/*For email form at bottom of home page*/
+.wpcf7-form {
+	padding-top: 2.5em;
+}
+
+#home-email button {
+	background-color: #0099CC;
+	color: white;
+	border: none;
+	border-radius: 8em 8em 0 0;
+	width: 8em;
+	height: 4em;
+	padding-top: 1em;
+}
+
+#final-white-background {
+	margin-bottom: 20px
+}
+
 /*For who-we-are page*/
 #post_59 .white-background .row {
 	margin-top: 4em;
