@@ -119,6 +119,27 @@ h4 {
 /*For email form at bottom of home page*/
 .wpcf7-form {
 	padding-top: 2.5em;
+	text-align: center;
+}
+
+.wpcf7-submit {
+	border-radius:20px;
+	border:0;
+	width:120px;
+	height:32px;
+	color: white;
+	background-color: #0099CC;
+}
+
+/*So that the send button displays in the centre*/
+.ajax-loader {
+	display: block;
+}
+
+.col-centered {
+	margin: 0 auto;
+    float: none;
+    /*text-align: center;*/
 }
 
 #home-email button {
