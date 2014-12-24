@@ -1,3 +1,5 @@
+<?php $ignitionlaw2 = "http://localhost/wordpress/ignitionlaw2";
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -9,14 +11,12 @@
 		<!-- jQuery -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<!-- Bootstrap stuff -->
-		<script type="text/javascript" src="http://localhost/wordpress/ignitionlaw/wp-content/themes/ignitionlaw/bootstrap/dist/js/bootstrap.js"></script>
-		<link rel="stylesheet" href="http://localhost/wordpress/ignitionlaw/wp-content/themes/ignitionlaw/bootstrap/dist/css/bootstrap.css">
-		<!-- Custom CSS for Bootstrap -->
-		<link rel="stylesheet" href="http://localhost/wordpress/ignitionlaw/wp-content/themes/ignitionlaw/bootstrap/dist/css/custom.css">
+		<script type="text/javascript" src="<?=$ignitionlaw2?>/wp-content/themes/ignitionlaw/bootstrap/dist/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="<?=$ignitionlaw2?>/wp-content/themes/ignitionlaw/bootstrap/dist/css/bootstrap.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
-		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">-->
-		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
+		<!-- Custom Bootstrap styling -->
+		<link rel="stylesheet" href="<?=$ignitionlaw2?>/wp-content/themes/ignitionlaw/bootstrap/dist/css/bootstrap.css">
 		<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
 		<?php wp_head(); ?>
 	</head>
@@ -25,26 +25,24 @@
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		    <div class="navbar-header navbar-right">
+		      <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="http://localhost/wordpress/ignitionlaw/">Space for logo</a>
+		      <a class="navbar-brand pull-right" href="<?=$ignitionlaw2?>">Space for logo</a>
 		    </div>
-		    <?php if (is_front_page()): ?>
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#how-we-work">How we work<span class="sr-only">(current)</span></a></li>
-			        <li><a href="#who-we-are">Who we are</a></li>
-			        <li><a href="#ignition-community">Ignition community</a></li>
-			        <li><a href="#contact">Contact</a></li>
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-			<?php endif; ?>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse navbar-left" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="<?=$ignitionlaw2?>/how-we-work">How we work<span class="sr-only">(current)</span></a></li>
+		        <li><a href="<?=$ignitionlaw2?>/who-we-are">Who we are</a></li>
+		        <li><a href="<?=$ignitionlaw2?>/ignition-community">Ignition community</a></li>
+		        <li><a href="<?=$ignitionlaw2?>/contact">Contact</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 		<!-- Container -->
