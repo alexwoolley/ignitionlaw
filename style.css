@@ -116,10 +116,20 @@ h4 {
 	padding-bottom: 30px;
 }
 
+#alex-bio {
+	display: none;
+}
+
+#david-bio {
+	display: none;
+}
+
+
 /*For email form at bottom of home page*/
 .wpcf7-form {
 	padding-top: 2.5em;
 	text-align: center;
+	display: none;
 }
 
 .wpcf7-submit {
