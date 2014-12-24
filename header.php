@@ -47,12 +47,7 @@
 			<?php endif; ?>
 		  </div><!-- /.container-fluid -->
 		</nav>
-		<?php //wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header_menu' ) ); ?>
 		<!-- Container -->
 		<div class="container-fluid">
 			<!-- Content -->
-			<div id="topmost-social-media">
-				<a href="https://twitter.com/IgnitionLaw"><img src="http://localhost/wordpress/ignitionlaw/wp-content/uploads/sites/3/2014/12/Twitter_logo_white6.png" alt="Twitter_logo_white" width="32" height="32" /></a>
-				<img src="http://localhost/wordpress/ignitionlaw/wp-content/uploads/sites/3/2014/12/linkedin_logo1.png">
-			</div>
 				<div id="content">
