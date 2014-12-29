@@ -32,7 +32,7 @@ get_header(); ?>
 	if (have_posts()): ?>
 		<?php while (have_posts()): the_post(); ?>
 
-			<div class="col-sm-4 col-sm-offset-0">
+			<div class="col-sm-4 col-sm-offset-0 text-center">
 				<?php the_content(); ?>
 			</div>
 

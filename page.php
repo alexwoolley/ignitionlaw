@@ -1,14 +1,20 @@
-<?php
+<?php get_header(); ?>
 
-get_header(); ?>
+<?php if (have_posts()): ?>
+	<?php while (have_posts()): the_post(); ?>
 
-<?php
-	if (have_posts()): ?>
-	<!-- Start the Loop. -->
-		<?php while ( have_posts() ) : the_post(); ?>		
-			<?php the_content(); ?>
-		<?php endwhile;
-	endif; ?>
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<div class="text-center">
+				<h1><?php the_title(); ?></h1>
+			</div>
+			<div class="text-justify">
+				<?php the_content(); ?>
+			</div>
+		</div>
+	</div>
 
-<?php
-get_footer(); ?>
+	<?php endwhile; ?>
+<?php endif; ?>
+
+<?php get_footer(); ?>

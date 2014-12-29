@@ -9,25 +9,40 @@ Author URI: http://twitter.com/alexwoolley4
 .container-fluid {
 	padding-right: 0px;
 	padding-left: 0px;
-	padding-top: 30px;
 }
 
 .navbar .container-fluid {
 	padding-top: 0px;
+	background-color: #0099CC;
+	/*color: white;*/
+}
+
+.navbar ul li a:link {
+	color: white; /*FFS whyu won'the links go white??*/
 }
 
 .navbar {
-	padding-left: 15px;
-	padding-right: 15px;
+	border-left: 15px;
+	border-right: 15px;
+	border: solid;
+	border-color: #0099CC;
 }
 
 body {
-	padding-top: 60px; /*Makes sure navbar doesn't overlap body*/
+	padding-top: 50px; /*Makes sure navbar doesn't overlap body*/
 }
 
 * {
 	font-family: 'Carrois Gothic', sans-serif;
-	font-size: 15px;
+	/*font-size: 15px;*/
+}
+
+#home-content {
+	font-size: 16px;
+}
+
+#home-sidebar h3 {
+	margin-top: none;
 }
 
 #wpadminbar {
@@ -57,6 +72,7 @@ body {
 	background-color: #0099CC;
 	color: white;
 	width: 100%;
+	margin-top: 20px;
 }
 
 .il-footer ul {
@@ -67,4 +83,20 @@ body {
 .il-footer li{
 	display: inline;
 	list-style-type: none;
+	padding-right: 2em;
+}
+
+.ajax-loader {
+	/*Display needs to be set to something so this goes on next line*/
+}
+
+.wpcf7-submit {
+	color: white;
+	background-color: #0099CC;
+	border: none;
+	/*border-radius: 50%;*/
+	padding-top: .3em;
+	padding-bottom: .3em;
+	padding-right: 2em;
+	padding-left: 2em;
 }
