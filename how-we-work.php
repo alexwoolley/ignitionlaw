@@ -26,17 +26,51 @@ Template Name: How we work
 <?php endif; ?>
 
 <div class="row">
-	<div class="col-md-2 col-md-offset-3 col-sm-6 col-sm-offset-3">
+	<div class="col-sm-6 col-sm-offset-3 text-justify">
 		<h3>On brief</h3>
-		<p>We provide on point legal advice, so your focus remains on your business.</p>
+		<p><!-- start slipsum code -->
+
+		Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
+
+		<!-- please do not remove this line -->
+
+		<div style="display:none;">
+		<a href="http://slipsum.com">lorem ipsum</a></div>
+
+		<!-- end slipsum code -->
+		</p>
 	</div>
-	<div class="col-md-2 col-md-offset-0 col-sm-6 col-sm-offset-3">
+</div>
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3 text-justify">
 		<h3>On budget</h3>
-		<p>Certainty of costs, totally transparent fee structures, no nasty surprises.</p>
+		<p><!-- start slipsum code -->
+
+		Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
+
+		<!-- please do not remove this line -->
+
+		<div style="display:none;">
+		<a href="http://slipsum.com">lorem ipsum</a></div>
+
+		<!-- end slipsum code -->
+		</p>
 	</div>
-	<div class="col-md-2 col-md-offset-0 col-sm-6 col-sm-offset-3">
+</div>
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3 text-justify">
 		<h3>On time</h3>
-		<p>Building great businesses requires quick decisions and fast pace. We’ll work to your schedule, providing the advice you want, when you want it.</p>
+		<p><!-- start slipsum code -->
+
+		Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
+
+		<!-- please do not remove this line -->
+
+		<div style="display:none;">
+		<a href="http://slipsum.com">lorem ipsum</a></div>
+
+		<!-- end slipsum code -->
+		</p>
 	</div>	
 </div>
 

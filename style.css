@@ -68,11 +68,25 @@ body {
 	float:	left;
 }
 
+/*STICKY FOOTER*/
+/*Based on http://getbootstrap.com/examples/sticky-footer-navbar*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 20px;
+}
 .il-footer {
-	background-color: #0099CC;
-	color: white;
-	width: 100%;
-	margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  background-color: #0099CC;
+  color: white;
 }
 
 .il-footer ul {
@@ -85,6 +99,13 @@ body {
 	list-style-type: none;
 	padding-right: 2em;
 }
+
+#main-container {
+	margin-bottom: 20px;
+}
+
+/*END STICKY FOOTER*/
+
 
 .ajax-loader {
 	/*Display needs to be set to something so this goes on next line*/
