@@ -18,6 +18,15 @@
 		<!-- Custom Bootstrap styling -->
 		<link rel="stylesheet" href="<?=$ignitionlaw?>/wp-content/themes/ignitionlaw/bootstrap/dist/css/bootstrap.css">
 		<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
+		<!-- bxSlider Javascript file. See http://bxslider.com/ -->
+		<script src="<?=bloginfo('stylesheet_directory');?>/jquery.bxslider/jquery.bxslider.min.js"></script>
+		<!-- bxSlider CSS file -->
+		<link href="<?=bloginfo('stylesheet_directory');?>/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+		<script type="text/javascript">
+			$(document).ready(function(){
+		  $('.bxslider').bxSlider();
+		});
+		</script>
 		<?php wp_head(); ?>
 	</head>
 	<body>
