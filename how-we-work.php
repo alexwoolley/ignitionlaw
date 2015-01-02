@@ -25,6 +25,15 @@ Template Name: How we work
 	<?php endwhile; ?>
 <?php endif; ?>
 
+<br>
+
+<div class="row">
+<!-- Example image -->
+	<img class="img-responsive" src="<?=bloginfo('stylesheet_directory');?>/images/law_books.png">
+</div>
+
+<br>
+
 <div class="row">
 	<div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
 		<div class="row"><!--Nested row allows division by three-->

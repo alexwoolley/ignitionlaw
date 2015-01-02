@@ -27,6 +27,11 @@ Template Name: Ignition community
 <?php endif; ?>
 
 <div class="row">
+<!-- Example image -->
+	<img class="img-responsive" src="<?=bloginfo('stylesheet_directory');?>/images/law_books.png">
+</div>
+
+<div class="row">
 	<div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
 		<div class="row"><!--Nested row allows division by three-->
 			<div class="col-md-4 text-justify">

@@ -13,7 +13,7 @@ get_header(); ?>
 <div class="custom-bx-wrapper">	
 	<ul class="bxslider">
 		<li>
-			<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" title="Entreprenurially led">
+			<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" title="Entrepreneurially led">
 		</li>
 		<li>
 			<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" title="Humanity obsessed">
