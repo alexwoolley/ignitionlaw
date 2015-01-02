@@ -26,51 +26,54 @@ Template Name: How we work
 <?php endif; ?>
 
 <div class="row">
-	<div class="col-sm-6 col-sm-offset-3 text-justify">
-		<h3>On brief</h3>
-		<p><!-- start slipsum code -->
+	<div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
+		<div class="row"><!--Nested row allows division by three-->
+			<div class="col-md-4 text-justify">
+				<h3>On brief</h3>
+				<p><!-- start slipsum code -->
 
-		Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
+				Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
 
-		<!-- please do not remove this line -->
+				<!-- please do not remove this line -->
 
-		<div style="display:none;">
-		<a href="http://slipsum.com">lorem ipsum</a></div>
+				<div style="display:none;">
+				<a href="http://slipsum.com">lorem ipsum</a></div>
 
-		<!-- end slipsum code -->
-		</p>
-	</div>
-</div>
-<div class="row">
-	<div class="col-sm-6 col-sm-offset-3 text-justify">
-		<h3>On budget</h3>
-		<p><!-- start slipsum code -->
+				<!-- end slipsum code -->
+				</p>
+			</div>
+			<div class="col-md-4 text-justify">
+				<h3>On budget</h3>
+				<p><!-- start slipsum code -->
 
-		Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
+				Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
 
-		<!-- please do not remove this line -->
+				<!-- please do not remove this line -->
 
-		<div style="display:none;">
-		<a href="http://slipsum.com">lorem ipsum</a></div>
+				<div style="display:none;">
+				<a href="http://slipsum.com">lorem ipsum</a></div>
 
-		<!-- end slipsum code -->
-		</p>
-	</div>
-</div>
-<div class="row">
-	<div class="col-sm-6 col-sm-offset-3 text-justify">
-		<h3>On time</h3>
-		<p><!-- start slipsum code -->
+				<!-- end slipsum code -->
+				</p>
+			</div>
+			<div class="col-md-4 text-justify">
 
-		Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
+				<h3>On time</h3>
+				<p><!-- start slipsum code -->
 
-		<!-- please do not remove this line -->
+				Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
 
-		<div style="display:none;">
-		<a href="http://slipsum.com">lorem ipsum</a></div>
+				<!-- please do not remove this line -->
 
-		<!-- end slipsum code -->
-		</p>
+				<div style="display:none;">
+				<a href="http://slipsum.com">lorem ipsum</a></div>
+
+				<!-- end slipsum code -->
+				</p>
+			</div>
+		</div>
+		<div class="col-md-2 col-sm-3">
+		</div>
 	</div>	
 </div>
 

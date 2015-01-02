@@ -12,6 +12,7 @@
 			<ul>
 				<li>Terms of use</li>
 				<li>Privacy policy</li>
+				<li>Photo credits</li>
 			</ul>
 		</div>
 		<?php wp_footer(); ?>

@@ -17,7 +17,9 @@
 		<meta charset="utf-8">
 		<!-- Custom Bootstrap styling -->
 		<link rel="stylesheet" href="<?=$ignitionlaw?>/wp-content/themes/ignitionlaw/bootstrap/dist/css/bootstrap.css">
-		<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 		<!-- bxSlider Javascript file. See http://bxslider.com/ -->
 		<script src="<?=bloginfo('stylesheet_directory');?>/jquery.bxslider/jquery.bxslider.min.js"></script>
 		<!-- bxSlider CSS file -->
@@ -35,7 +37,7 @@
 	</head>
 	<body>
 		<!-- Following based on example in http://getbootstrap.com/components/#navbar -->
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header navbar-right">

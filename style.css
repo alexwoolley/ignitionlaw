@@ -11,30 +11,69 @@ Author URI: http://twitter.com/alexwoolley4
 	padding-left: 0px;
 }
 
-.navbar .container-fluid {
-	padding-top: 0px;
-	background-color: #0099CC;
-	/*color: white;*/
+/*NAVBAR STUFF. Built from http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/*/
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(0, 0, 0, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(0, 153, 204, 1);
+    border-width: 0px;
+    border-radius: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 153, 204, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(0, 153, 204, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #0099cc;
 }
 
-.navbar ul li a:link {
-	color: white; /*FFS whyu won'the links go white??*/
-}
-
-.navbar {
-	border-left: 15px;
-	border-right: 15px;
-	border: solid;
-	border-color: #0099CC;
-}
+/*END NAVBAR STUFF*/
 
 body {
 	padding-top: 50px; /*Makes sure navbar doesn't overlap body*/
 }
 
 * {
-	font-family: 'Carrois Gothic', sans-serif;
+	font-family: 'Droid Serif', serif;
 	/*font-size: 15px;*/
+}
+
+p {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 16px;
+}
+
+a:link {
+	font-family: 'Droid Sans', sans-serif;
+}
+
+li {
+	font-family: 'Droid Sans', sans-serif;
 }
 
 #home-content {
@@ -94,7 +133,15 @@ body {
 
 /*CONTACT FORM*/
 .ajax-loader {
-	/*Display needs to be set to something so this goes on next line*/
+	display: block;
+}
+
+#wpcf7-f13-p10-o1 {
+	margin-top: 40px;
+}
+
+#wpcf7-f13-p10-o1 .btn-primary {
+	background-color: #0099CC;
 }
 
 .wpcf7-submit {
