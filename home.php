@@ -14,14 +14,13 @@ get_header(); ?>
 	<ul class="bxslider">
 		<li>
 			<!-- <p>Ignition Law is a very different law firm</p> -->
+			<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" title="Entreprenurially led">
+		</li>
+		<li>
 			<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" title="Humanity obsessed">
 		</li>
 		<li>
-			<img src="<?=bloginfo('stylesheet_directory');?>/images/Twitter_logo_white.png">
-			<p>Really loving it</p>
-		</li>
-		<li>
-			<img src="http://localhost/wordpress/ignitionlaw2/wp-content/uploads/sites/4/2014/12/AlexMcPherson.jpg">
+			<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" title="Digitally native">
 		</li>
 	</ul>
 </div>

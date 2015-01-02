@@ -110,19 +110,26 @@ body {
 /*END CONTACT FORM*/
 
 .custom-bx-wrapper {
-	width: 80%;
+	/*width: 80%;*/
 	margin: auto;
+}
+
+.custom-bx-wrapper .bx-wrapper .bx-caption {
+	background: none;
 }
 
 .bx-wrapper .bx-caption {
 	width: 30% !important; /*This overrides l189ff of jquery.bxslider.css*/
 	position: absolute !important;
-	bottom: 5em !important;
-	/*top: 2.5em !important;
-	bottom: 40em !important;*/
+	top: .5em !important;
+	/*bottom: 5em !important;*/
 }
+
 
 .bx-wrapper .bx-caption span {
 	font-family: 'Carrois Gothic', sans-serif;
 	font-size: 1.5em !important;
+	font-style: italic;
+	background: none !important;
+	color: black !important;
 }

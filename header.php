@@ -26,7 +26,8 @@
 			$(document).ready(function(){
 		  		$('.bxslider').bxSlider({
 		  			captions: true,
-		  			controls: false
+		  			controls: false,
+		  			adaptiveHeight: true
 		  		});
 			});
 		</script>
