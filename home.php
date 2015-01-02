@@ -13,7 +13,6 @@ get_header(); ?>
 <div class="custom-bx-wrapper">	
 	<ul class="bxslider">
 		<li>
-			<!-- <p>Ignition Law is a very different law firm</p> -->
 			<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" title="Entreprenurially led">
 		</li>
 		<li>
@@ -24,8 +23,6 @@ get_header(); ?>
 		</li>
 	</ul>
 </div>
-
-
 
 <?php
 	if (have_posts()): ?>
