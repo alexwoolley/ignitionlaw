@@ -24,8 +24,11 @@
 		<link href="<?=bloginfo('stylesheet_directory');?>/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
 		<script type="text/javascript">
 			$(document).ready(function(){
-		  $('.bxslider').bxSlider();
-		});
+		  		$('.bxslider').bxSlider({
+		  			captions: true,
+		  			controls: false
+		  		});
+			});
 		</script>
 		<?php wp_head(); ?>
 	</head>

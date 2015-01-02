@@ -49,23 +49,8 @@ body {
 	display: none;
 }
 
-#home-carousel {
-	width: 480px;
-	overflow:hidden;
-}
-
-#home-carousel ul {
-	width: 1920px;
-	padding: 0;
-	margin: 0;
-}
-
-#home-carousel ul li {
-	width:480px;
-	text-align: center;
-	height: 280px;
-	list-style: none;
-	float:	left;
+#home-content h4 {
+	line-height: 150%;
 }
 
 /*STICKY FOOTER*/
@@ -107,6 +92,7 @@ body {
 /*END STICKY FOOTER*/
 
 
+/*CONTACT FORM*/
 .ajax-loader {
 	/*Display needs to be set to something so this goes on next line*/
 }
@@ -120,4 +106,23 @@ body {
 	padding-bottom: .3em;
 	padding-right: 2em;
 	padding-left: 2em;
+}
+/*END CONTACT FORM*/
+
+.custom-bx-wrapper {
+	width: 80%;
+	margin: auto;
+}
+
+.bx-wrapper .bx-caption {
+	width: 30% !important; /*This overrides l189ff of jquery.bxslider.css*/
+	position: absolute !important;
+	bottom: 5em !important;
+	/*top: 2.5em !important;
+	bottom: 40em !important;*/
+}
+
+.bx-wrapper .bx-caption span {
+	font-family: 'Carrois Gothic', sans-serif;
+	font-size: 1.5em !important;
 }
