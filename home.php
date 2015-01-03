@@ -10,19 +10,44 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="custom-bx-wrapper">	
-	<ul class="bxslider">
-		<li>
-			<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" title="Entrepreneurially led">
-		</li>
-		<li>
-			<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" title="Humanity obsessed">
-		</li>
-		<li>
-			<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" title="Digitally native">
-		</li>
-	</ul>
-</div>
+<!-- Carousel modified from http://bootstrapbay.com/blog/bootstrap-3-carousel-tutorial/ -->
+<div id="carousel-home-page" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-home-page" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-home-page" data-slide-to="1"></li>
+    <li data-target="#carousel-home-page" data-slide-to="2"></li>
+    <li data-target="#carousel-home-page" data-slide-to="3"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://placehold.it/1200x315" alt="...">
+      <div class="carousel-caption">
+          <h4>Entrepreneurially led</h4>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x315" alt="...">
+      <div class="carousel-caption">
+          <h4>Legally driven</h4>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x315" alt="...">
+      <div class="carousel-caption">
+          <h4>Digitally native</h4>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x315" alt="...">
+      <div class="carousel-caption">
+          <h4>Humanity obsessed</h4>
+      </div>
+    </div>
+  </div>
+</div> <!-- Carousel -->
 
 <?php
 	if (have_posts()): ?>
