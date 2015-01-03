@@ -1,5 +1,3 @@
-<?php $ignitionlaw = "http://localhost/wordpress/ignitionlaw2";
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -11,12 +9,12 @@
 		<!-- jQuery -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<!-- Bootstrap stuff -->
-		<script type="text/javascript" src="<?=$ignitionlaw?>/wp-content/themes/ignitionlaw/bootstrap/dist/js/bootstrap.js"></script>
-		<link rel="stylesheet" href="<?=$ignitionlaw?>/wp-content/themes/ignitionlaw/bootstrap/dist/css/bootstrap.css">
+		<script type="text/javascript" src="<?=bloginfo('stylesheet_directory');?>/bootstrap/dist/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="<?=bloginfo('stylesheet_directory');?>/bootstrap/dist/css/bootstrap.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<!-- Custom Bootstrap styling -->
-		<link rel="stylesheet" href="<?=$ignitionlaw?>/wp-content/themes/ignitionlaw/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="<?=bloginfo('stylesheet_directory');?>/bootstrap/dist/css/bootstrap.css">
 		<!-- Google fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
@@ -52,6 +50,7 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse navbar-left" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
+		      	<!-- Conditionals allow interchange of colours -->
 		      	<?php if (is_page("How we work")): ?>
 			        <li class="active">
 			        	<a href="<?=$ignitionlaw?>/how-we-work">How we work<span class="sr-only">(current)</span></a>
