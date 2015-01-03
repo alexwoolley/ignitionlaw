@@ -13,7 +13,7 @@ Template Name: Who we are
 
 	<div class="row">
 		<div class="col-sm-6 col-sm-offset-3">
-			<div class="text-center">
+			<div class="text-center masthead">
 				<h1><?php the_title(); ?></h1>
 			</div>
 			<div class="text-justify">

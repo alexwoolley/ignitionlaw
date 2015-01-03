@@ -6,7 +6,9 @@ get_header(); ?>
 
 <div class="row">
 	<div class="col-sm-8 col-sm-offset-2 text-center">
-		<h1>Ignition Law is a very different law firm</h1>
+		<div class="masthead">
+			<h1>Ignition Law is a very different law firm</h1>
+		</div>
 	</div>
 </div>
 
@@ -23,31 +25,32 @@ get_header(); ?>
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <img src="http://placehold.it/1200x315" alt="..." width="100%">
       <div class="carousel-caption">
           <h4>Entrepreneurially led</h4>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <img src="http://placehold.it/1200x315" alt="..." width="100%">
       <div class="carousel-caption">
           <h4>Legally driven</h4>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <img src="http://placehold.it/1200x315" alt="..." width="100%">
       <div class="carousel-caption">
           <h4>Digitally native</h4>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <img src="http://placehold.it/1200x315" alt="..." width="100%">
       <div class="carousel-caption">
           <h4>Humanity obsessed</h4>
       </div>
     </div>
   </div>
 </div> <!-- Carousel -->
+
 
 <?php
 	if (have_posts()): ?>
