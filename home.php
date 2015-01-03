@@ -5,7 +5,7 @@ Template Name: Home
 get_header(); ?>
 
 <div class="row">
-	<div class="col-sm-6 col-sm-offset-3 text-center">
+	<div class="col-sm-8 col-sm-offset-2 text-center">
 		<h1>Ignition Law is a very different law firm</h1>
 	</div>
 </div>

@@ -52,10 +52,42 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse navbar-left" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li><a href="<?=$ignitionlaw?>/how-we-work">How we work<span class="sr-only">(current)</span></a></li>
-		        <li><a href="<?=$ignitionlaw?>/who-we-are">Who we are</a></li>
-		        <li><a href="<?=$ignitionlaw?>/ignition-community">Ignition community</a></li>
-		        <li><a href="<?=$ignitionlaw?>/contact">Contact</a></li>
+		      	<?php if (is_page("How we work")): ?>
+			        <li class="active">
+			        	<a href="<?=$ignitionlaw?>/how-we-work">How we work<span class="sr-only">(current)</span></a>
+			        </li>
+			    <?php else: ?>
+			    	<li>
+			        	<a href="<?=$ignitionlaw?>/how-we-work">How we work<span class="sr-only">(current)</span></a>
+			        </li>
+			    <?php endif; ?>
+			    <?php if (is_page("Who we are")): ?>
+		        	<li class="active">
+		        		<a href="<?=$ignitionlaw?>/who-we-are">Who we are</a>
+		        	</li>
+		        <?php else: ?>
+		        	<li>
+		        		<a href="<?=$ignitionlaw?>/who-we-are">Who we are</a>
+		        	</li>
+		        <?php endif; ?>
+		        <?php if (is_page("Ignition community")): ?>
+		        	<li class="active">
+		        		<a href="<?=$ignitionlaw?>/ignition-community">Ignition community</a>
+		        	</li>
+		        <?php else: ?>
+		        	<li>
+		        		<a href="<?=$ignitionlaw?>/ignition-community">Ignition community</a>
+		        	</li>
+		        <?php endif; ?>
+		        <?php if (is_page("Contact us")): ?>
+		        	<li class="active">
+		        		<a href="<?=$ignitionlaw?>/contact">Contact</a>
+		        	</li>
+		        <?php else: ?>
+		        	<li>
+		        		<a href="<?=$ignitionlaw?>/contact">Contact</a>
+		        	</li>
+		        <?php endif; ?>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
