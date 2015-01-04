@@ -25,25 +25,25 @@ get_header(); ?>
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="http://placehold.it/1200x315" alt="..." width="100%">
+      <img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" alt=".Entrepreneurially led" width="100%">
       <div class="carousel-caption">
           <h4>Entrepreneurially led</h4>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="..." width="100%">
+      <img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" alt="Legally driven" width="100%">
       <div class="carousel-caption">
           <h4>Legally driven</h4>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="..." width="100%">
+      <img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" alt="Digitally native" width="100%">
       <div class="carousel-caption">
           <h4>Digitally native</h4>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="..." width="100%">
+      <img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" alt="Humanity obsessed" width="100%">
       <div class="carousel-caption">
           <h4>Humanity obsessed</h4>
       </div>

@@ -31,6 +31,16 @@ Author URI: http://twitter.com/alexwoolley4
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 153, 204, 1);
 }
+#custom-bootstrap-menu.navbar-default .navbar-nav>li {
+	/*None of this works*/
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-topright: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
@@ -42,17 +52,23 @@ Author URI: http://twitter.com/alexwoolley4
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #ffffff;
+    background-color: white;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
     background-color: #ffffff;
 }
+
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #0099cc;
 }
 
 /*END NAVBAR STUFF*/
+
+.navbar-toggle {
+	border: none !important;
+}
+
 
 body {
 	padding-top: 50px; /*Makes sure navbar doesn't overlap body*/
@@ -84,10 +100,6 @@ li {
 	font-size: 16px;
 }
 
-#home-sidebar h3 {
-	margin-top: none;
-}
-
 #wpadminbar {
 	display: none;
 }
@@ -107,6 +119,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 20px;
 }
+
 .il-footer {
   position: absolute;
   bottom: 0;
@@ -115,6 +128,7 @@ body {
   height: 20px;
   background-color: #0099CC;
   color: white;
+  /*margin-top: 20px;*/
 }
 
 .il-footer ul {
@@ -164,3 +178,7 @@ body {
 	margin-top: 45px;
 	margin-bottom: 45px;
 }
+/*
+.IN-widget {
+	float: left;
+}*/

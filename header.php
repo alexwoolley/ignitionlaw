@@ -32,46 +32,46 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand pull-right" href="<?=$ignitionlaw?>">Space for logo</a>
+		      <a class="navbar-brand pull-right" href="<?=bloginfo('url');?>">Space for logo</a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse navbar-left" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		      	<!-- Conditionals allow interchange of colours -->
+		      	<!-- Conditionals allow interchange of colours and correct screen-reader stuff -->
 		      	<?php if (is_page("How we work")): ?>
 			        <li class="active">
-			        	<a href="<?=$ignitionlaw?>/how-we-work">How we work<span class="sr-only">(current)</span></a>
+			        	<a href="<?=bloginfo('url');?>/how-we-work">How we work<span class="sr-only">(current)</span></a>
 			        </li>
 			    <?php else: ?>
 			    	<li>
-			        	<a href="<?=$ignitionlaw?>/how-we-work">How we work<span class="sr-only">(current)</span></a>
+			        	<a href="<?=bloginfo('url');?>/how-we-work">How we work</a>
 			        </li>
 			    <?php endif; ?>
 			    <?php if (is_page("Who we are")): ?>
 		        	<li class="active">
-		        		<a href="<?=$ignitionlaw?>/who-we-are">Who we are</a>
+		        		<a href="<?=bloginfo('url');?>/who-we-are">Who we are<span class="sr-only">(current)</span></a>
 		        	</li>
 		        <?php else: ?>
 		        	<li>
-		        		<a href="<?=$ignitionlaw?>/who-we-are">Who we are</a>
+		        		<a href="<?=bloginfo('url');?>/who-we-are">Who we are</a>
 		        	</li>
 		        <?php endif; ?>
 		        <?php if (is_page("Ignition community")): ?>
 		        	<li class="active">
-		        		<a href="<?=$ignitionlaw?>/ignition-community">Ignition community</a>
+		        		<a href="<?=bloginfo('url');?>/ignition-community">Ignition community<span class="sr-only">(current)</span></a>
 		        	</li>
 		        <?php else: ?>
 		        	<li>
-		        		<a href="<?=$ignitionlaw?>/ignition-community">Ignition community</a>
+		        		<a href="<?=bloginfo('url');?>/ignition-community">Ignition community</a>
 		        	</li>
 		        <?php endif; ?>
 		        <?php if (is_page("Contact us")): ?>
 		        	<li class="active">
-		        		<a href="<?=$ignitionlaw?>/contact">Contact</a>
+		        		<a href="<?=bloginfo('url');?>/contact">Contact<span class="sr-only">(current)</span></a>
 		        	</li>
 		        <?php else: ?>
 		        	<li>
-		        		<a href="<?=$ignitionlaw?>/contact">Contact</a>
+		        		<a href="<?=bloginfo('url');?>/contact">Contact</a>
 		        	</li>
 		        <?php endif; ?>
 		      </ul>

@@ -27,7 +27,7 @@ Template Name: Ignition community
 
 <div class="row">
 <!-- Example image -->
-	<img class="img-responsive" src="<?=bloginfo('stylesheet_directory');?>/images/law_books.png">
+	<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" alt="Digitally native" width="100%">>
 </div>
 
 <div class="row">
