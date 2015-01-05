@@ -12,20 +12,29 @@ get_header(); ?>
 
 		<br>
 		<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac magna non augue porttitor scelerisque ac id diam. Mauris elit velit, lobortis sed interdum at, vestibulum vitae libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		<br>
+		<!-- <br> -->
+		
+		<div id="contact-page-skype">
+			<p>
+			<a href="skype:IgnitionLaw?call"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/skype_logo.png"></a>
+			<a href="skype:IgnitionLaw?call">Call us on Skype.</a>
+			</p>
+		</div>
 
-		<div class="row" id="contact-social">
+		<p><em>Or catch us on social media:</em></p>
+
+		<div class="row" id="contact-page-social">
 			<div class="col-xs-3">
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/Twitter_logo_white.png">
 			</div>
 			<div class="col-xs-3">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/Twitter_logo_white.png">
+				<p>LinkedIn</p>
 			</div>
 			<div class="col-xs-3">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/Twitter_logo_white.png">
+				<p>Facebook</p>
 			</div>
 			<div class="col-xs-3">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/Twitter_logo_white.png">
+				<p>Google +</p>
 			</div>
 		</div>
 
@@ -45,10 +54,8 @@ get_header(); ?>
 
 <div class="row">
 	<div class="col-sm-8 col-sm-offset-2 text-justify">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac magna non augue porttitor scelerisque ac id diam. Mauris elit velit, lobortis sed interdum at, vestibulum vitae libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac magna non augue porttitor scelerisque ac id diam. Mauris elit velit, lobortis sed interdum at, vestibulum vitae libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
 	</div>
-	
 </div>
 
 <div class="row">

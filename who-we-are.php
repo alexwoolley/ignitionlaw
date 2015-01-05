@@ -25,4 +25,60 @@ Template Name: Who we are
 	<?php endwhile; ?>
 <?php endif; ?>
 
+<br>
+
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4">
+		<img src="<?=bloginfo('stylesheet_directory');?>/images/alex_mcpherson.jpg" class="img-responsive">
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3 text-center">
+		<h3>Alex McPherson</h3>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3 text-justify">
+		<br>
+		<p>With a broad legal background, Alex advises on corporate, commercial and employment law issues for a variety of clients with a particular focus on entrepreneurs, SMEs and start-ups in the technology, energy, property and media sectors.</p>
+		<p>Alex is passionate about start-up businesses, having been heavily involved and run a number of them; giving him a true understanding of the legal nuances that fledgling businesses may encounter.</p>
+		<p>He is equally passionate about pro bono and charity work. In recent years, Alex has accepted the CSR Programme of the Year Award at the Legal Business Awards and Best Contribution by an Individual at the LawWorks Awards, and is now a fellow of the RSA. Over the past few years he has run a seminar on the Masters of Corporate Law at Cambridge University.</p>
+		<p>After graduating from Oxford University, Alex started his career at Freshfields Bruckhaus Deringer and has also spent a further 6 years at Hogan Lovells. During this time he completed corporate and commercial secondments to Goldman Sachs, Tesco and ExxonMobil.</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3 text-center">
+		<p><em>You can find Alex on <a href="https://www.linkedin.com/pub/alex-mcpherson/7/982/965" target="_blank">LinkedIn</a>.</em></p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4">
+		<img src="<?=bloginfo('stylesheet_directory');?>/images/david_farquharson.jpg" class="img-responsive">
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3 text-center">
+		<h3>David Farquharson</h3>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3 text-justify">
+		<br>
+		<p>David has focused his career on advising SMEs, start-ups and entrepreneurs in the media, technology, renewables and other industries. This has recently included a number of university spin-outs and intrapreneur groups rising out of some of the foremost digital and technology businesses in the world.</p>
+		<p>A recognised expert in the field, David regularly speaks at seminars on a wide range of corporate and entrepreneurial matters, including to the MBA Class at the London Business School, UCL postgraduate groups, and other European universities.</p>
+		<p>He undertakes a range of pro bono activities in the charitable and not for profit sectors and is the Chairman of Africat UK, a charity focusing on conservation, education and community enhancement in Southern Africa.</p>
+		<p>David started his career at the major international law firm, HerbertSmith Freehills in London and, most recently has spent 7 years as the Head of the Corporate, Commercial and Employment Groups at boutique Covent Garden firm, Swan Turton.</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3 text-center">
+		<p><em>You can find David on <a href="https://www.linkedin.com/pub/david-farquharson/3/1a4/469" target="_blank">LinkedIn</a>.</em></p>
+	</div>
+</div>
+
 <?php get_footer(); ?>
