@@ -21,20 +21,26 @@ get_header(); ?>
 			</p>
 		</div>
 
-		<p><em>Or catch us on social media:</em></p>
+		<p><em>Or just socialise with us:</em></p>
 
-		<div class="row" id="contact-page-social">
-			<div class="col-xs-3">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/Twitter_logo_white.png">
+		<div class="row">
+			<div class="col-md-3 col-xs-6 social-icon">
+				<a href="https://twitter.com/ignitionlaw" target="_blank">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/twitter.png" class="img-responsive">
+				</a>
 			</div>
-			<div class="col-xs-3">
-				<p>LinkedIn</p>
+			<div class="col-md-3 col-xs-6 social-icon">
+				<a href="https://www.linkedin.com/company/9222237" target="_blank">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/linkedin.png" class="img-responsive">
+				</a>
 			</div>
-			<div class="col-xs-3">
-				<p>Facebook</p>
+			<div class="col-md-3 col-xs-6 social-icon">
+				<a href="https://www.facebook.com/ignitionlaw" target="_blank">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/facebook.png" class="img-responsive">
+				</a>
 			</div>
-			<div class="col-xs-3">
-				<p>Google +</p>
+			<div class="col-md-3 col-xs-6 social-icon">
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/googleplus.png" class="img-responsive">
 			</div>
 		</div>
 

@@ -142,6 +142,10 @@ body {
 	padding-right: 2em;
 }
 
+.il-footer li a {
+	color: white;
+}
+
 #main-container {
 	margin-bottom: 20px;
 }
@@ -177,4 +181,9 @@ body {
 .masthead {
 	margin-top: 45px;
 	margin-bottom: 45px;
+}
+
+.social-icon {
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
