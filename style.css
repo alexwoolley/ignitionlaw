@@ -126,7 +126,6 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 20px;
-  background-color: #0099CC;
   color: white;
   /*margin-top: 20px;*/
 }
@@ -134,6 +133,7 @@ body {
 .il-footer ul {
 	text-align: center;
 	margin-bottom: 0;
+	background-color: #0099CC;
 }
 
 .il-footer li{

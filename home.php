@@ -31,7 +31,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="item">
-      <img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" alt="Legally driven" width="100%">
+      <img src="<?=bloginfo('stylesheet_directory');?>/images/law_books.png" alt="Legally driven" width="100%">
       <div class="carousel-caption">
           <h4>Legally driven</h4>
       </div>
