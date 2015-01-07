@@ -76,6 +76,33 @@ Template Name: Who we are
 	</div>
 </div>
 
+<!-- NB The following isn't responsive, but it is at least adaptive -->
+<script type="text/javascript">
+
+    function setCarouselHeight(id)
+    {
+        var slideHeight = [];
+        $(id+' .item').each(function()
+        {
+            // add all slide heights to an array
+            slideHeight.push($(this).height());
+        });
+
+        // find the tallest item
+        max = Math.max.apply(null, slideHeight);
+
+        // set the slide's height
+        $(id+' .carousel-text').each(function()
+        {
+            $(this).css('height',max+'px');
+        });
+    }
+
+	setCarouselHeight('#carousel-who-we-are');
+
+</script>
+
+
 <div class="row">
 	<div class="col-sm-6 col-sm-offset-3 text-center">
 		<h3>Alex McPherson</h3>
@@ -97,6 +124,8 @@ Template Name: Who we are
 		<p><em>Find Alex on <a href="https://www.linkedin.com/pub/alex-mcpherson/7/982/965" target="_blank">LinkedIn</a>.</em></p>
 	</div>
 </div>
+
+<br>
 
 <div class="row">
 	<div class="col-sm-6 col-sm-offset-3 text-center">

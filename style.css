@@ -197,7 +197,17 @@ body {
 .carousel-text { 
     display: flex;
     align-items: center;
-    height: 10em;
+    /*height: 15em;*/
     font-family: 'Droid Serif', serif;
     font-style: italic;
+}
+
+#carousel-who-we-are {
+	/*height: 150px;*/
+}
+
+/*END WHO WE ARE TEXT-ONLY CAROUSEL*/
+
+#content {
+	padding-bottom: 30px;
 }
