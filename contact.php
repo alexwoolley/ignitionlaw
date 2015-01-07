@@ -21,7 +21,7 @@ get_header(); ?>
 			</p>
 		</div>
 
-		<p><em>Or just socialise with us:</em></p>
+		<p><em>Or catch us on social media:</em></p>
 
 		<div class="row">
 			<div class="col-md-3 col-xs-6 social-icon">

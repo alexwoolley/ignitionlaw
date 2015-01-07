@@ -211,3 +211,12 @@ body {
 #content {
 	padding-bottom: 30px;
 }
+
+
+.slider-size {
+height: 300px;  /*This is your slider height*/ 
+}
+.carousel {
+width:100%; 
+margin:0 auto; /* center your carousel if other than 100% */ 
+}

@@ -45,7 +45,7 @@ Template Name: Who we are
 <br>
 
 <!-- Carousel modified from http://bootstrapbay.com/blog/bootstrap-3-carousel-tutorial/ -->
-<!-- See also https://www.technotarek.com/projects-and-tasks/text-bootstrap-carousel -->
+<!-- For text only carousel,see https://www.technotarek.com/projects-and-tasks/text-bootstrap-carousel -->
 <div class="row">
 	<div class="col-sm-6 col-sm-offset-3">	
 		<div id="carousel-who-we-are" class="carousel slide" data-ride="carousel">
@@ -63,12 +63,12 @@ Template Name: Who we are
 		    </div>
 		    <div class="item">
 		      <div class="carousel-text">
-		          <p>"Alex is one of the most commercial lawyers I know. Whatever the topic, Alex has been quick to understand the key dynamics of the situation, incentives of different parties, and help us identify what terms matter, where we can be flexible, and how to get deals done." – Jan Sramek, CEO of <a href="http://better.com/" target="_blank">Better.com</a></p>
+		          <p>"Alex is professional and super-efficient at getting things done. I highly recommend Alex to organisations in the startup community for his straightforward talk and deep understanding of the problems and issues growing startup businesses face." – James Pattison, CEO of Startup Direct</p>
 		      </div>
 		    </div>
 		    <div class="item">
 		      <div class="carousel-text">
-		          <p>"I was hugely impressed with David's overall knowledge and meticulous attention to detail. His experience and advice also proved invaluable in an industry subject to perpetual change." –  Duncan McMonagle, Chief Revenue Officer at 90Min</p>
+		          <p>"David is a truly first class Lawyer, an expert in the media world." – Chris Gorell Barnes, Founder & CEO, Adjust Your Set, New Media Entrepreneur and Investor</p>
 		      </div>
 		    </div>
 		  </div>
@@ -76,7 +76,7 @@ Template Name: Who we are
 	</div>
 </div>
 
-<!-- NB The following isn't responsive, but it is at least adaptive -->
+<!-- NB The following JS isn't responsive, but it is at least adaptive -->
 <script type="text/javascript">
 
     function setCarouselHeight(id)
