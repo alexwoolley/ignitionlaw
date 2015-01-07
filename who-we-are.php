@@ -28,10 +28,54 @@ Template Name: Who we are
 <br>
 
 <div class="row">
-	<div class="col-sm-4 col-sm-offset-4">
-		<img src="<?=bloginfo('stylesheet_directory');?>/images/alex_mcpherson.jpg" class="img-responsive">
+	<div class="col-sm-3 col-sm-offset-3">
+		<img src="<?=bloginfo('stylesheet_directory');?>/images/alex_mcpherson.png" class="img-responsive img-circle">
+		<div class="text-center">
+			<h4>Alex McPherson</h4>
+		</div>
+	</div>
+	<div class="col-sm-3 col-sm-offset-0">
+		<img src="<?=bloginfo('stylesheet_directory');?>/images/david_farquharson.png" class="img-responsive img-circle">
+		<div class="text-center">
+			<h4>David Farquharson</h4>
+		</div>
 	</div>
 </div>
+
+<br>
+
+<!-- Carousel modified from http://bootstrapbay.com/blog/bootstrap-3-carousel-tutorial/ -->
+<!-- See also https://www.technotarek.com/projects-and-tasks/text-bootstrap-carousel -->
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">	
+		<div id="carousel-who-we-are" class="carousel slide" data-ride="carousel">
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <div class="carousel-text">
+		          <p>"Alex is one of the most commercial lawyers I know. Whatever the topic, Alex has been quick to understand the key dynamics of the situation, incentives of different parties, and help us identify what terms matter, where we can be flexible, and how to get deals done." – Jan Sramek, CEO of <a href="http://better.com/" target="_blank">Better.com</a></p>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <div class="carousel-text">
+		          <p>"I was hugely impressed with David's overall knowledge and meticulous attention to detail. His experience and advice also proved invaluable in an industry subject to perpetual change." –  Duncan McMonagle, Chief Revenue Officer at 90Min</p>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <div class="carousel-text">
+		          <p>"Alex is one of the most commercial lawyers I know. Whatever the topic, Alex has been quick to understand the key dynamics of the situation, incentives of different parties, and help us identify what terms matter, where we can be flexible, and how to get deals done." – Jan Sramek, CEO of <a href="http://better.com/" target="_blank">Better.com</a></p>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <div class="carousel-text">
+		          <p>"I was hugely impressed with David's overall knowledge and meticulous attention to detail. His experience and advice also proved invaluable in an industry subject to perpetual change." –  Duncan McMonagle, Chief Revenue Officer at 90Min</p>
+		      </div>
+		    </div>
+		  </div>
+		</div> <!-- Carousel -->
+	</div>
+</div>
+
 <div class="row">
 	<div class="col-sm-6 col-sm-offset-3 text-center">
 		<h3>Alex McPherson</h3>
@@ -50,15 +94,10 @@ Template Name: Who we are
 
 <div class="row">
 	<div class="col-sm-6 col-sm-offset-3 text-center">
-		<p><em>You can find Alex on <a href="https://www.linkedin.com/pub/alex-mcpherson/7/982/965" target="_blank">LinkedIn</a>.</em></p>
+		<p><em>Find Alex on <a href="https://www.linkedin.com/pub/alex-mcpherson/7/982/965" target="_blank">LinkedIn</a>.</em></p>
 	</div>
 </div>
 
-<div class="row">
-	<div class="col-sm-4 col-sm-offset-4">
-		<img src="<?=bloginfo('stylesheet_directory');?>/images/david_farquharson.jpg" class="img-responsive">
-	</div>
-</div>
 <div class="row">
 	<div class="col-sm-6 col-sm-offset-3 text-center">
 		<h3>David Farquharson</h3>
@@ -77,7 +116,7 @@ Template Name: Who we are
 
 <div class="row">
 	<div class="col-sm-6 col-sm-offset-3 text-center">
-		<p><em>You can find David on <a href="https://www.linkedin.com/pub/david-farquharson/3/1a4/469" target="_blank">LinkedIn</a>.</em></p>
+		<p><em>Find David on <a href="https://www.linkedin.com/pub/david-farquharson/3/1a4/469" target="_blank">LinkedIn</a>.</em></p>
 	</div>
 </div>
 

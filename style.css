@@ -94,6 +94,10 @@ li {
 	font-family: 'Droid Sans', sans-serif;
 }
 
+h4 {
+	font-family: 'Droid Sans', sans-serif;
+}
+
 /*END FONTS*/
 
 #home-content {
@@ -106,6 +110,7 @@ li {
 
 #home-content h4 {
 	line-height: 150%;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 /*STICKY FOOTER*/
@@ -186,4 +191,13 @@ body {
 .social-icon {
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+/*WHO WE ARE TEXT-ONLY CAROUSEL*/
+.carousel-text { 
+    display: flex;
+    align-items: center;
+    height: 10em;
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
 }
