@@ -26,7 +26,7 @@ get_header(); ?>
   <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png) center center; background-size:cover;" class="slider-size">
+            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/entrepreneurially_led.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
                         <h3>Entrepreneurially led</h3>
@@ -35,7 +35,7 @@ get_header(); ?>
             </div>
         </div>
         <div class="item">
-            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png) center center; background-size:cover;" class="slider-size">
+            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/legally_driven.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
                         <h3>Legally driven</h3>
@@ -44,7 +44,7 @@ get_header(); ?>
             </div>
         </div>
         <div class="item">
-            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png) center center; background-size:cover;" class="slider-size">
+            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/digitally_native.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
                         <h3>Digitally native</h3>
@@ -53,7 +53,7 @@ get_header(); ?>
             </div>
         </div>
         <div class="item">
-            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png) center center; background-size:cover;" class="slider-size">
+            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/humanity_obsessed.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
                         <h3>Humanity obsessed</h3>
