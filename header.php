@@ -56,15 +56,6 @@
 		        		<a href="<?=bloginfo('url');?>/who-we-are">Who we are</a>
 		        	</li>
 		        <?php endif; ?>
-		        <?php if (is_page("Ignition community")): ?>
-		        	<li class="active">
-		        		<a href="<?=bloginfo('url');?>/ignition-community">Ignition community<span class="sr-only">(current)</span></a>
-		        	</li>
-		        <?php else: ?>
-		        	<li>
-		        		<a href="<?=bloginfo('url');?>/ignition-community">Ignition community</a>
-		        	</li>
-		        <?php endif; ?>
 		        <?php if (is_page("Contact us")): ?>
 		        	<li class="active">
 		        		<a href="<?=bloginfo('url');?>/contact">Contact<span class="sr-only">(current)</span></a>
