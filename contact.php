@@ -11,7 +11,10 @@ get_header(); ?>
 		<h1>Contact us</h1>
 
 		<br>
-		<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac magna non augue porttitor scelerisque ac id diam. Mauris elit velit, lobortis sed interdum at, vestibulum vitae libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		<div  class=" class="text-justify"">
+			<p>Ignition Law is actively looking for lawyers who are able to make a step up. Lawyers who can gain the confidence and become trusted advisors to some of the best entrepreneurs and businesses country, who know what it means to lead a deal, to negotiate with real authority and commercial common sense, to project manage and drive a matter to closing. To deliver a real client-led service.</p>
+			<p>We are actively recruiting for lawyers at all levels. If you think this could be you, we’d love to speak to you. Please get in touch, and send your CV and a covering email to: [insert address] </p>
+		</div>
 		<!-- <br> -->
 		
 		<div id="contact-page-skype">
@@ -45,7 +48,8 @@ get_header(); ?>
 		</div>
 
 	</div>
-<?php
+
+	<?php
 	if (have_posts()): ?>
 		<?php while (have_posts()): the_post(); ?>
 
@@ -58,9 +62,11 @@ get_header(); ?>
 
 </div> <!--/.row-->
 
+<br>
+
 <div class="row">
 	<div class="col-sm-8 col-sm-offset-2 text-justify">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac magna non augue porttitor scelerisque ac id diam. Mauris elit velit, lobortis sed interdum at, vestibulum vitae libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
+		<p>We also hang out and have meeting rooms available at:</p>	
 	</div>
 </div>
 

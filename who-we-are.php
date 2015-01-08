@@ -53,22 +53,32 @@ Template Name: Who we are
 		  <div class="carousel-inner">
 		    <div class="item active">
 		      <div class="carousel-text">
-		          <p>"Alex is one of the most commercial lawyers I know. Whatever the topic, Alex has been quick to understand the key dynamics of the situation, incentives of different parties, and help us identify what terms matter, where we can be flexible, and how to get deals done." – Jan Sramek, CEO of <a href="http://better.com/" target="_blank">Better.com</a></p>
-		      </div>
-		    </div>
-		    <div class="item">
-		      <div class="carousel-text">
-		          <p>"I was hugely impressed with David's overall knowledge and meticulous attention to detail. His experience and advice also proved invaluable in an industry subject to perpetual change." –  Duncan McMonagle, Chief Revenue Officer at 90Min</p>
-		      </div>
-		    </div>
-		    <div class="item">
-		      <div class="carousel-text">
-		          <p>"Alex is professional and super-efficient at getting things done. I highly recommend Alex to organisations in the startup community for his straightforward talk and deep understanding of the problems and issues growing startup businesses face." – James Pattison, CEO of Startup Direct</p>
+		          <p>"Alex is one of the most commercial lawyers I know. Whatever the topic, Alex has been quick to understand the key dynamics of the situation, incentives of different parties, and help us identify what terms matter, where we can be flexible, and how to get deals done." – Jan Sramek, CEO of Better</p>
 		      </div>
 		    </div>
 		    <div class="item">
 		      <div class="carousel-text">
 		          <p>"David is a truly first class Lawyer, an expert in the media world." – Chris Gorell Barnes, Founder & CEO, Adjust Your Set, New Media Entrepreneur and Investor</p>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <div class="carousel-text">
+		          <p>“Alex consistently provides outstanding pro bono legal support to. Alex is patient and always constructive, carefully calibrating his advice to reflect the context of the non profit world.” – Andrew Davenport, CEO at Prince’s Youth Business International</p>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <div class="carousel-text">
+		          <p>"David is a highly capable, experienced and profoundly knowledgeable professional who you can rely on to be 'on point', with a clear focus on 'getting the deal done.'" – Jana Hlistova, Founder at Lifeshifter</p>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <div class="carousel-text">
+		          <p>"I've worked with Alex on various legal issues including company set up, company structure and advice around investment documentation, particularly as it relates to start ups. Alex is professional and super-efficient at getting things done. I highly recommend Alex to organisations in the startup community for his straightforward talk and deep understanding of the problems.” – James Pattinson, CEO at Startup Direct</p>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <div class="carousel-text">
+		          <p>"David is committed to getting the best result for his clients. And he does." – Deborah Saw, Managing Partner, Newgate Communications LLP</p>
 		      </div>
 		    </div>
 		  </div>

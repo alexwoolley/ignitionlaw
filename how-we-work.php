@@ -41,46 +41,15 @@ Template Name: How we work
 		<div class="row"><!--Nested row allows division by three-->
 			<div class="col-md-4 text-justify">
 				<h3>On brief</h3>
-				<p><!-- start slipsum code -->
-
-				Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
-
-				<!-- please do not remove this line -->
-
-				<div style="display:none;">
-				<a href="http://slipsum.com">lorem ipsum</a></div>
-
-				<!-- end slipsum code -->
-				</p>
+				<p>We advise passionate people on creating business growth. We work with entrepreneurs, we understand objectives, and we deliver solutions to meet them.  Our clients put their trust in us to provide legal advice that is not only technically spot on, but that also helps them commercially – so that their focus remains on growing their business.</p>
 			</div>
 			<div class="col-md-4 text-justify">
 				<h3>On budget</h3>
-				<p><!-- start slipsum code -->
-
-				Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
-
-				<!-- please do not remove this line -->
-
-				<div style="display:none;">
-				<a href="http://slipsum.com">lorem ipsum</a></div>
-
-				<!-- end slipsum code -->
-				</p>
+				<p>Spiralling costs are the enemy of the entrepreneur. Getting the right legal advice is fundamental to success, but for some businesses, the cost of getting the right advice can be prohibitive. We offer all clients a transparent, fee structure with no nasty surprises (and wherever possible, a fixed fee arrangement) – giving complete budget certainty over the cost of any solution.</p>
 			</div>
 			<div class="col-md-4 text-justify">
-
 				<h3>On time</h3>
-				<p><!-- start slipsum code -->
-
-				Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum. 
-
-				<!-- please do not remove this line -->
-
-				<div style="display:none;">
-				<a href="http://slipsum.com">lorem ipsum</a></div>
-
-				<!-- end slipsum code -->
-				</p>
+				<p>Building great businesses requires quick decisions and fast pace. Unfortunately in some cases, advisors can slow the momentum down! At Ignition Law, we’ll work to your schedule – providing the advice you want, when you want it.</p>
 			</div>
 		</div>
 		<div class="col-md-2 col-sm-3">
