@@ -121,9 +121,12 @@ Template Name: Who we are
 
 <div class="row">
 	<div class="col-sm-6 col-sm-offset-3 text-center">
-		<p><em>Find Alex on <a href="https://www.linkedin.com/pub/alex-mcpherson/7/982/965" target="_blank">LinkedIn</a>.</em></p>
+	    <a href="https://www.linkedin.com/pub/alex-mcpherson/7/982/965" target="_blank">
+			<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Alex McPherson's profile on LinkedIn">   
+	    </a>
 	</div>
 </div>
+
 
 <br>
 
@@ -145,7 +148,9 @@ Template Name: Who we are
 
 <div class="row">
 	<div class="col-sm-6 col-sm-offset-3 text-center">
-		<p><em>Find David on <a href="https://www.linkedin.com/pub/david-farquharson/3/1a4/469" target="_blank">LinkedIn</a>.</em></p>
+	    <a href="https://www.linkedin.com/pub/david-farquharson/3/1a4/469" target="_blank">
+			<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View David Farquharson's profile on LinkedIn">   
+	    </a>
 	</div>
 </div>
 
