@@ -12,15 +12,16 @@ get_header(); ?>
 
 		<br>
 		<div class="text-justify">
-			<p>Ignition Law is actively looking for lawyers who are able to make a step up. Lawyers who can gain the confidence and become trusted advisors to some of the best entrepreneurs and businesses country, who know what it means to lead a deal, to negotiate with real authority and commercial common sense, to project manage and drive a matter to closing. To deliver a real client-led service.</p>
-			<p>We are actively recruiting for lawyers at all levels. If you think this could be you, we’d love to speak to you. Please get in touch, and send your CV and a covering email to: [insert address] </p>
+			<p>If you’d like more information about any of the services provided by Ignition Law, we’d love to hear from you! Please send us your query, using the form on this page, and someone will be in touch as soon as possible.</p>
+			<p>We are also actively recruiting for lawyers at all levels. If you think this could be you, we’d love to speak to you. Please get in touch, using the form on this page.</p>
+			
 		</div>
 		<!-- <br> -->
 		
 		<div id="contact-page-skype">
 			<p>
 			<a href="skype:IgnitionLaw?call"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/skype_logo.png"></a>
-			<a href="skype:IgnitionLaw?call">Call us on Skype.</a>
+			<a href="skype:IgnitionLaw?call">You can also call us on Skype.</a>
 			</p>
 		</div>
 
@@ -66,7 +67,7 @@ get_header(); ?>
 
 <div class="row">
 	<div class="col-sm-8 col-sm-offset-2 text-justify">
-		<p>We also hang out and have meeting rooms available at:</p>	
+		<p>We hang out and have meeting rooms available at:</p>	
 	</div>
 </div>
 
