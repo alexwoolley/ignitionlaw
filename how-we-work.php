@@ -29,7 +29,9 @@ Template Name: How we work
 
 <div class="row">
 <!-- Example image -->
-	<img src="<?=bloginfo('stylesheet_directory');?>/images/lightbulb.png" alt="Digitally native" width="100%">
+	<div id="how-we-work-illustration">					
+		<img src="<?=bloginfo('stylesheet_directory');?>/images/how_we_work.jpg" alt="How we work" width="100%" class="img-responsive">
+	</div>
 </div>
 
 <br>
