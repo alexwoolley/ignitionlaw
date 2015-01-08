@@ -76,27 +76,67 @@ body {
 
 /*FONTS*/
 
-* {
-	font-family: 'Droid Serif', serif;
+
+	/*font-family: 'Montserrat', sans-serif;*/
 	/*font-size: 15px;*/
+p {
+	font-family: 'Open Sans', sans-serif;
 }
 
-p {
-	font-family: 'Droid Sans', sans-serif;
+.navbar li a:link {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#content h1 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#content h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#content h4 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#home-content h4 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.il-footer li a:link {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.il-footer li {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#wpcf7-f13-p10-o1  label {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#wpcf7-f13-p10-o1 textarea {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/*p {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 }
 
 a:link {
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 li {
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h4 {
-	font-family: 'Droid Sans', sans-serif;
-}
+	font-family: 'Montserrat', sans-serif;
+}*/
+
 
 /*END FONTS*/
 
@@ -110,7 +150,6 @@ h4 {
 
 #home-content h4 {
 	line-height: 150%;
-	font-family: 'Droid Sans', sans-serif;
 }
 
 /*STICKY FOOTER*/
@@ -198,7 +237,6 @@ body {
     display: flex;
     align-items: center;
     /*height: 15em;*/
-    font-family: 'Droid Serif', serif;
     font-style: italic;
 }
 

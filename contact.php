@@ -11,7 +11,7 @@ get_header(); ?>
 		<h1>Contact us</h1>
 
 		<br>
-		<div  class=" class="text-justify"">
+		<div class="text-justify">
 			<p>Ignition Law is actively looking for lawyers who are able to make a step up. Lawyers who can gain the confidence and become trusted advisors to some of the best entrepreneurs and businesses country, who know what it means to lead a deal, to negotiate with real authority and commercial common sense, to project manage and drive a matter to closing. To deliver a real client-led service.</p>
 			<p>We are actively recruiting for lawyers at all levels. If you think this could be you, we’d love to speak to you. Please get in touch, and send your CV and a covering email to: [insert address] </p>
 		</div>
