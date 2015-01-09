@@ -29,13 +29,13 @@ Template Name: Who we are
 
 <div class="row">
 	<div class="col-sm-3 col-sm-offset-3">
-		<img src="<?=bloginfo('stylesheet_directory');?>/images/alex_mcpherson.png" class="img-responsive img-circle">
+		<img src="<?=bloginfo('stylesheet_directory');?>/images/alex_mcpherson.jpg" class="img-responsive img-circle">
 		<div class="text-center">
 			<h4>Alex McPherson</h4>
 		</div>
 	</div>
 	<div class="col-sm-3 col-sm-offset-0">
-		<img src="<?=bloginfo('stylesheet_directory');?>/images/david_farquharson.png" class="img-responsive img-circle">
+		<img src="<?=bloginfo('stylesheet_directory');?>/images/david_farquharson.jpg" class="img-responsive img-circle">
 		<div class="text-center">
 			<h4>David Farquharson</h4>
 		</div>
