@@ -16,7 +16,6 @@
 				<li>
 					<a href="<?=bloginfo('url');?>/privacy-policy">Privacy policy</a>
 				</li>
-				<li>Credits</li>
 			</ul>
 		</div>
 		<?php wp_footer(); ?>
