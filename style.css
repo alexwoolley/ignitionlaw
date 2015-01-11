@@ -109,6 +109,13 @@ p {
 	font-size: 10px;
 }
 
+.il-footer li {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+
 #wpcf7-f13-p80-o1  label {
 	font-family: 'Open Sans', sans-serif;
 }

@@ -11,6 +11,15 @@
 		<div class="il-footer">
 			<ul>
 				<li>
+					© 
+					<?php //So that you don't need to update footer every year.
+						$startYear = 2015; 
+						$curYear = date('Y'); 
+						echo $startYear . (($startYear != $curYear) ? '-' . $curYear : '');
+						?>
+					Ignition Law. All Rights Reserved.
+				</li>
+				<li>
 					<a href="<?=bloginfo('url');?>/terms-of-use">Terms of use</a>
 				</li>
 				<li>
