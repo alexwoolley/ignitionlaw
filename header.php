@@ -52,8 +52,17 @@
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse navbar-left" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
+		      <ul class="nav navbar-nav" id="main-menu">
 		      	<!-- Conditionals allow interchange of colours and correct screen-reader stuff -->
+		      	<?php if (is_page("Home page")): ?>
+			        <li class="active">
+			        	<a href="<?=bloginfo('url');?>">Home<span class="sr-only">(current)</span></a>
+			        </li>
+			    <?php else: ?>
+			    	<li>
+			        	<a href="<?=bloginfo('url');?>">Home</a>
+			        </li>
+			    <?php endif; ?>
 		      	<?php if (is_page("How we work")): ?>
 			        <li class="active">
 			        	<a href="<?=bloginfo('url');?>/how-we-work">How we work<span class="sr-only">(current)</span></a>
