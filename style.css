@@ -250,3 +250,17 @@ body {
 	width: 100%;
 	overflow: hidden;
 }
+
+/*#explicitsubmit {
+	color: #0099CC;
+}*/
+
+input[type=submit] {
+	color: black;
+	font-weight: bold;
+	padding:5px 15px;
+	background:#ccc; /*TODO change this to a better grey.*/
+	border:0 none;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+}

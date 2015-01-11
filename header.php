@@ -20,6 +20,20 @@
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<!-- Open Sans-->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<!-- Cookies. See http://cookiesdirective.com/ -->
+		<script type="text/javascript" src="<?=bloginfo('stylesheet_directory');?>/js/cookiesdirective/jquery.cookiesdirective.js"></script>
+		<?php if (!is_page("Privacy policy")): ?> <!--So that people don't have to read the cookies warning again after clicking on the privacy policy link -->
+		<script type="text/javascript">
+		    $(document).ready(function() {
+		        $.cookiesDirective({
+		            privacyPolicyUri: "<?=bloginfo('url');?>/privacy-policy",
+		            message: "This website uses 'cookies' to enhance your experience and for basic functionality. Using this website means you're happy with this. ",
+		            fontFamily: 'Open Sans',
+		            linkColor: '#0099CC',
+		        });
+		    });
+		</script>
+		 <?php endif; ?>
 		<?php wp_head(); ?>
 	</head>
 	<body>
