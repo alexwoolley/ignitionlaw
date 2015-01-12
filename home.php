@@ -4,14 +4,6 @@ Template Name: Home
 */
 get_header(); ?>
 
-<div class="row">
-	<div class="col-sm-8 col-sm-offset-2 text-center">
-		<div class="masthead">
-			<h1>Ignition Law is a very different law firm</h1>
-		</div>
-	</div>
-</div>
-
 <!-- Carousel modified from http://bootstrapbay.com/blog/bootstrap-3-carousel-tutorial/ -->
 <!-- See also http://parkhurstdesign.com/improved-carousels-twitter-bootstrap/ and http://jockstothecore.com/proper-implementation-of-background-images-with-text-inside-responsive-carousels/-->
 <div id="carousel-home-page" class="carousel slide" data-ride="carousel">
@@ -21,11 +13,25 @@ get_header(); ?>
         <li data-target="#carousel-home-page" data-slide-to="1"></li>
         <li data-target="#carousel-home-page" data-slide-to="2"></li>
         <li data-target="#carousel-home-page" data-slide-to="3"></li>
+        <li data-target="#carousel-home-page" data-slide-to="4"></li>
     </ol>
  
   <!-- Wrapper for slides -->
     <div class="carousel-inner">
-        <div class="item active">
+        <div class="item active" id="initial-item">
+            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/home_background.jpg) center center; background-size:cover;" class="slider-size">
+<!--                 <div id="floater-div">
+                </div>
+                <div class="container" id="initial-caption-container">
+                    <div id="initial-caption">
+                        <h1>a very</h1>
+                        <h1>different</h1>
+                        <h1>law firm</h1>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="item">
             <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/entrepreneurially_led.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
@@ -64,6 +70,10 @@ get_header(); ?>
       </div>
 </div> <!-- Carousel -->
 
+<!-- Container -->
+        <div class="container-fluid" id="main-container">
+            <!-- Content -->
+                <div id="content">
 
 <?php
 	if (have_posts()): ?>

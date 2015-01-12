@@ -60,7 +60,9 @@
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+		<?php if(!is_page("Home")): //So carousel doesn't have irritating padding ?>
 		<!-- Container -->
 		<div class="container-fluid" id="main-container">
 			<!-- Content -->
 				<div id="content">
+		<?php endif; ?>

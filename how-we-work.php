@@ -25,14 +25,19 @@ Template Name: How we work
 	<?php endwhile; ?>
 <?php endif; ?>
 
-<br>
-
+</div><!--/content-->
+</div><!--/container-->
 <div class="row">
 <!-- Example image -->
 	<div id="how-we-work-illustration">					
 		<img src="<?=bloginfo('stylesheet_directory');?>/images/how_we_work.jpg" alt="How we work" width="100%" class="img-responsive">
 	</div>
 </div>
+
+	<!-- Container -->
+    <div class="container-fluid" id="main-container">
+        <!-- Content -->
+            <div id="content">
 
 <br>
 

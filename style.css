@@ -53,6 +53,9 @@ Author URI: http://twitter.com/alexwoolley4
 	border: none !important;
 }
 
+#custom-bootstrap-menu {
+	margin-bottom: 0;
+}
 
 #navbar-logo {
 	max-height: 100px;
@@ -156,13 +159,8 @@ body {
 /*END STICKY FOOTER*/
 
 /*MORE FOOTER STYLING*/
-#footer-container {
-	background-color: #f5f5f5;
-}
-
-
-#il-footer #footer-bottom ul {
-	padding-left: none !important;
+#il-footer {
+	margin-top: 30px;
 }
 
 #il-footer #footer-bottom li {
@@ -292,11 +290,16 @@ img.img-center {
 
 /*END WHO WE ARE TEXT-ONLY CAROUSEL*/
 
-#content {
-	padding-bottom: 30px;
-}
 
 /*HOME PAGE CAROUSEL*/
+
+#floater-div {
+	height: 100px;
+}
+
+#initial-caption {
+	float: right;	
+}
 
 .slider-size {
 	height: 400px;  /*This is your slider height*/ 
