@@ -38,7 +38,7 @@
 	</head>
 	<body>
 		<!-- Following based on example in http://getbootstrap.com/components/#navbar -->
-		<nav id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header navbar-right">
@@ -53,43 +53,23 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse navbar-left" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav" id="main-menu">
-		      	<!-- Conditionals allow interchange of colours and correct screen-reader stuff -->
-		      	<?php if (is_page("Home page")): ?>
-			        <li class="active">
-			        	<a href="<?=bloginfo('url');?>">Home<span class="sr-only">(current)</span></a>
-			        </li>
-			    <?php else: ?>
-			    	<li>
-			        	<a href="<?=bloginfo('url');?>">Home</a>
-			        </li>
-			    <?php endif; ?>
-		      	<?php if (is_page("How we work")): ?>
-			        <li class="active">
-			        	<a href="<?=bloginfo('url');?>/how-we-work">How we work<span class="sr-only">(current)</span></a>
-			        </li>
-			    <?php else: ?>
-			    	<li>
-			        	<a href="<?=bloginfo('url');?>/how-we-work">How we work</a>
-			        </li>
-			    <?php endif; ?>
-			    <?php if (is_page("Who we are")): ?>
-		        	<li class="active">
-		        		<a href="<?=bloginfo('url');?>/who-we-are">Who we are<span class="sr-only">(current)</span></a>
-		        	</li>
-		        <?php else: ?>
-		        	<li>
-		        		<a href="<?=bloginfo('url');?>/who-we-are">Who we are</a>
-		        	</li>
-		        <?php endif; ?>
-		        <?php if (is_page("Contact us")): ?>
-		        	<li class="active">
-		        		<a href="<?=bloginfo('url');?>/contact">Contact<span class="sr-only">(current)</span></a>
-		        	</li>
-		        <?php else: ?>
-		        	<li>
-		        		<a href="<?=bloginfo('url');?>/contact">Contact</a>
-		        	</li>
-		        <?php endif; ?>
+		      	<?php $main_menu_items = array("Home", "What we do", "How we work", "Who we are", "Contact us");
+
+		      		foreach ($main_menu_items as $mmi) {
+		      			//Get rid of upper case and spaces
+		      			$url_string = strtolower(str_replace(" ", "-", $mmi));
+		      			//Make the menu
+		      			if (is_page($mmi)): ?>
+		      				<li class="active">
+		      					<a href="<?=bloginfo('url');?>/<?=$url_string;?>"><?=$mmi;?><span class="sr-only">(current)</span></a>
+		      				</li>
+		      			<?php else: ?>
+		      				<li>
+		      					<a href="<?=bloginfo('url');?>/<?=$url_string;?>"><?=$mmi;?></a>
+		      				</li>
+		      			<?php endif;
+		      		}
+		      	?>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->

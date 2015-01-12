@@ -69,11 +69,6 @@ Author URI: http://twitter.com/alexwoolley4
 	border: none !important;
 }
 
-
-body {
-	padding-top: 50px; /*Makes sure navbar doesn't overlap body*/
-}
-
 /*FONTS and sizes et al*/
 p {
 	font-family: 'Open Sans', sans-serif;
@@ -103,18 +98,27 @@ p {
 	color: #68645F;
 }
 
-.il-footer li a:link {
+#il-footer h3 {
 	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
+}
+
+#il-footer p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#il-footer li a:link {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 10px;
 }
 
-.il-footer li {
+#il-footer li {
 	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
 	font-size: 10px;
 }
 
+#il-footer p {
+	font-size: 12px;
+}
 
 #wpcf7-f13-p80-o1  label {
 	font-family: 'Open Sans', sans-serif;
@@ -142,48 +146,47 @@ p {
 /*Based on http://getbootstrap.com/examples/sticky-footer-navbar*/
 
 html {
-  position: relative;
-  min-height: 100%;
+	position: relative;
+	min-height: 100%;
 }
+
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 20px;
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
 }
 
-.il-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 20px;
-  color: white;
-  /*margin-top: 20px;*/
-}
-
-.il-footer ul {
-	text-align: center;
-	margin-bottom: 0;
-	background-color: #0099CC;
-	padding-bottom: 10px;
-	padding-top: 10px;
-}
-
-.il-footer li{
-	display: inline;
-	list-style-type: none;
-	padding-right: 2em;
-}
-
-.il-footer li a {
-	color: white;
+#il-footer {
+	position: absolute;
+	bottom: 0;
+ 	width: 100%;
+  	/* Set the fixed height of the footer here */
+  	height: 250px;
+  	background-color: #f5f5f5;
 }
 
 #main-container {
-	margin-bottom: 20px;
+	margin-bottom: 250px;
 }
 
 /*END STICKY FOOTER*/
 
+/*MORE FOOTER STYLING*/
+
+#il-footer ul {
+	padding-left: none !important;
+}
+
+#il-footer li {
+	list-style-type: none;
+	display: inline;
+}
+
+#il-footer ul {
+	text-align: center;
+	padding-left: 0;
+}
+
+/*END MORE FOOTER STYLING*/
 
 /*CONTACT FORM*/
 .ajax-loader {
@@ -273,7 +276,7 @@ body {
 /*END COOKIES WARNING*/
 
 
-/*GRADIENTS FOR HEADER AND FOOTER*/
+/*GRADIENTS FOR HEADER*/
 /*For browsers, see http://www.w3schools.com/css/css3_gradients.asp*/
 .navbar {
 	background: -webkit-linear-gradient(#0099CC, #E6F5FA); /* For Safari 5.1 to 6.0 */
@@ -281,11 +284,4 @@ body {
 	background: -moz-linear-gradient(#0099CC, #E6F5FA); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#0099CC, #E6F5FA); /* Standard syntax */
 }
-
-.il-footer ul {
-	background: -webkit-linear-gradient(#E6F5FA, #0099CC); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(#E6F5FA, #0099CC); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(#E6F5FA, #0099CC); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(#E6F5FA, #0099CC); /* Standard syntax */
-}
-/*END GRADIENTS FOR HEADER AND FOOTER*/
+/*END GRADIENTS FOR HEADER*/

@@ -177,8 +177,7 @@
 		html += '-khtml-opacity: .' + settings.backgroundOpacity + '; -moz-opacity: .' + settings.backgroundOpacity + ';';
 		html += 'color:' + settings.fontColor + ';font-family:' + settings.fontFamily + ';font-size:' + settings.fontSize + ';';
 		html += 'text-align:center;z-index:1000;">';
-		// Padding has been changed from original 10px all-round 11 January 2015
-		html += '<div style="position:relative;height:auto;width:90%;padding:60px 10px 10px;margin-left:auto;margin-right:auto;">';
+		html += '<div style="position:relative;height:auto;width:90%;padding:10px;margin-left:auto;margin-right:auto;">';
 			
 		if(!settings.message) {
 			if(settings.explicitConsent) {
