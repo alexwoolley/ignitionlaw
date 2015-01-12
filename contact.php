@@ -44,7 +44,9 @@ get_header(); ?>
 				</a>
 			</div>
 			<div class="col-md-3 col-xs-6 social-icon">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/googleplus.png" class="img-responsive">
+				<a href="https://plus.google.com/communities/113707983229855618630" target="_blank">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/googleplus.png" class="img-responsive">
+				</a>
 			</div>
 		</div>
 
