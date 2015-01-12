@@ -9,59 +9,54 @@ Author URI: http://twitter.com/alexwoolley4
 /*NAVBAR STUFF. Built from http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/*/
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(119, 119, 119, 1);
 }
 #custom-bootstrap-menu.navbar-default {
     font-size: 14px;
-    background-color: rgba(0, 153, 204, 1);
-    border-width: 0px;
+    background-color: rgba(255, 255, 255, 1);
+    border-width: 1px;
     border-radius: 0px;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(248, 248, 248, 0);
+    color: rgba(104, 100, 95, 1);
+    background-color: rgba(255, 255, 255, 1);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 153, 204, 1);
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(255, 255, 255, 1);
 }
-#custom-bootstrap-menu.navbar-default .navbar-nav>li {
-	/*None of this works*/
-	-webkit-border-top-left-radius: 15px;
-	-webkit-border-top-right-radius: 15px;
-	-moz-border-radius-topleft: 15px;
-	-moz-border-radius-topright: 15px;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-}
-
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(0, 153, 204, 1);
-    background-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 153, 204, 1);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #ffffff;
+    border-color: #0099cc;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: white;
+    background-color: #0099cc;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #ffffff;
+    background-color: #0099cc;
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #0099cc;
+    background-color: #ffffff;
 }
 
 /*END NAVBAR STUFF*/
 
 .navbar-toggle {
 	border: none !important;
+}
+
+
+#navbar-logo {
+	max-height: 100px;
+	max-width: 100px;
 }
 
 /*FONTS and sizes et al*/
@@ -196,10 +191,35 @@ body {
 #il-footer #footer-main-menu li a:link {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
+	color: #3914AD;
+}
+
+#il-footer #footer-main-menu li a:visited {
+	color: #3914AD;
+}
+
+#il-footer #footer-main-menu li a:hover {
+	color: #3914AD;
+}
+
+#il-footer #footer-main-menu li a:active {
+	color: #3914AD;
 }
 
 #il-footer #tweets a:link {
-	color: #333;
+	color: #3914AD;
+}
+
+#il-footer #tweets a:visited {
+	color: #3914AD;
+}
+
+#il-footer #tweets li a:hover {
+	color: #3914AD;
+}
+
+#il-footer #tweets li a:active {
+	color: #3914AD;
 }
 
 img.desaturate { 
@@ -217,6 +237,8 @@ img.img-center {
 
 .socialbw {
 	padding-top: 20px;
+	max-height: 65px;
+	max-width: 65px;
 }
 
 /*END MORE FOOTER STYLING*/
@@ -289,7 +311,7 @@ img.img-center {
 #how-we-work-illustration {
 	padding-right: 15px;
 	padding-left: 15px;
-	max-height: 400px;
+	max-height: 550px;
 	width: 100%;
 	overflow: hidden;
 }
@@ -307,14 +329,3 @@ img.img-center {
 }
 
 /*END COOKIES WARNING*/
-
-
-/*GRADIENTS FOR HEADER*/
-/*For browsers, see http://www.w3schools.com/css/css3_gradients.asp*/
-.navbar {
-	background: -webkit-linear-gradient(#0099CC, #E6F5FA); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#0099CC, #E6F5FA); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#0099CC, #E6F5FA); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#0099CC, #E6F5FA); /* Standard syntax */
-}
-/*END GRADIENTS FOR HEADER*/
