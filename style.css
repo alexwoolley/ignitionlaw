@@ -6,11 +6,6 @@ Author: Alexander Woolley
 Author URI: http://twitter.com/alexwoolley4
 */
 
-.container-fluid {
-	padding-right: 0px;
-	padding-left: 0px;
-}
-
 /*NAVBAR STUFF. Built from http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/*/
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
@@ -73,6 +68,7 @@ Author URI: http://twitter.com/alexwoolley4
 p {
 	font-family: 'Open Sans', sans-serif;
 	color: #68645F;
+	font-size: 16px;
 }
 
 .navbar li a:link {
@@ -106,17 +102,17 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 
-#il-footer li a:link {
+#il-footer #footer-bottom li a:link {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 }
 
-#il-footer li {
+#il-footer #footer-bottom li {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 }
 
-#il-footer p {
+#il-footer #footer-bottom p {
 	font-size: 12px;
 }
 
@@ -152,38 +148,75 @@ html {
 
 body {
 	/* Margin bottom by footer height */
-	margin-bottom: 60px;
+	/*margin-bottom: 60px;*/
 }
 
 #il-footer {
-	position: absolute;
+	position: relative;
 	bottom: 0;
  	width: 100%;
   	/* Set the fixed height of the footer here */
-  	height: 250px;
   	background-color: #f5f5f5;
 }
-
-#main-container {
-	margin-bottom: 250px;
-}
-
 /*END STICKY FOOTER*/
 
 /*MORE FOOTER STYLING*/
+#footer-container {
+	background-color: #f5f5f5;
+}
 
-#il-footer ul {
+
+#il-footer #footer-bottom ul {
 	padding-left: none !important;
 }
 
-#il-footer li {
+#il-footer #footer-bottom li {
 	list-style-type: none;
 	display: inline;
 }
 
-#il-footer ul {
+#il-footer #footer-bottom ul {
 	text-align: center;
 	padding-left: 0;
+}
+
+#il-footer #footer-main-menu {
+	margin-top: 20px;
+}
+
+#il-footer #footer-main-menu ul {
+	padding-left: 0;
+}
+
+#il-footer #footer-main-menu li {
+	list-style-type: none;
+	padding-bottom: 1em;
+}
+
+#il-footer #footer-main-menu li a:link {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+#il-footer #tweets a:link {
+	color: #333;
+}
+
+img.desaturate { 
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: gray; filter: grayscale(100%);
+	filter: url(desaturate.svg#greyscale)
+}
+
+img.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.socialbw {
+	padding-top: 20px;
 }
 
 /*END MORE FOOTER STYLING*/

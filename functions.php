@@ -1,11 +1,22 @@
 <?php
 
-// add_action( 'wp_enqueue_scripts', 'enqueue_parent_theme_style' );
-// function enqueue_parent_theme_style() {
-//     wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
-// }
+function getMainMenu () {
 
-function register_my_menu() {
-  register_nav_menu('header-menu',__( 'Header menu' ));
+	global $main_menu_items;
+	$main_menu_items = array("Home", "What we do", "How we work", "Who we are", "Contact us");
+
+	foreach ($main_menu_items as $mmi) {
+		//Get rid of upper case and spaces
+		$url_string = strtolower(str_replace(" ", "-", $mmi));
+		//Make the menu
+		if (is_page($mmi)): ?>
+			<li class="active">
+				<a href="<?=bloginfo('url');?>/<?=$url_string;?>"><?=$mmi;?><span class="sr-only">(current)</span></a>
+			</li>
+		<?php else: ?>
+			<li>
+				<a href="<?=bloginfo('url');?>/<?=$url_string;?>"><?=$mmi;?></a>
+			</li>
+		<?php endif;
+	}
 }
-add_action( 'init', 'register_my_menu' );

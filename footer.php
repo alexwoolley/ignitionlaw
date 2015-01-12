@@ -1,5 +1,6 @@
 <?php
 	require_once get_stylesheet_directory() . "/apis/twitter.php";
+	require_once get_stylesheet_directory() . "/header.php";
 ?>
 
 			</div>
@@ -9,41 +10,25 @@
 			<!-- /Container -->
 
 		<!-- Page generated: <?php timer_stop(1); ?> s, <?php echo get_num_queries(); ?> queries -->
-		<div id="il-footer">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2">
-						<div class="row"><!--Nested row allows division by three-->
-							<div class="col-sm-4">
-								<ul>
-									<?php $main_menu_items = array("Home", "What we do", "How we work", "Who we are", "Contact us");
 
-							      		foreach ($main_menu_items as $mmi) {
-							      			//Get rid of upper case and spaces
-							      			$url_string = strtolower(str_replace(" ", "-", $mmi));
-							      			//Make the menu
-							      			if (is_page($mmi)): ?>
-							      				<li class="active">
-							      					<a href="<?=bloginfo('url');?>/<?=$url_string;?>"><?=$mmi;?><span class="sr-only">(current)</span></a>
-							      				</li>
-							      			<?php else: ?>
-							      				<li>
-							      					<a href="<?=bloginfo('url');?>/<?=$url_string;?>"><?=$mmi;?></a>
-							      				</li>
-							      			<?php endif;
-							      		}
-						      		?>
+			<div class="container-fluid" id="il-footer">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
+						<div class="row"><!--Nested row allows division by three-->
+							<div class="col-md-3 col-md-offset-1 col-sm-12" id="footer-main-menu">
+								<ul>
+									<?php getMainMenu (); ?>
 								</ul>
 							</div>
-							<div class="col-sm-4 text-justify">
-								<h3>From Twitter</h3>
+							<div class="col-md-4 col-sm-12 text-justify">
+								<h3>
+									<a href="https://twitter.com/ignitionlaw" target="_blank" style="color:#333333">From Twitter</a>
+								</h3>
 							  	<?php foreach($tweets as $t) : ?>
 							  		<div id="tweets">
 							      		<p style="margin-bottom: 0;">
 									        <span class="tweet-time" style="font-weight:bold;">
-									        	<?php echo date("j F, Y, g:i a", $t['time'])
-
-									        	// human_time_diff($t['time'], current_time('timestamp'));?>
+									        	<?php echo date("j F, Y, g:i a", $t['time']); ?>
 									        </span>
 									    </p>
 									    <p>
@@ -52,18 +37,27 @@
 							      	</div>
 							  	<?php endforeach; ?>
 							</div>
-							<div class="col-sm-4">
-								<p>more social</p>
+							<div class="col-md-4 col-sm-12">
+								<a href="https://www.linkedin.com/company/9222237" target="_blank">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/linkedin.png" class="img-responsive desaturate img-center socialbw">
+								</a>
+								<a href="https://www.facebook.com/ignitionlaw" target="_blank">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/facebook.png" class="img-responsive desaturate img-center socialbw">
+								</a>
+								<a href="https://plus.google.com/communities/113707983229855618630" target="_blank">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/googleplus.png" class="img-responsive desaturate img-center socialbw">
+								</a>
 							</div>
 						</div>
-					<div class="col-sm-2">
+					</div>
+					<div class="col-md-2 col-sm-3">
 					</div>
 				</div>
 
-
+				<!-- TODO: There is some sort of problem with the footer which produces a left margin. It only appears when both rows of the footer are present: deleting one or the other gets rid of the problem.-->
 
 				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2">
+					<div class="col-sm-8 col-sm-offset-2" id="footer-bottom">
 						<ul>
 							<li>
 								© 
@@ -83,9 +77,9 @@
 						</ul>
 					</div>
 				</div>
-			</div>
 
-		</div><!-- /il-footer -->
+
+			</div><!-- /il-footer -->
 
 		<?php wp_footer(); ?>
 	</body>
