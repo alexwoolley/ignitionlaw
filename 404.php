@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="row">
-	<div class="col-sm-6 col-sm-offset-3">
+	<div class="col-sm-6 col-sm-offset-3 gunnercooke-curves">
 		<div class="text-center masthead">
 			<h1>404!</h1>
 		</div>

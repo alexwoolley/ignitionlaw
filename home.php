@@ -80,7 +80,7 @@ get_header(); ?>
 		<?php while (have_posts()): the_post(); ?>
 		
 		<div class="row">
-			<div class="col-sm-6 col-sm-offset-3 text-justify" id="home-content">
+			<div class="col-sm-6 col-sm-offset-3 text-justify gunnercooke-curves" id="home-content">
 				<?php the_content(); ?>
 			</div>
 		</div>
