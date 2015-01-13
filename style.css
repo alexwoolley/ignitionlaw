@@ -62,10 +62,6 @@ Author URI: http://twitter.com/alexwoolley4
 	border: none !important;
 }
 
-#custom-bootstrap-menu {
-	margin-bottom: 0;
-}
-
 #navbar-logo {
 	max-height: 100px;
 	max-width: 160px;
@@ -100,13 +96,15 @@ a:visited {
 }
  
 a:hover{
-	color: #1C43A8;
+	/*importants override Bootstrap*/
 	text-decoration: none !important;
+	color: #B54930 !important;
 }
 
 a:focus {
-	color: #1C43A8;
+	/*important overrides Bootstrap*/
 	text-decoration: none !important;
+	color: #B54930;
 }
 
 a:active{
@@ -164,6 +162,10 @@ p {
 
 #il-footer #footer-bottom p {
 	font-size: 12px;
+}
+
+#wpcf7-f13-p10-o1 {
+	font-family: 'Open Sans', sans-serif;
 }
 
 #wpcf7-f13-p10-o1  label {
@@ -289,10 +291,17 @@ img.img-center {
 }
 /*END CONTACT FORM*/
 
+/*MASTHEADS*/
 .masthead {
 	margin-top: 45px;
 	margin-bottom: 45px;
 }
+
+#how-we-work-masthead {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/*END MASTHEADS*/
 
 .social-icon {
 	padding-top: 15px;
@@ -336,6 +345,10 @@ img.img-center {
 	margin:0 auto; /* center your carousel if other than 100% */ 
 }
 
+.carousel-caption {
+	font-family: 'Montserrat', sans-serif;
+}
+
 /*END HOME PAGE CAROUSEL*/
 
 #how-we-work-illustration {
@@ -372,14 +385,16 @@ img.img-center {
 
 .gunnercooke-curves {
 	margin-top: 25px;
+	border-left: dotted 1px #B54930;
+	border-top: dotted 1px #B54930;
 	-webkit-border-top-left-radius: 20px;
 	-moz-border-radius-topleft: 20px;
 	border-top-left-radius: 20px;
 	-webkit-box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
 	-moz-box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
 	box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
-
 }
+
 .gunnercooke-heading {
 	padding-top: 10px;
 }

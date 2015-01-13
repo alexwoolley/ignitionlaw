@@ -12,7 +12,7 @@ Template Name: How we work
 	<?php while (have_posts()): the_post(); ?>
 
 	<div class="row">
-		<div class="col-sm-6 col-sm-offset-3 text-center masthead">
+		<div class="col-sm-6 col-sm-offset-3 text-center masthead" id="how-we-work-masthead">
 			<h1><?php the_title(); ?></h1>
 		</div>
 	</div>

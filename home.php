@@ -35,7 +35,7 @@ get_header(); ?>
             <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/entrepreneurially_led.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h3>Entrepreneurially led</h3>
+                        <h2>Entrepreneurially led</h2>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ get_header(); ?>
             <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/legally_driven.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h3>Legally driven</h3>
+                        <h2>Legally driven</h2>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ get_header(); ?>
             <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/digitally_native.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h3>Digitally native</h3>
+                        <h2>Digitally native</h2>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@ get_header(); ?>
             <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/humanity_obsessed.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h3>Humanity obsessed</h3>
+                        <h2>Humanity obsessed</h2>
                     </div>
                 </div>
             </div>
