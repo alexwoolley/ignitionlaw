@@ -9,7 +9,7 @@ Author URI: http://twitter.com/alexwoolley4
 /*NAVBAR STUFF. Built from http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/*/
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(104, 100, 95, 1);
+    color: rgba(22, 65, 172, 1);
 }
 #custom-bootstrap-menu.navbar-default {
     font-size: 14px;
@@ -18,7 +18,7 @@ Author URI: http://twitter.com/alexwoolley4
     border-radius: 0px;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(104, 100, 95, 1);
+    color: rgba(22, 65, 172, 1);
     background-color: rgba(255, 255, 255, 1);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
@@ -30,17 +30,17 @@ Author URI: http://twitter.com/alexwoolley4
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(57, 20, 173, 1);
+    background-color: rgba(22, 65, 172, 1);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #3914ad;
+    border-color: #1641ac;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #3914ad;
+    background-color: #1641ac;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #3914ad;
+    background-color: #1641ac;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
@@ -58,25 +58,29 @@ Author URI: http://twitter.com/alexwoolley4
 
 #navbar-logo {
 	max-height: 100px;
-	max-width: 100px;
+	max-width: 160px;
+}
+
+.navbar-brand {
+	padding-top: 5px !important; /*Reduce padding so larger image can be vertically centred*/
 }
 
 /*FONTS and sizes et al*/
 
 a:link {
-	color: #3914AD;
+	color: #1641AC;
 }
 
 a:visited {
-	color: #3914AD;
+	color: #1641AC;
 }
  
 a:hover{
-	color: #3914AD;
+	color: #1641AC;
 }
 
 a:active{
-	color: #3914AD;
+	color: #1641AC;
 }
 
 p {
@@ -200,7 +204,8 @@ body {
 
 #il-footer #footer-main-menu li a:link {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
+	font-size: 12px;
+	text-transform: uppercase;
 }
 
 img.desaturate { 
@@ -234,12 +239,12 @@ img.img-center {
 }
 
 #wpcf7-f13-p10-o1 .btn-primary {
-	background-color: #3914AD;
+	background-color: #1641AC;
 }
 
 .wpcf7-submit {
 	color: white;
-	background-color: #3914AD;
+	background-color: #1641AC;
 	border: none;
 	/*border-radius: 50%;*/
 	padding-top: .3em;
@@ -315,3 +320,11 @@ img.img-center {
 }
 
 /*END COOKIES WARNING*/
+
+.name {
+	color: #1641AC;
+}
+
+.contact-page-skype {
+	color: #1641AC;
+}

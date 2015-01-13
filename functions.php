@@ -1,9 +1,9 @@
 <?php
 
-function getMainMenu () {
+function listMainMenu () {
 
 	global $main_menu_items;
-	$main_menu_items = array("Home", "What we do", "How we work", "Who we are", "Contact us");
+	$main_menu_items = array("Home", "What We Do", "How We Work", "Gunnercooke", "About Us", "Contact Us");
 
 	foreach ($main_menu_items as $mmi) {
 		//Get rid of upper case and spaces

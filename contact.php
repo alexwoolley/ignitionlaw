@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="row">
 	<div class="col-sm-4 col-sm-offset-2">
 
-		<h1>Contact us</h1>
+		<h1>Contact Us</h1>
 
 		<br>
 		<div class="text-justify">
@@ -64,14 +64,6 @@ get_header(); ?>
 	<?php endif; ?>
 
 </div> <!--/.row-->
-
-<br>
-
-<div class="row">
-	<div class="col-sm-8 col-sm-offset-2 text-justify">
-		<p>We hang out and have meeting rooms available at:</p>	
-	</div>
-</div>
 
 <div class="row">
 	<div class="col-sm-8 col-sm-offset-2">

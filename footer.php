@@ -17,7 +17,7 @@
 						<div class="row"><!--Nested row allows division by three-->
 							<div class="col-md-3 col-md-offset-1 col-sm-12" id="footer-main-menu">
 								<ul>
-									<?php getMainMenu (); ?>
+									<?php listMainMenu (); ?>
 								</ul>
 							</div>
 							<div class="col-md-4 col-sm-12 text-justify">
@@ -54,8 +54,6 @@
 					</div>
 				</div>
 
-				<!-- TODO: There is some sort of problem with the footer which produces a left margin. It only appears when both rows of the footer are present: deleting one or the other gets rid of the problem.-->
-
 				<div class="row">
 					<div class="col-sm-8 col-sm-offset-2" id="footer-bottom">
 						<ul>
@@ -69,10 +67,10 @@
 								Ignition Law. All Rights Reserved.
 							</li>
 							<li>
-								<a href="<?=bloginfo('url');?>/terms-of-use">Terms of use</a>.
+								<a href="<?=bloginfo('url');?>/terms-of-use">Terms of Use</a>.
 							</li>
 							<li>
-								<a href="<?=bloginfo('url');?>/privacy-policy">Privacy policy</a>.
+								<a href="<?=bloginfo('url');?>/privacy-policy">Privacy Policy</a>.
 							</li>
 						</ul>
 					</div>

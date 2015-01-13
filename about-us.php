@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Who we are
+Template Name: About us
 */
 
 ?>
@@ -30,13 +30,13 @@ Template Name: Who we are
 <div class="row">
 	<div class="col-sm-3 col-sm-offset-3">
 		<img src="<?=bloginfo('stylesheet_directory');?>/images/alex_mcpherson.jpg" class="img-responsive img-circle">
-		<div class="text-center">
+		<div class="text-center name">
 			<h4>Alex McPherson</h4>
 		</div>
 	</div>
 	<div class="col-sm-3 col-sm-offset-0">
 		<img src="<?=bloginfo('stylesheet_directory');?>/images/david_farquharson.jpg" class="img-responsive img-circle">
-		<div class="text-center">
+		<div class="text-center name">
 			<h4>David Farquharson</h4>
 		</div>
 	</div>
@@ -114,7 +114,7 @@ Template Name: Who we are
 
 
 <div class="row">
-	<div class="col-sm-6 col-sm-offset-3 text-center">
+	<div class="col-sm-6 col-sm-offset-3 text-center name">
 		<h3>Alex McPherson</h3>
 	</div>
 </div>
@@ -141,7 +141,7 @@ Template Name: Who we are
 <br>
 
 <div class="row">
-	<div class="col-sm-6 col-sm-offset-3 text-center">
+	<div class="col-sm-6 col-sm-offset-3 text-center name">
 		<h3>David Farquharson</h3>
 	</div>
 </div>
