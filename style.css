@@ -87,18 +87,31 @@ Author URI: http://twitter.com/alexwoolley4
 
 a:link {
 	color: #1C43A8;
+	border-bottom: 1px #1C43A8 dotted;
+}
+
+.navbar a:link {
+	border-bottom: 0;
 }
 
 a:visited {
 	color: #1C43A8;
+	border-bottom: 1px #1C43A8 dotted;
 }
  
 a:hover{
 	color: #1C43A8;
+	text-decoration: none !important;
+}
+
+a:focus {
+	color: #1C43A8;
+	text-decoration: none !important;
 }
 
 a:active{
 	color: #1C43A8;
+	border-bottom: 1px #1C43A8 dotted;
 }
 
 p {
@@ -115,6 +128,7 @@ p {
 
 #content h1 {
 	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
 }
 
 #content h3 {
@@ -194,7 +208,6 @@ body {
 /*MORE FOOTER STYLING*/
 #il-footer {
   	background-color: #f5f5f5;
-	margin-top: 30px;
 	/*GENERATED FROM http://www.cssmatic.com/box-shadow*/
 	-webkit-box-shadow: 0px -5px 10px 0px rgba(245,245,245,1);
 	-moz-box-shadow: 0px -5px 10px 0px rgba(245,245,245,1);
@@ -303,6 +316,10 @@ img.img-center {
 
 /*HOME PAGE CAROUSEL*/
 
+#carousel-home-page {
+	margin-top: 1px;
+}
+
 #floater-div {
 	height: 100px;
 }
@@ -351,6 +368,8 @@ img.img-center {
 	color: #1C43A8;
 }
 
+/*GUNNERCOOKE CURVES*/
+
 .gunnercooke-curves {
 	margin-top: 25px;
 	-webkit-border-top-left-radius: 20px;
@@ -363,10 +382,21 @@ img.img-center {
 }
 .gunnercooke-heading {
 	padding-top: 10px;
-	/*adding-bottom: 10px;*/
 }
 
 .gunnercooke-masthead {
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 10px;*/
 }
+
+/*END GUNNERCOOKE CURVES*/
+
+/*BACKGROUND FOR EVERYTHING*/
+#main-container {
+	background-color: #ffffff;
+	background-image: url(/wordpress/ignitionlaw2/wp-content/themes/ignitionlaw/images/brilliant.png);
+	/* Background image from http://www.transparenttextures.com/brilliant.html */
+	padding-bottom: 30px;
+}
+
+/*END BACKGROUND FOR EVERYTHING*/
