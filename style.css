@@ -71,6 +71,10 @@ Author URI: http://twitter.com/alexwoolley4
 	padding-top: 5px !important; /*Reduce padding so larger image can be vertically centred*/
 }
 
+#custom-bootstrap-menu {
+	margin-bottom: 0;
+}
+
 /*Make main menu pretty*/
 #main-menu li {
 	padding-right: 1px;
@@ -194,11 +198,6 @@ html {
 	min-height: 100%;
 }
 
-body {
-	/* Margin bottom by footer height */
-	/*margin-bottom: 60px;*/
-}
-
 #il-footer {
 	position: relative;
 	bottom: 0;
@@ -300,6 +299,7 @@ img.img-center {
 #how-we-work-masthead {
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-top: 20px;
 }
 /*END MASTHEADS*/
 
@@ -315,11 +315,6 @@ img.img-center {
     /*height: 15em;*/
     font-style: italic;
 }
-
-#carousel-who-we-are {
-	/*height: 150px;*/
-}
-
 /*END WHO WE ARE TEXT-ONLY CAROUSEL*/
 
 
@@ -385,8 +380,8 @@ img.img-center {
 
 .gunnercooke-curves {
 	margin-top: 25px;
-	border-left: dotted 1px #B54930;
-	border-top: dotted 1px #B54930;
+/*	border-left: solid 2px #B54930;
+	border-top: solid 2px #B54930;*/
 	-webkit-border-top-left-radius: 20px;
 	-moz-border-radius-topleft: 20px;
 	border-top-left-radius: 20px;
@@ -413,5 +408,4 @@ img.img-center {
 	/* Background image from http://www.transparenttextures.com/brilliant.html */
 	padding-bottom: 30px;
 }
-
 /*END BACKGROUND FOR EVERYTHING*/
