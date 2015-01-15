@@ -22,7 +22,7 @@
 							</div>
 							<div class="col-md-4 col-sm-12 text-justify">
 								<h3>
-									<a href="https://twitter.com/ignitionlaw" target="_blank" style="color:#333333; border-bottom:0;">From Twitter</a>
+									<a href="https://twitter.com/ignitionlaw" target="_blank" style="color:#333333; border-bottom:0;">Twitter Feed</a>
 								</h3>
 							  	<?php foreach($tweets as $t) : ?>
 							  		<div id="tweets">

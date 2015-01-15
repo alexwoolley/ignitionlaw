@@ -144,6 +144,7 @@ p {
 #home-content h4 {
 	font-family: 'Open Sans', sans-serif;
 	color: #68645F;
+	font-size: 19px;
 }
 
 #il-footer h3 {
@@ -178,6 +179,10 @@ p {
 
 #wpcf7-f13-p10-o1 textarea {
 	font-family: 'Open Sans', sans-serif;
+}
+
+#tweets p {
+	font-size: 14px;
 }
 
 /*END FONTS*/
@@ -308,6 +313,7 @@ img.img-center {
 #wpcf7-f13-p10-o1  .btn-primary:hover {
   background: #f5f5f5;
   text-decoration: none;
+  color: #B54930;
 }
 
 /*END MOSTLY GENERATED*/
@@ -320,7 +326,7 @@ img.img-center {
 	margin-bottom: 45px;
 }
 
-#how-we-work-masthead {
+.hww-wwd-masthead {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-top: 20px;
@@ -371,8 +377,8 @@ img.img-center {
 /*END HOME PAGE CAROUSEL*/
 
 #how-we-work-illustration {
-	padding-right: 15px;
-	padding-left: 15px;
+	/*padding-right: 15px;*/
+	/*padding-left: 15px;*/
 	max-height: 550px;
 	width: 100%;
 	overflow: hidden;
@@ -428,7 +434,7 @@ img.img-center {
 /*BACKGROUND FOR EVERYTHING*/
 #main-container {
 	background-color: #ffffff;
-	background-image: url(/wordpress/ignitionlaw2/wp-content/themes/ignitionlaw/images/brilliant.png);
+	background-image: url(http://new.ignitionlaw.co.uk/wp-content/themes/ignitionlaw/images/brilliant.png);
 	/* Background image from http://www.transparenttextures.com/brilliant.html */
 	padding-bottom: 30px;
 }
