@@ -124,6 +124,13 @@ p {
 	font-size: 16px;
 }
 
+#content h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 150%;
+	color: #68645F;
+}
+
 .navbar li a:link {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -412,14 +419,27 @@ img.img-center {
 
 .gunnercooke-curves {
 	margin-top: 25px;
-/*	border-left: solid 2px #B54930;
-	border-top: solid 2px #B54930;*/
 	-webkit-border-top-left-radius: 20px;
 	-moz-border-radius-topleft: 20px;
 	border-top-left-radius: 20px;
 	-webkit-box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
 	-moz-box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
 	box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
+}
+
+.gunnercooke-image-wrapper {
+	max-height: 220px;
+	overflow: hidden;
+}
+
+.gunnercooke-curves-images {
+	-webkit-border-top-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	border-top-left-radius: 20px;
+	-webkit-box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
+	-moz-box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
+	box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
+	width: 100%;
 }
 
 .gunnercooke-heading {
@@ -441,3 +461,17 @@ img.img-center {
 	padding-bottom: 30px;
 }
 /*END BACKGROUND FOR EVERYTHING*/
+
+/*BIOGRAPHY STUFF*/
+.bio-contact {
+	border-top: 1px solid #f5f5f5;
+	padding-top: 5px;
+}
+
+.bio-social-icon {
+	max-height: 30px;
+	max-width: 30px;
+	margin-bottom: 10px
+}
+
+/*END BIOGRAPHY STUFF*/

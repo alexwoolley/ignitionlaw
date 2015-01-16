@@ -61,7 +61,7 @@ function getTeam () {
 	});
 
 	foreach ($children_titles_with_orders as $cto) { ?>
-		<div class="col-sm-6">
+		<div class="col-sm-4">
 			<?php
 				$child_id = $cto['id'];
 				$child_title = $cto['title'];
@@ -69,9 +69,11 @@ function getTeam () {
 				$link = get_site_url() . "/about-us/" . $url_string;
 			?>
 			<a href="<?= $link; ?>">
-				<?php
-					echo get_the_post_thumbnail( $child_id, "full", array('class' => 'img-responsive') );
-				?>
+				<div class="gunnercooke-image-wrapper">
+					<?php
+						echo get_the_post_thumbnail( $child_id, "full", array('class' => 'img-responsive gunnercooke-curves-images') );
+					?>
+				</div>
 			</a>
 			<div class="text-center">
 				<h4>
