@@ -1,5 +1,9 @@
 <?php
 
+add_theme_support( 'post-thumbnails' ); 
+
+////////////////// MY FUNCTIONS /////////////////////////
+
 function listMainMenu () {
 
 	global $main_menu_items;
@@ -39,13 +43,15 @@ function getTeam () {
 	//Make array of titles of children pages with orders, i.e. "Alex McPherson", "David Farquharson" etc.
 	$children_titles_with_orders = [];
 	foreach ($about_us_children as $child) {
-		
+
 		$child_with_order = array(
+			'id' => $child->ID,
 			'title' => $child->post_title,
 			'menu_order' => $child->menu_order
-
 		);
+
 		array_push($children_titles_with_orders, $child_with_order);
+
 	}
 
 	//See http://stackoverflow.com/questions/2699086/sort-multi-dimensional-array-by-value
@@ -57,15 +63,15 @@ function getTeam () {
 	foreach ($children_titles_with_orders as $cto) { ?>
 		<div class="col-sm-6">
 			<?php
+				$child_id = $cto['id'];
 				$child_title = $cto['title'];
 				$url_string = strtolower(str_replace(" ", "-", $child_title));
 				$link = get_site_url() . "/about-us/" . $url_string;
 			?>
 			<a href="<?= $link; ?>">
 				<?php
-					$image_title = strtolower(str_replace(" ", "_", $child_title));
+					echo get_the_post_thumbnail( $child_id, "full", array('class' => 'img-responsive') );
 				?>
-				<img src="<?=bloginfo('stylesheet_directory');?>/images/<?= $image_title; ?>.jpg" class="img-responsive">
 			</a>
 			<div class="text-center">
 				<h4>
