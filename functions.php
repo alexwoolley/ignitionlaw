@@ -69,11 +69,9 @@ function getTeam () {
 				$link = get_site_url() . "/about-us/" . $url_string;
 			?>
 			<a href="<?= $link; ?>">
-				<div class="gunnercooke-image-wrapper">
-					<?php
-						echo get_the_post_thumbnail( $child_id, "full", array('class' => 'img-responsive gunnercooke-curves-images') );
-					?>
-				</div>
+				<?php
+					echo get_the_post_thumbnail( $child_id, "full", array('class' => 'img-responsive gunnercooke-curves-images') );
+				?>
 			</a>
 			<div class="text-center">
 				<h4>
