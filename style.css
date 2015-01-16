@@ -152,8 +152,14 @@ p {
 
 #home-content h4 {
 	font-family: 'Open Sans', sans-serif;
-	color: #68645F;
+	color: #4A4A4A; /*This is a good colour to use to make text look bold without actually using bold, which is ugly.*/
 	font-size: 19px;
+}
+
+#home-content h6 {
+	font-family: 'Open Sans', sans-serif;
+	color: #4A4A4A;
+	font-size: 16px;
 }
 
 #il-footer h3 {
@@ -222,11 +228,11 @@ html {
 
 /*MORE FOOTER STYLING*/
 #il-footer {
-  	background-color: #f5f5f5;
+  	background-color: #EDEDED;
 	/*GENERATED FROM http://www.cssmatic.com/box-shadow*/
-	-webkit-box-shadow: 0px -5px 10px 0px rgba(245,245,245,1);
-	-moz-box-shadow: 0px -5px 10px 0px rgba(245,245,245,1);
-	box-shadow: 0px -5px 10px 0px rgba(245,245,245,1);
+	-webkit-box-shadow: 0px -5px 10px 0px rgba(237, 237, 237, 1);
+	-moz-box-shadow: 0px -5px 10px 0px rgba(237, 237, 237, 1);
+	box-shadow: 0px -5px 10px 0px rrgba(237, 237, 237, 1);
 }
 
 #il-footer #footer-bottom li {
@@ -272,9 +278,13 @@ img.img-center {
 }
 
 .socialbw {
-	padding-top: 20px;
-	max-height: 65px;
-	max-width: 65px;
+	margin-top: 10px;
+	max-height: 45px;
+	max-width: 45px;
+}
+
+#socialbwtop {
+	margin-top: 20px;
 }
 
 /*END MORE FOOTER STYLING*/
@@ -283,14 +293,6 @@ img.img-center {
 .ajax-loader {
 	display: block;
 }
-
-#wpcf7-f13-p10-o1 {
-	margin-top: 40px;
-}
-
-/*#wpcf7-f13-p10-o1 .btn-primary {
-	background-color: #1C43A8;
-}*/
 
 .wpcf7-submit {
 	color: white;

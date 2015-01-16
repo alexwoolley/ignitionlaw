@@ -9,11 +9,14 @@ get_header(); ?>
 	<div class="col-sm-8 col-sm-offset-2 gunnercooke-curves">
 
 		<div class="row">
-			<div class="col-sm-6">
-
+			<div class="col-xs-12 text-center masthead">
 				<h1>Contact Us</h1>
+			</div>
 
-				<br>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
 				<div class="text-justify">
 					<p>If you’d like more information about any of the services provided by Ignition Law, we’d love to hear from you! Please send us your query, using the form on this page, and someone will be in touch as soon as possible.</p>
 					<p>We are also actively recruiting for lawyers at all levels. If you think this could be you, we’d love to speak to you. Please get in touch, using the form on this page.</p>

@@ -37,7 +37,10 @@
 							      	</div>
 							  	<?php endforeach; ?>
 							</div>
-							<div class="col-md-4 col-sm-12">
+							<div class="col-md-3 col-sm-12">
+								<a href="https://twitter.com/ignitionlaw" target="_blank">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/twitter.png" class="img-responsive desaturate img-center socialbw" id="socialbwtop">
+								</a>
 								<a href="https://www.linkedin.com/company/9222237" target="_blank">
 									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/linkedin.png" class="img-responsive desaturate img-center socialbw">
 								</a>
