@@ -9,7 +9,7 @@ Template Name: Biography
 <?php get_header(); ?>
 
 <div class="row">
-	<div class="col-sm-8 col-sm-offset-2 gunnercooke-curves">
+	<div class="col-sm-6 col-sm-offset-3 gunnercooke-curves">
 
 		<!-- This loop gets the title, i.e. the person's name  -->
 		<?php if (have_posts()): ?> 

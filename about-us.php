@@ -29,9 +29,20 @@ Template Name: About us
 			<?php endwhile; ?>
 		<?php endif; ?>
 
-		<br>
+			<br>
+			
 			<div class="row">
-				<?php getTeam (); ?>
+				<?php getTeam ( "About Us"); ?>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h3>Advisory Board</h3>
+				</div>
+			</div>
+
+			<div class="row">
+				<?php getTeam ("Advisory Board"); ?>
 			</div>
 
 	</div>

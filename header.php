@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<title><?php wp_title( '|', true, 'right' ); ?>Ignition Law</title>
@@ -29,12 +29,15 @@
 		<?php if (!is_page("Privacy policy")): ?> <!--So that people don't have to read the cookies warning again after clicking on the privacy policy link -->
 			<script type="text/javascript">
 			    $(document).ready(function() {
-			        $.cookiesDirective({
+			        $.cookiesDirective({ //Get cookies warning
 			            privacyPolicyUri: "<?=bloginfo('url');?>/privacy-policy",
 			            message: "This website uses 'cookies' to enhance your experience and for basic functionality. Using this website means you're happy with this. ",
 			            fontFamily: 'Open Sans',
 			            linkColor: '#0099CC',
 			        });
+			        $('.carousel').carousel({ //Call carousel on home page at custom speed. NB 1000 = 1 second
+						interval: 3000
+ 					});
 			    });
 			</script>
 		<?php endif; ?>

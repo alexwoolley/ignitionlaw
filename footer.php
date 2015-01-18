@@ -15,7 +15,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
 						<div class="row"><!--Nested row allows division by three-->
-							<div class="col-md-3 col-md-offset-1 col-sm-12" id="footer-main-menu">
+							<div class="col-md-4 col-sm-12" id="footer-main-menu">
 								<ul>
 									<?php listMainMenu (); ?>
 								</ul>
@@ -37,19 +37,27 @@
 							      	</div>
 							  	<?php endforeach; ?>
 							</div>
-							<div class="col-md-3 col-sm-12">
-								<a href="https://twitter.com/ignitionlaw" target="_blank">
-									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/twitter.png" class="img-responsive desaturate img-center socialbw" id="socialbwtop">
-								</a>
-								<a href="https://www.linkedin.com/company/9222237" target="_blank">
-									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/linkedin.png" class="img-responsive desaturate img-center socialbw">
-								</a>
-								<a href="https://www.facebook.com/ignitionlaw" target="_blank">
-									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/facebook.png" class="img-responsive desaturate img-center socialbw">
-								</a>
-								<a href="https://plus.google.com/communities/113707983229855618630" target="_blank">
-									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/googleplus.png" class="img-responsive desaturate img-center socialbw">
-								</a>
+							<div class="col-md-4 col-sm-12">
+								<div class="text-right">
+									<a href="https://twitter.com/ignitionlaw" target="_blank">
+										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/twitter.png" class="desaturate socialbw" id="socialbwtop">
+									</a>
+								</div>
+								<div class="text-right">
+									<a href="https://www.linkedin.com/company/9222237" target="_blank">
+										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/linkedin.png" class="desaturate socialbw">
+									</a>
+								<!-- </div> -->
+								<div class="text-right">
+									<a href="https://www.facebook.com/ignitionlaw" target="_blank">
+										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/facebook.png" class="desaturate socialbw">
+									</a>
+								</div>
+								<div class="text-right">
+									<a href="https://plus.google.com/communities/113707983229855618630" target="_blank">
+										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/googleplus.png" class="desaturate socialbw">
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
