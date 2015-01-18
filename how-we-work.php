@@ -11,11 +11,17 @@ Template Name: How we work
 <?php if (have_posts()): ?>
 	<?php while (have_posts()): the_post(); ?>
 
-	<div class="row">
-		<div class="col-sm-6 col-sm-offset-3 text-center masthead hww-wwd-masthead">
-			<h1><?php the_title(); ?></h1>
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3 gunnercooke-curves">
+
+			<div class="row">
+				<div class="col-xs-12 text-center masthead">
+					<h1><?php the_title(); ?></h1>
+				</div>
+			</div>
+
+			</div>
 		</div>
-	</div>
 
 	<?php endwhile; ?>
 <?php endif; ?>

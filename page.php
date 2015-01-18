@@ -5,16 +5,29 @@
 
 	<div class="row">
 		<div class="col-sm-6 col-sm-offset-3 gunnercooke-curves">
-			<div class="text-center gunnercooke-masthead">
-				<h1><?php the_title(); ?></h1>
+			
+			<!-- The point of these nested rows is to be consistent with other pages, where they're more necessary. -->
+			<div class="row">
+				<div class="col-xs-12 text-center masthead">
+					<h1><?php the_title(); ?></h1>
+				</div>
 			</div>
-			<div class="text-justify">
-				<?php the_content(); ?>
+			
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="text-justify">
+						<?php the_content(); ?>
+					</div>
+				</div>
 			</div>
+
 		</div>
 	</div>
 
 	<?php endwhile; ?>
 <?php endif; ?>
+
+
+
 
 <?php get_footer(); ?>

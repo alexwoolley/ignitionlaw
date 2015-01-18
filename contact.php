@@ -12,7 +12,6 @@ get_header(); ?>
 			<div class="col-xs-12 text-center masthead">
 				<h1>Contact Us</h1>
 			</div>
-
 		</div>
 
 		<div class="row">
@@ -22,7 +21,6 @@ get_header(); ?>
 					<p>We are also actively recruiting for lawyers at all levels. If you think this could be you, we’d love to speak to you. Please get in touch, using the form on this page.</p>
 					
 				</div>
-				<!-- <br> -->
 				
 				<div id="contact-page-skype">
 					<p>
