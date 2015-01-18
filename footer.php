@@ -47,7 +47,7 @@
 									<a href="https://www.linkedin.com/company/9222237" target="_blank">
 										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/linkedin.png" class="desaturate socialbw">
 									</a>
-								<!-- </div> -->
+								</div>
 								<div class="text-right">
 									<a href="https://www.facebook.com/ignitionlaw" target="_blank">
 										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/facebook.png" class="desaturate socialbw">
