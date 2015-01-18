@@ -32,7 +32,7 @@ Template Name: How we work
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12">
-			<div id="how-we-work-illustration">					
+			<div class="big-illustration-wrapper">					
 				<img src="<?=bloginfo('stylesheet_directory');?>/images/how_we_work.jpg" alt="How We Work" width="100%" class="img-responsive">
 			</div>
 		</div>

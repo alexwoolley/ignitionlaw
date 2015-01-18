@@ -113,7 +113,7 @@ Author URI: http://twitter.com/alexwoolley4
 }
 
 #custom-bootstrap-menu .navbar-brand {
-	padding-top: 5px; /*Reduce padding so larger image can be vertically centred*/
+	padding-top: 8px; /*Reduce padding so larger image can be vertically centred*/
 }
 
 #custom-bootstrap-menu {
@@ -416,10 +416,8 @@ img.img-center {
 
 /*END HOME PAGE CAROUSEL*/
 
-#how-we-work-illustration {
-	/*padding-right: 15px;*/
-	/*padding-left: 15px;*/
-	max-height: 550px;
+.big-illustration-wrapper {
+	max-height: 400px;
 	width: 100%;
 	overflow: hidden;
 }

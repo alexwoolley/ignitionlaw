@@ -30,7 +30,7 @@ Template Name: What We Do
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12">
-			<div id="how-we-work-illustration">					
+			<div class="big-illustration-wrapper">					
 				<img src="<?=bloginfo('stylesheet_directory');?>/images/what_we_do.jpg" alt="What We Do" width="100%" class="img-responsive">
 			</div>
 		</div>
