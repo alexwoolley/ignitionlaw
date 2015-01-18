@@ -1,4 +1,4 @@
-/*
+
 Theme Name: Ignition Law
 Description: Ignition Law WordPress theme
 Version: 1
@@ -210,23 +210,7 @@ p {
 	line-height: 150%;
 }
 
-/*STICKY FOOTER*/
-/*Based on http://getbootstrap.com/examples/sticky-footer-navbar*/
-
-html {
-	position: relative;
-	min-height: 100%;
-}
-
-#il-footer {
-	position: relative;
-	bottom: 0;
- 	width: 100%;
-  	/* Set the fixed height of the footer here */
-}
-/*END STICKY FOOTER*/
-
-/*MORE FOOTER STYLING*/
+/*FOOTER STYLING*/
 #il-footer {
   	background-color: #EDEDED;
 	/*GENERATED FROM http://www.cssmatic.com/box-shadow*/
@@ -471,3 +455,7 @@ img.img-center {
 }
 
 /*END BIOGRAPHY STUFF*/
+
+#fourhundredandfour {
+	padding-bottom: 100px; /*Sticky footers aren't really possible on such a large footer, so this hack ensures the 404 page footer doesn't leap up. Better did the same thing: http://better.com/hello-world*/
+}
