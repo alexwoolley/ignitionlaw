@@ -15,21 +15,17 @@ get_header(); ?>
         <li data-target="#carousel-home-page" data-slide-to="3"></li>
         <li data-target="#carousel-home-page" data-slide-to="4"></li>
     </ol>
- 
+
   <!-- Wrapper for slides -->
     <div class="carousel-inner">
-        <div class="item active" id="initial-item">
-            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/home_background.jpg) center center; background-size:cover;" class="slider-size">
-<!--                 <div id="floater-div">
-                </div>
-                <div class="container" id="initial-caption-container">
-                    <div id="initial-caption">
-                        <h1>a very</h1>
-                        <h1>different</h1>
-                        <h1>law firm</h1>
+        <div class="item active">
+            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/?home_background.jpg) center center; background-size:cover;" class="slider-size">
+                <!-- <div class="container">
+                    <div class="carousel-caption">
+                        <h2 style="font-size: 80px; font-family: 'Open Sans', sans-serif;">a very<br><span style="color: #C5C5C5;">different</span><br>law firm</h2>
                     </div>
                 </div> -->
-            </div>
+            </div> 
         </div>
         <div class="item">
             <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/entrepreneurially_led.jpg) center center; background-size:cover;" class="slider-size">
