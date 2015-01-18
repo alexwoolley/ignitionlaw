@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>
+<html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<title><?php wp_title( '|', true, 'right' ); ?>Ignition Law</title>
@@ -36,7 +36,7 @@
 			            linkColor: '#0099CC',
 			        });
 			        $('.carousel').carousel({ //Call carousel on home page at custom speed. NB 1000 = 1 second
-						interval: 3000
+						interval: 2000
  					});
 			    });
 			</script>
@@ -46,26 +46,26 @@
 	<body>
 		<!-- Following based on example in http://getbootstrap.com/components/#navbar -->
 		<nav id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
-		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header navbar-right">
-		      	<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-		      	</button>
-		      	<a class="navbar-brand pull-right" href="<?=bloginfo('url');?>">
-		      		<img src="<?=bloginfo('stylesheet_directory');?>/images/logo.jpeg" id="navbar-logo">
-		      	</a>
-		    </div>
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse navbar-left" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav" id="main-menu">
-		      	<?php listMainMenu (); ?>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header navbar-right">
+			      	<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      	</button>
+			      	<a class="navbar-brand pull-right" href="<?=bloginfo('url');?>">
+			      		<img src="<?=bloginfo('stylesheet_directory');?>/images/logo.jpeg" id="navbar-logo">
+			      	</a>
+			    </div>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse navbar-left" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav" id="main-menu">
+			      	<?php listMainMenu (); ?>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container-fluid -->
 		</nav>
 		<?php if(!is_page("Home")): //So carousel doesn't have irritating padding ?>
 		<!-- Container -->

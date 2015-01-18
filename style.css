@@ -1,4 +1,4 @@
-
+/*
 Theme Name: Ignition Law
 Description: Ignition Law WordPress theme
 Version: 1
@@ -7,6 +7,51 @@ Author URI: http://twitter.com/alexwoolley4
 */
 
 /*NAVBAR STUFF. */
+
+#custom-bootstrap-menu.navbar-default .navbar-nav li a {
+	height: 60px;
+	padding-top: 20px;
+}
+
+/*Makes navbar collapse at 960px rather than Bootstrap's default*/
+
+@media (max-width: 960px) {
+    #custom-bootstrap-menu .navbar-header {
+        float: none;
+    }
+   	#custom-bootstrap-menu .navbar-right {
+        float: none !important;
+    }
+    #custom-bootstrap-menu .navbar-toggle {
+        display: block;
+    }
+    #custom-bootstrap-menu .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    #custom-bootstrap-menu .navbar-collapse.collapse {
+        display: none!important;
+    }
+    #custom-bootstrap-menu .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    #custom-bootstrap-menu .navbar-nav>li {
+        float: none;
+    }
+    #custom-bootstrap-menu .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* since 3.1.0 */
+    #custom-bootstrap-menu .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    #custom-bootstrap-menu .collapsing {
+        overflow: hidden!important;
+    }
+}
+
 
 /*Built from http://bootstrapdesigntools.com/tools/bootstrap-menu-builder*/
 
@@ -58,17 +103,17 @@ Author URI: http://twitter.com/alexwoolley4
 }
 /*END GENERATED*/
 
-.navbar-toggle {
-	border: none !important;
+#custom-bootstrap-menu .navbar-toggle {
+	border: none;
 }
 
 #navbar-logo {
-	max-height: 100px;
-	max-width: 160px;
+	max-height: 150px;
+	max-width: 200px;
 }
 
-.navbar-brand {
-	padding-top: 5px !important; /*Reduce padding so larger image can be vertically centred*/
+#custom-bootstrap-menu .navbar-brand {
+	padding-top: 5px; /*Reduce padding so larger image can be vertically centred*/
 }
 
 #custom-bootstrap-menu {
