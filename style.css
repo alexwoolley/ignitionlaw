@@ -479,7 +479,7 @@ img.img-center {
 /*BACKGROUND FOR EVERYTHING*/
 #main-container {
 	background-color: #ffffff;
-	background-image: url(http://new.ignitionlaw.co.uk/wp-content/themes/ignitionlaw/images/brilliant.png);
+	background-image: url(http://localhost/wordpress/ignitionlaw2/wp-content/themes/ignitionlaw/images/brilliant.png);
 	/* Background image from http://www.transparenttextures.com/brilliant.html */
 	padding-bottom: 30px;
 }

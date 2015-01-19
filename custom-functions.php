@@ -75,7 +75,7 @@ function getTeam ( $parent_page ) {
 			?>
 			<a href="<?= $link; ?>">
 				<?php
-					echo get_the_post_thumbnail( $child_id, "full", array('class' => 'img-responsive gunnercooke-curves-images') );
+					echo get_the_post_thumbnail( $child_id, "medium", array('class' => 'img-responsive gunnercooke-curves-images') );
 				?>
 			</a>
 			<div class="text-center">

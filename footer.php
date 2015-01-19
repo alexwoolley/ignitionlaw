@@ -15,7 +15,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
 						<div class="row"><!--Nested row allows division by three-->
-							<div class="col-md-4 col-sm-12" id="footer-main-menu">
+							<div class="col-md-3 col-md-offset-1 col-sm-12" id="footer-main-menu">
 								<ul>
 									<?php listMainMenu (); ?>
 								</ul>

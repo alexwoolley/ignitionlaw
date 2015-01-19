@@ -36,7 +36,7 @@
 			            linkColor: '#0099CC',
 			        });
 			        $('.carousel').carousel({ //Call carousel on home page at custom speed. NB 1000 = 1 second
-						interval: 10000
+						interval: 3000
  					});
 			    });
 			</script>
