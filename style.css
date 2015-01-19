@@ -245,6 +245,10 @@ p {
 	font-size: 14px;
 }
 
+#footer-contact p {
+	font-size: 14px;
+}
+
 /*END FONTS*/
 
 #home-content {
@@ -307,13 +311,9 @@ img.img-center {
 }
 
 .socialbw {
-	margin-top: 10px;
+	margin: 10px 0;
 	max-height: 45px;
 	max-width: 45px;
-}
-
-#socialbwtop {
-	margin-top: 20px;
 }
 
 /*END MORE FOOTER STYLING*/

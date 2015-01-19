@@ -37,27 +37,23 @@
 							      	</div>
 							  	<?php endforeach; ?>
 							</div>
-							<div class="col-md-4 col-sm-12">
-								<div class="text-right">
-									<a href="https://twitter.com/ignitionlaw" target="_blank">
-										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/twitter.png" class="desaturate socialbw" id="socialbwtop">
-									</a>
-								</div>
-								<div class="text-right">
-									<a href="https://www.linkedin.com/company/9222237" target="_blank">
-										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/linkedin.png" class="desaturate socialbw">
-									</a>
-								</div>
-								<div class="text-right">
-									<a href="https://www.facebook.com/ignitionlaw" target="_blank">
-										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/facebook.png" class="desaturate socialbw">
-									</a>
-								</div>
-								<div class="text-right">
-									<a href="https://plus.google.com/communities/113707983229855618630" target="_blank">
-										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/googleplus.png" class="desaturate socialbw">
-									</a>
-								</div>
+							<div class="col-md-4 col-sm-12" id="footer-contact">
+								<h3>Contact Us:</h3>
+									<p>D: 020 3432 4020<br>
+									Skype: <a href="skype:IgnitionLaw?call">IgnitionLaw</a><br>
+									Twitter: <a href="https://twitter.com/ignitionlaw" target="_blank">@IgnitionLaw</a></p>
+								<a href="https://twitter.com/ignitionlaw" target="_blank">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/twitter.png" class="desaturate socialbw">
+								</a>
+								<a href="https://www.linkedin.com/company/9222237" target="_blank">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/linkedin.png" class="desaturate socialbw">
+								</a>
+								<a href="https://www.facebook.com/ignitionlaw" target="_blank">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/facebook.png" class="desaturate socialbw">
+								</a>
+								<a href="https://plus.google.com/communities/113707983229855618630" target="_blank">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/googleplus.png" class="desaturate socialbw">
+								</a>
 							</div>
 						</div>
 					</div>

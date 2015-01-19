@@ -19,7 +19,7 @@ get_header(); ?>
   <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/?home_background.jpg) center center; background-size:cover;" class="slider-size">
+            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/home_background.jpg) center center; background-size:cover;" class="slider-size">
                 <!-- <div class="container">
                     <div class="carousel-caption">
                         <h2 style="font-size: 80px; font-family: 'Open Sans', sans-serif;">a very<br><span style="color: #C5C5C5;">different</span><br>law firm</h2>

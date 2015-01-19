@@ -21,7 +21,16 @@ Template Name: Biography
 
 			<?php endwhile; ?>
 		<?php endif; ?>
-					<h4><?= get_post_meta (get_queried_object_id(), "Title", true); ?></h4>
+					<h4>
+						<?php $title = get_post_meta (get_queried_object_id(), "Title", true);
+							if ($title) {
+								echo $title;
+							} 
+							else {
+								echo "Advisory Board";
+							}
+						?>
+					</h4>
 				</div><!-- /col -->
 			</div><!-- /row -->
 
@@ -38,11 +47,12 @@ Template Name: Biography
 
 				<div class="col-sm-8">
 					<div class="bio-contact"><!--Nested div necessary for reasons of padding and margins -->
-						<?php if (get_post_meta( get_queried_object_id(), "Email", true )): ?>
+						<?php 
+							$email_address = get_post_meta( get_queried_object_id(), "Email", true );
+							if ($email_address):
+						?>
 						<p><strong>Email: </strong>
-							<?php $email_address = get_post_meta( get_queried_object_id(), "Email", true );
-								$email_bits = explode("@", $email_address)
-							?>
+							<?php $email_bits = explode("@", $email_address); ?>
 							<SCRIPT type='text/javascript'>
 								a='<?= $email_bits[0]; ?>'; 
 								b='<?= $email_bits[1]; ?>'
@@ -51,18 +61,25 @@ Template Name: Biography
 							</SCRIPT>
 						</p>
 						<?php endif; ?>
-						<?php if (get_post_meta( get_queried_object_id(), "Mobile", true )): ?>
-							<p><strong>Mobile: </strong><?= get_post_meta( get_queried_object_id(), "Mobile", true ); ?></p>
+						<?php 
+							$mobile = get_post_meta( get_queried_object_id(), "Mobile", true );
+							if ($mobile):
+						?>
+							<p><strong>Mobile: </strong><?= $mobile; ?></p>
 						<?php endif; ?>
-						<?php if (get_post_meta( get_queried_object_id(), 'LinkedIn', true )): ?>
-							<a href="<?= get_post_meta( get_queried_object_id(), 'LinkedIn', true ); ?>" target="_blank">
+						<?php 
+							$linkedin = get_post_meta( get_queried_object_id(), 'LinkedIn', true );
+							if ($linkedin): 
+						?>
+							<a href="<?= $linkedin; ?>" target="_blank">
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/linkedin.png" class="img-responsive desaturate bio-social-icon">
 							</a>
 						<?php endif; ?>
-						<?php if (get_post_meta( get_queried_object_id(), "Quote", true )): ?>
-							<h5>
-								<?= get_post_meta( get_queried_object_id(), "Quote", true ); ?>
-							</h5>
+						<?php 
+							$quote = get_post_meta( get_queried_object_id(), "Quote", true );
+							if ($quote):
+						?>
+							<h5><?= $quote; ?></h5>
 						<?php endif; ?>
 					</div>
 				</div>
