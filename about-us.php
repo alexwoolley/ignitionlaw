@@ -41,7 +41,7 @@ Template Name: About us
 
 			<div class="row">
 				<div class="col-xs-12 text-center">
-					<h3>Advisory Board</h3>
+					<h3 style="margin-bottom: 25px;">Advisory Board</h3>
 				</div>
 			</div>
 
@@ -51,4 +51,5 @@ Template Name: About us
 
 	</div>
 </div>
+
 <?php get_footer(); ?>

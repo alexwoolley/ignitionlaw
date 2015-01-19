@@ -65,12 +65,12 @@ function getTeam ( $parent_page ) {
 	});
 
 	foreach ($children_titles_with_orders as $cto) { ?>
-		<div class="col-sm-4">
+		<div class="col-sm-4 col-xs-6">
 			<?php
 				$child_id = $cto['id'];
-				$child_title = $cto['title'];
+				$child_post_title = $cto['title'];
 				$url_string_0 = strtolower(str_replace(" ", "-", $parent_page));
-				$url_string_1 = strtolower(str_replace(" ", "-", $child_title));
+				$url_string_1 = strtolower(str_replace(" ", "-", $child_post_title));
 				$link = get_site_url() . "/" . $url_string_0 . "/" . $url_string_1;
 			?>
 			<a href="<?= $link; ?>">
@@ -80,7 +80,13 @@ function getTeam ( $parent_page ) {
 			</a>
 			<div class="text-center">
 				<h4>
-					<a href="<?= $link; ?>"><?= $child_title; ?></a>
+					<?php $names = explode(" ", $child_post_title); ?>
+					<a href="<?= $link; ?>" class="about-us-names">
+						<?php foreach ($names as $name) {
+							echo $name . "<br>"; //Splitting the names over two lines is to prevent irritating flow issues on smaller screens. It would probably be better to do this using jQuery's width() and only split the names onto two lines when necessary, but for the time being this will have to do.
+						}
+						?>
+					</a>
 				</h4>
 			</div>
 			<?php

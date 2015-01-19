@@ -502,3 +502,7 @@ img.img-center {
 #fourhundredandfour {
 	padding-bottom: 100px; /*Sticky footers aren't really possible on such a large footer, so this hack ensures the 404 page footer doesn't leap up. Better did the same thing: http://better.com/hello-world*/
 }
+
+.about-us-names {
+	line-height: 130%
+}
