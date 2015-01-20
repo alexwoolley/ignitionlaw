@@ -65,7 +65,7 @@ Template Name: How we work
 				<img src="<?=bloginfo('stylesheet_directory');?>/images/clock.png" class="img-center gunnercooke-heading">
 				<h3 class="text-center">On Time</h3>
 				<p>Building great businesses requires quick decisions and fast pace. Unfortunately in some cases, advisors can slow the momentum down!</p>
-				<p>At Ignition Law, we’ll work to your schedule – providing the advice you want, when you want it.</p>
+				<p>The Ignition team work to your schedule – providing the advice you want, when you want it.</p>
 			</div>
 			<div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 text-justify gunnercooke-curves">
 				<img src="<?=bloginfo('stylesheet_directory');?>/images/tower_block.png" class="img-center gunnercooke-heading">
