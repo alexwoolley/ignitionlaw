@@ -13,9 +13,9 @@ Author URI: http://twitter.com/alexwoolley4
 	padding-top: 20px;
 }
 
-/*Makes navbar collapse at 960px rather than Bootstrap's default*/
+/*Makes navbar collapse at 990px rather than Bootstrap's default*/
 
-@media (max-width: 960px) {
+@media (max-width: 990px) {
     #custom-bootstrap-menu .navbar-header {
         float: none;
     }
@@ -110,10 +110,16 @@ Author URI: http://twitter.com/alexwoolley4
 #navbar-logo {
 	max-height: 150px;
 	max-width: 200px;
+	margin-right: 40px;
 }
 
 #custom-bootstrap-menu .navbar-brand {
 	padding-top: 8px; /*Reduce padding so larger image can be vertically centred*/
+	padding-left: 0; /*For mobile screens*/
+}
+
+#custom-bootstrap-menu .navbar-header button {
+	margin-right: 0;
 }
 
 #custom-bootstrap-menu {
@@ -204,6 +210,12 @@ p {
 #home-content h6 {
 	font-family: 'Open Sans', sans-serif;
 	color: #4A4A4A;
+	font-size: 16px;
+}
+
+#content li {
+	font-family: 'Open Sans', sans-serif;
+	color: #68645F;
 	font-size: 16px;
 }
 
