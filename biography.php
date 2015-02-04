@@ -91,17 +91,21 @@ Template Name: Biography
 										    <div class="item <?php
 										    	if ($id_counter == 0): ?>
 										    		active
-										    	<?php endif; ?>" 
+										    	<?php endif; ?> carousel-text" 
 										    	id="carousel-text-<?= $id_counter ?>">
 										        <p><em><?= $quote; ?></em></p>
 										    </div>
 										<?php 
-											++$id_counter; //increment the id_counter
+											++$id_counter; //increment the id_counter so that each quote has its own identifier. This helps assign the class "active" only to the first quote.
 										}
 
 									?>
 								</div>
 							</div>
+							<script type="text/javascript">
+								//Make sure div heights of quotes are the same to get rid of jumping effects
+								equalise_bio_div_height();
+							</script>
 							<?php endif; ?>
 					</div><!-- /bio-contact -->
 				</div><!-- /col -->
@@ -124,9 +128,5 @@ Template Name: Biography
 
 	</div>
 </div>
-
-<script type="text/javascript">
-	equalise_bio_div_height();
-</script>
 
 <?php get_footer(); ?>

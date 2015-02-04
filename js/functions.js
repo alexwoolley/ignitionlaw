@@ -1,31 +1,26 @@
 function equalise_bio_div_height () {
+	
+	//Make array of biography quotes
+	carousel_text = $( ".carousel-text" ).toArray()
 
-	var height = Math.max($("#carousel-text-0").height(), $("#carousel-text-1").height(), $("#carousel-text-1").height());
+	//Make array of heights of the biography quotes.
+	carousel_text_heights = [];
+	i = 0;
+	len = carousel_text.length;
+	for (i = 0; i < len; i++) {
+		carousel_text_heights.push($(carousel_text[i]).height())
+	}
 
-	for (i=0; )
+	//Sort carousel_text_heights so that largest height comes first.
+	carousel_text_heights.sort(function(a, b){return b-a})
 
-    $("#carousel-text-0").height(height);
-    $("#carousel-text-1").height(height);
-    $("#carousel-text-2").height(height);
+	//Assign largest height to a variable.
+	var height = carousel_text_heights[0];
+
+	//Set all heights equal to the largest height.
+	i = 0;
+	for (i = 0; i < len; i++) {
+		$(carousel_text[i]).height(height)
+	}
+
 }
-
-
-	// var divHeight = $('#carousel-text-0').height(); 
-	// $('#carousel-text-1').css('height', divHeight+'px');
-
-
-	// var slideHeight = [];
- //    $('.item').each(function()
- //    {
- //        // add all slide heights to an array
- //        slideHeight.push($(this).height());
- //    });
-
- //    // find the tallest item
- //    max = Math.max.apply(null, slideHeight);
-
- //    // set the slide's height
- //    $('.carousel-text').each(function()
- //    {
- //        $(this).css('height',max+'px');
- //    });
