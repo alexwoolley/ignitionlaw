@@ -37,8 +37,12 @@
 			            fontFamily: 'Open Sans',
 			            linkColor: '#0099CC',
 			        });
-			        $('.carousel').carousel({ //Call carousel on home page at custom speed. NB 1000 = 1 second
+			        //Call home pages and biography carousels at custom speeds
+			        $('#carousel-home-page').carousel({
 						interval: 3000
+ 					});
+ 					$('#carousel-biography').carousel({
+						interval: 5000
  					});
 			    });
 			</script>
