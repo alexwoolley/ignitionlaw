@@ -76,15 +76,35 @@ Template Name: Biography
 							</a>
 						<?php endif; ?>
 						<?php 
-							$quote = get_post_meta( get_queried_object_id(), "Quote", true );
-							if ($quote):
+							$quotes = get_post_meta( get_queried_object_id(), "Quote", false );
+							if ($quotes):
 						?>
-							<h5><?= $quote; ?></h5>
-						<?php endif; ?>
-					</div>
-				</div>
+							<!-- Carousel modified from http://bootstrapbay.com/blog/bootstrap-3-carousel-tutorial/ -->
+							<!-- See also https://www.technotarek.com/projects-and-tasks/text-bootstrap-carousel -->	
+							<div id="carousel-biography" class="carousel slide" data-ride="carousel">
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
 
+									<?php
+										$id_counter = 0;
+										foreach ($quotes as $quote) { ?>
+										    <div class="item <?php
+										    	if ($id_counter == 0): ?>
+										    		active
+										    	<?php endif; ?>" 
+										    	id="carousel-text-<?= $id_counter ?>">
+										        <p><em><?= $quote; ?></em></p>
+										    </div>
+										<?php 
+											++$id_counter; //increment the id_counter
+										}
 
+									?>
+								</div>
+							</div>
+							<?php endif; ?>
+					</div><!-- /bio-contact -->
+				</div><!-- /col -->
 			</div><!--/row -->
 
 		<br>
@@ -104,4 +124,9 @@ Template Name: Biography
 
 	</div>
 </div>
+
+<script type="text/javascript">
+	equalise_bio_div_height();
+</script>
+
 <?php get_footer(); ?>

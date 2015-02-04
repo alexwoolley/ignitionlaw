@@ -74,7 +74,7 @@
 								Ignition Law. All Rights Reserved.
 							</li>
 							<li>
-								<a href="<?=bloginfo('url');?>/terms-of-use">Terms of Use</a>.
+								<a href="<?=bloginfo('url');?>/legal-notices">Legal Notices</a>.
 							</li>
 							<li>
 								<a href="<?=bloginfo('url');?>/privacy-policy">Privacy Policy</a>.

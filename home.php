@@ -20,18 +20,18 @@ get_header(); ?>
     <div class="carousel-inner">
         <div class="item active">
             <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/home_background.jpg) center center; background-size:cover;" class="slider-size">
-                <!-- <div class="container">
+                <div class="container">
                     <div class="carousel-caption">
-                        <h2 style="font-size: 80px; font-family: 'Open Sans', sans-serif;">a very<br><span style="color: #C5C5C5;">different</span><br>law firm</h2>
+                        <h1 style="display:none;">Placeholder so iPads actually display this image</h1>
                     </div>
-                </div> -->
-            </div> 
+                </div>
+            </div>
         </div>
         <div class="item">
             <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/entrepreneurially_led.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h2>Entrepreneurially led</h2>
+                        <h1>Entrepreneurially led</h1>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@ get_header(); ?>
             <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/legally_driven.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h2>Legally driven</h2>
+                        <h1>Legally driven</h1>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@ get_header(); ?>
             <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/digitally_native.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h2>Digitally native</h2>
+                        <h1>Digitally native</h1>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@ get_header(); ?>
             <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/humanity_obsessed.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h2>Humanity obsessed</h2>
+                        <h1>Humanity obsessed</h1>
                     </div>
                 </div>
             </div>

@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css">
 		<!-- jQuery -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<!-- Own JavaScript and jQuery functions -->
+		<script type="text/javascript" src="<?=bloginfo('stylesheet_directory');?>/js/functions.js"></script>
 		<!-- Bootstrap stuff -->
 		<script type="text/javascript" src="<?=bloginfo('stylesheet_directory');?>/bootstrap/dist/js/bootstrap.js"></script>
 		<link rel="stylesheet" href="<?=bloginfo('stylesheet_directory');?>/bootstrap/dist/css/bootstrap.css">
