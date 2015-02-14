@@ -175,13 +175,6 @@ a:active{
 	font-size: 16px;
 }
 
-#content h5 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	line-height: 150%;
-	color: #68645F;
-}
-
 .navbar li a:link {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -199,6 +192,13 @@ a:active{
 
 #content h4 {
 	font-family: 'Montserrat', sans-serif;
+}
+
+#content h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	margin: 15px 0;
+	line-height: 125%;
 }
 
 #home-content h4 {
