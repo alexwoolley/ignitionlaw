@@ -13,21 +13,26 @@
 
 			<div class="container-fluid" id="il-footer">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
+					<div class="col-md-10 col-md-offset-1 col-sm-6 col-sm-offset-3">
 						<div class="row"><!--Nested row allows division by three-->
-							<div class="col-md-3 col-md-offset-1 col-sm-12" id="footer-main-menu">
-								<ul>
-									<?php listMainMenu (); ?>
-								</ul>
+							<div class="col-md-4 col-sm-12 text-justify">
+								<h3>Igniting the Spark</h3>
+								<h5 class="footer-sub-headings">Quarterly Interviews with our Fantastic Clients</h5>
+								<div class="footer-text">
+									<p>Welcome to Ignition Law’s new ‘Igniting the Spark’ series, where we spend 5 minutes with inspiring entrepreneurs, talking about the key moments that defined their career.</p>
+									<p>This time, we speak with Sara Guiducci, a Senior Fine Wine Sales Executive at world-renowned Corney and Barrow.</p>
+									<em><a href="<?= get_site_url(); ?>/igniting-the-spark-with-sara-guiducci/">Read more...</a></em>
+								</div>
+
 							</div>
 							<div class="col-md-4 col-sm-12 text-justify">
 								<h3>
 									<a href="https://twitter.com/ignitionlaw" target="_blank" style="color:#333333; border-bottom:0;">Twitter Feed</a>
 								</h3>
 							  	<?php foreach($tweets as $t) : ?>
-							  		<div id="tweets">
+							  		<div class="footer-text">
 							      		<p style="margin-bottom: 0;">
-									        <span class="tweet-time" style="font-weight:bold;">
+									        <span class="footer-sub-headings">
 									        	<?php echo date("j F, Y, g:i a", $t['time']); ?>
 									        </span>
 									    </p>
@@ -37,11 +42,14 @@
 							      	</div>
 							  	<?php endforeach; ?>
 							</div>
-							<div class="col-md-4 col-sm-12" id="footer-contact">
+							<div class="col-md-4 col-sm-12">
 								<h3>Contact Us:</h3>
+								<div class="footer-text">
+									<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. Af</p>
 									<p>D: 020 3432 4020<br>
 									Skype: <a href="skype:IgnitionLaw?call">IgnitionLaw</a><br>
 									Twitter: <a href="https://twitter.com/ignitionlaw" target="_blank">@IgnitionLaw</a></p>
+								</div>
 								<a href="https://twitter.com/ignitionlaw" target="_blank">
 									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/social_icons/twitter.png" class="desaturate socialbw">
 								</a>

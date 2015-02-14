@@ -37,7 +37,7 @@
 			            fontFamily: 'Open Sans',
 			            linkColor: '#0099CC',
 			        });
-			        //Call home pages and biography carousels at custom speeds
+			        //Call home page and biography carousels at custom speeds
 			        $('#carousel-home-page').carousel({
 						interval: 3000
  					});

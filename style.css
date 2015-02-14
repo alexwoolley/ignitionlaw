@@ -169,7 +169,7 @@ a:active{
 	border-bottom: 1px #1C43A8 dotted;
 }
 
-p {
+#content p {
 	font-family: 'Open Sans', sans-serif;
 	color: #68645F;
 	font-size: 16px;
@@ -219,28 +219,6 @@ p {
 	font-size: 16px;
 }
 
-#il-footer h3 {
-	font-family: 'Montserrat', sans-serif;
-}
-
-#il-footer p {
-	font-family: 'Open Sans', sans-serif;
-}
-
-#il-footer #footer-bottom li a:link {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-}
-
-#il-footer #footer-bottom li {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-}
-
-#il-footer #footer-bottom p {
-	font-size: 12px;
-}
-
 #wpcf7-f13-p10-o1 {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -251,14 +229,6 @@ p {
 
 #wpcf7-f13-p10-o1 textarea {
 	font-family: 'Open Sans', sans-serif;
-}
-
-#tweets p {
-	font-size: 14px;
-}
-
-#footer-contact p {
-	font-size: 14px;
 }
 
 /*END FONTS*/
@@ -280,6 +250,28 @@ p {
 	box-shadow: 0px -5px 10px 0px rrgba(237, 237, 237, 1);
 }
 
+
+#il-footer .footer-text {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #68645F;
+}
+
+#il-footer .footer-sub-headings {
+	font-weight: bold;
+	color: #68645F;
+	margin-bottom: 0;
+}
+
+#il-footer h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#il-footer h5 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Footer bottom*/
 #il-footer #footer-bottom li {
 	list-style-type: none;
 	display: inline;
@@ -289,25 +281,21 @@ p {
 	text-align: center;
 	padding-left: 0;
 }
-
-#il-footer #footer-main-menu {
-	margin-top: 20px;
+#il-footer #footer-bottom p {
+	font-size: 12px;
 }
 
-#il-footer #footer-main-menu ul {
-	padding-left: 0;
-}
-
-#il-footer #footer-main-menu li {
-	list-style-type: none;
-	padding-bottom: 1em;
-}
-
-#il-footer #footer-main-menu li a:link {
+#il-footer #footer-bottom li {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
-	text-transform: uppercase;
 }
+#il-footer #footer-bottom li a:link {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+/*End footer bottom*/
+
+
 
 img.desaturate { 
 	-webkit-filter: grayscale(100%);
