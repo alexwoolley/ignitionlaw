@@ -42,10 +42,10 @@
 							      	</div>
 							  	<?php endforeach; ?>
 							</div>
-							<div class="col-md-4 col-sm-12">
+							<div class="col-md-4 col-sm-12 text-justify">
 								<h3>Contact Us:</h3>
 								<div class="footer-text">
-									<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. Af</p>
+									<p>Don't hesitate to get in touch with us, whether you're looking for a lawyer, legal advice, or a new job. Call, Skype, or Tweet us, or find more details on our <a href="<?= get_site_url() . "/contact-us" ;?>">contact page</a>.</p>
 									<p>D: 020 3432 4020<br>
 									Skype: <a href="skype:IgnitionLaw?call">IgnitionLaw</a><br>
 									Twitter: <a href="https://twitter.com/ignitionlaw" target="_blank">@IgnitionLaw</a></p>

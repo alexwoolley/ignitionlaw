@@ -19,11 +19,17 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="row">
+<!-- 			<div class="row">
+				<div class="col-xs-12">				
+						<?php the_post_thumbnail ("full", array('class' => "img-responsive")); ?>
+				</div>
+			</div> -->
+
+			<!-- <div class="row">
 				<div class="col-xs-12">
 					<img src="<?=bloginfo('stylesheet_directory');?>/images/what_we_do.jpg" alt="What We Do" width="100%" class="img-responsive" style="margin-bottom: 20px;">
 				</div>
-			</div>
+			</div> -->
 
 			<div class="row">
 				<div class="col-xs-12">

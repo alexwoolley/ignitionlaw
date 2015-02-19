@@ -1,4 +1,4 @@
-/*
+
 Theme Name: Ignition Law
 Description: Ignition Law WordPress theme
 Version: 1
@@ -248,6 +248,7 @@ a:active{
 	-webkit-box-shadow: 0px -5px 10px 0px rgba(237, 237, 237, 1);
 	-moz-box-shadow: 0px -5px 10px 0px rgba(237, 237, 237, 1);
 	box-shadow: 0px -5px 10px 0px rrgba(237, 237, 237, 1);
+	/*End generated*/
 }
 
 
@@ -260,7 +261,6 @@ a:active{
 #il-footer .footer-sub-headings {
 	font-weight: bold;
 	color: #68645F;
-	margin-bottom: 0;
 }
 
 #il-footer h3 {
@@ -496,3 +496,29 @@ img.img-center {
 .about-us-names {
 	line-height: 130%
 }
+
+/*Align right*/
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 30px;
+}
+
+/*Media queries to centre image at certain points*/
+@media only screen and (max-width: 900px) and (min-width: 768px) {
+	.alignright {
+		display: block;
+		margin: 0 auto;
+		float:none;
+	}
+}
+
+@media only screen and (max-width: 460px){
+	.alignright {
+		display: block;
+		margin: 0 auto;
+		float:none;
+	}
+}
+
+/*End align right

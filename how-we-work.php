@@ -62,7 +62,7 @@ Template Name: How we work
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3 text-justify gunnercooke-curves">
-				<img src="<?=bloginfo('stylesheet_directory');?>/images/clock.png" class="img-center gunnercooke-heading">
+				<img src="<?=bloginfo('stylesheet_directory');?>/images/clock.png" class="img-center gunnercooke-heading" style="padding-top: 20px; padding-bottom: 0px;">
 				<h3 class="text-center">On Time</h3>
 				<p>Building great businesses requires quick decisions and fast pace. Unfortunately in some cases, advisors can slow the momentum down!</p>
 				<p>The Ignition team work to your schedule – providing the advice you want, when you want it.</p>
