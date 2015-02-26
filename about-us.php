@@ -36,7 +36,7 @@ Template Name: About us
 			<br>
 			
 			<div class="row">
-				<?php getTeam ( "About Us"); ?>
+				<?php getPeople( "About Us"); ?>
 			</div>
 
 			<div class="row">
@@ -46,7 +46,7 @@ Template Name: About us
 			</div>
 
 			<div class="row">
-				<?php getTeam ("Advisory Board"); ?>
+				<?php getPeople( "Advisory Board"); ?>
 			</div>
 
 	</div>

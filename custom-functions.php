@@ -30,45 +30,27 @@ function listMainMenu () {
 //This function is for use on the About Us page.
 //It takes the title of the parent page, i.e. "About Us" or "Advisory Board", and returns HTML that produces a picture of the team member, their name with a link to their individual page, and their title.
 
-function getTeam ( $parent_page ) {
+function getPeople ( $parent_page ) {
 
-	//For get_page_children http://codex.wordpress.org/Function_Reference/get_page_children
+	$parent_page_object = get_page_by_title( $parent_page );
+	$parent_page_id = $parent_page_object->ID;
 
-	// Set up the objects needed
-	$my_wp_query = new WP_Query();
-	$all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
+	$children = get_children(array(
+	    'post_parent' => $parent_page_id,
+	    'post_type' => 'page',
+	    'post_status' => 'publish',
+	));
 
-	// Get the page as an Object
-	$parent_page_object =  get_page_by_title($parent_page);
-
-	// Filter through all pages and find Portfolio's children
-	$parent_page_children = get_page_children( $parent_page_object->ID, $all_wp_pages );
-
-	//Make array of titles of children pages with orders, i.e. "Alex McPherson", "David Farquharson" etc.
-	$children_titles_with_orders = [];
-	foreach ($parent_page_children as $child) {
-
-		$child_with_order = array(
-			'id' => $child->ID,
-			'title' => $child->post_title,
-			'menu_order' => $child->menu_order
-		);
-
-		array_push($children_titles_with_orders, $child_with_order);
-
-	}
-
-	//See http://stackoverflow.com/questions/2699086/sort-multi-dimensional-array-by-value
 	//Sort the arrays so that the lowest menu order displays first.
-	usort($children_titles_with_orders, function($a, $b) {
-    	return $a['menu_order'] - $b['menu_order'];
+	usort($children, function($a, $b) {
+    	return $a->menu_order - $b->menu_order;
 	});
 
-	foreach ($children_titles_with_orders as $cto) { ?>
+	foreach ($children as $child) { ?>
 		<div class="col-sm-4 col-xs-6">
 			<?php
-				$child_id = $cto['id'];
-				$child_post_title = $cto['title'];
+				$child_id = $child->ID;
+				$child_post_title = $child->post_title;
 				$url_string_0 = strtolower(str_replace(" ", "-", $parent_page));
 				$url_string_1 = strtolower(str_replace(" ", "-", $child_post_title));
 				$link = get_site_url() . "/" . $url_string_0 . "/" . $url_string_1;
