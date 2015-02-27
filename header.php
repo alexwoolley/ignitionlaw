@@ -68,7 +68,7 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse navbar-left" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav" id="main-menu">
-			      	<?php listMainMenu (); ?>
+			      	<?php createMainMenu (); ?>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container-fluid -->

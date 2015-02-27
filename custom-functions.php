@@ -1,28 +1,57 @@
 <?php
 //My functions go here and are required in functions.php so WordPress understands them.
 
-//This function is for use in the header and footer
+//Take title and turn it into slug.
+function titleToSlug ( $title ) {
+	//Make majuscule characters miniscule and replace whitespaces with hyphens
+	$slug = strtolower(str_replace(" ", "-", $title));
+	//Get rid of special characters
+	return preg_replace('/[^A-Za-z0-9\-]/', '', $slug);
+}
+
+
+//This function is for use in the header
 //It gets a list of the main menu links.
 //NB It does not specify whether the list is ordered or unordered
 
-function listMainMenu () {
+function createMainMenu () {
 
 	global $main_menu_items;
 	$main_menu_items = array("Home", "What We Do", "How We Work", "About Us", "Contact Us", "Gunnercooke");
 
 	foreach ($main_menu_items as $mmi) {
-		//Get rid of upper case and spaces
-		$url_string = strtolower(str_replace(" ", "-", $mmi));
-		//Make the menu
-		if (is_page($mmi)): ?>
-			<li class="active">
-				<a href="<?=bloginfo('url');?>/<?=$url_string;?>"><?=$mmi;?><span class="sr-only">(current)</span></a>
-			</li>
-		<?php else: ?>
-			<li>
-				<a href="<?=bloginfo('url');?>/<?=$url_string;?>"><?=$mmi;?></a>
-			</li>
-		<?php endif;
+		$slug = titleToSlug($mmi); 
+		//Create dropdown for Contact Us
+		if ($mmi == "Contact Us"): ?>
+			<li class="dropdown
+				<?php if (is_page($mmi)): ?>
+				active
+				<?php endif; ?>
+			">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Contact Us <span class="caret"></span></a>
+	                <ul class="dropdown-menu" role="menu">
+	                	<li><a href="<?= bloginfo('url'); ?>/<?= $slug; ?>">Get in Touch</a></li>
+	                	<?php
+	                		$person_title = "New Client Information: Natural Persons";
+	                		$corporate_title = "New Client Information: Corporate";
+	                	?>
+	                  	<li><a href="<?= bloginfo('url'); ?>/<?= $slug; ?>/<?= titleToSlug($person_title); ?>"><?= $person_title; ?></a></li>
+	                  	<li><a href="<?= bloginfo('url'); ?>/<?= $slug; ?>/<?= titleToSlug($corporate_title); ?>"><?= $corporate_title; ?></a></li>
+	                </ul>
+             </li>
+        <?php else: ?>
+		<li 
+			<?php if (is_page($mmi)): ?>
+			class="active"
+			<?php endif; ?>
+		>
+			<a href="<?=bloginfo('url');?>/<?=$slug;?>"><?= $mmi; ?>
+				<?php if (is_page($mmi)): ?>
+				<span class="sr-only">(current)</span>
+				<?php endif; ?>
+			</a>
+		</li>
+        <?php endif;
 	}
 }
 
@@ -51,8 +80,8 @@ function getPeople ( $parent_page ) {
 			<?php
 				$child_id = $child->ID;
 				$child_post_title = $child->post_title;
-				$url_string_0 = strtolower(str_replace(" ", "-", $parent_page));
-				$url_string_1 = strtolower(str_replace(" ", "-", $child_post_title));
+				$url_string_0 = titleToSlug($parent_page);
+				$url_string_1 = titleToSlug($child_post_title);
 				$link = get_site_url() . "/" . $url_string_0 . "/" . $url_string_1;
 			?>
 			<a href="<?= $link; ?>">
