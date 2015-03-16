@@ -30,10 +30,10 @@ function createMainMenu () {
 			">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Contact Us <span class="caret"></span></a>
 	                <ul class="dropdown-menu" role="menu">
-	                	<li><a href="<?= bloginfo('url'); ?>/<?= $slug; ?>">Get in Touch</a></li>
+	                	<li><a href="<?= bloginfo('url'); ?>/<?= $slug; ?>">Our Contact Details</a></li>
 	                	<?php
-	                		$person_title = "New Client Information: Natural Persons";
-	                		$corporate_title = "New Client Information: Corporate";
+	                		$person_title = "New Client Engagement Forms: Natural Person Clients";
+	                		$corporate_title = "New Client Engagement Forms: Corporate Clients";
 	                	?>
 	                  	<li><a href="<?= bloginfo('url'); ?>/<?= $slug; ?>/<?= titleToSlug($person_title); ?>"><?= $person_title; ?></a></li>
 	                  	<li><a href="<?= bloginfo('url'); ?>/<?= $slug; ?>/<?= titleToSlug($corporate_title); ?>"><?= $corporate_title; ?></a></li>
