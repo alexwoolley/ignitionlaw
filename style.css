@@ -213,6 +213,14 @@ a:active{
 	font-size: 16px;
 }
 
+a h1 {
+	color: #333;
+}
+
+a h3 {
+	color: #333;
+}
+
 #content li {
 	font-family: 'Open Sans', sans-serif;
 	color: #68645F;

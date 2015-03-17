@@ -9,7 +9,15 @@
 			<!-- The point of these nested rows is to be consistent with other pages, where they're more necessary. -->
 			<div class="row">
 				<div class="col-xs-12 text-center masthead">
-					<h1><?php the_title(); ?></h1>
+					<a href="<?php echo get_site_url() . "/igniting-the-spark"; ?>"><h1>Igniting the Spark</h1></a>
+					<h3>
+						<?php 
+							$short_title = the_title('','',false); 
+							$trimmed_title = ltrim($short_title, "Igniting the Spark");
+							$upper_cased_title = ucfirst($trimmed_title);
+							echo $upper_cased_title; 
+						?>
+					</h3>
 				</div>
 			</div>
 			

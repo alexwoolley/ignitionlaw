@@ -16,19 +16,18 @@
 					<div class="col-md-10 col-md-offset-1 col-sm-6 col-sm-offset-3">
 						<div class="row"><!--Nested row allows division by three-->
 							<div class="col-md-4 col-sm-12 text-justify">
-								<h3>Igniting the Spark</h3>
+								<a href="<?= get_site_url(); ?>/igniting-the-spark/"><h3>Igniting the Spark</h3></a>
 								<h5 class="footer-sub-headings">Quarterly Interviews with our Fantastic Clients</h5>
 								<div class="footer-text">
 									<p>Welcome to Ignition Law’s new ‘Igniting the Spark’ series, where we spend 5 minutes with inspiring entrepreneurs, talking about the key moments that defined their career.</p>
-									<p>This time, we speak with Sara Guiducci, a Senior Fine Wine Sales Executive at world-renowned Corney and Barrow.</p>
-									<em><a href="<?= get_site_url(); ?>/igniting-the-spark-with-sara-guiducci/">Read more...</a></em>
+									<em><a href="<?= get_site_url(); ?>/igniting-the-spark/">Read more...</a></em>
 								</div>
 
 							</div>
 							<div class="col-md-4 col-sm-12 text-justify">
-								<h3>
-									<a href="https://twitter.com/ignitionlaw" target="_blank" style="color:#333333; border-bottom:0;">Twitter Feed</a>
-								</h3>
+								<a href="https://twitter.com/ignitionlaw" target="_blank">
+									<h3>Twitter Feed</h3>
+								</a>
 							  	<?php foreach($tweets as $t) : ?>
 							  		<div class="footer-text">
 							      		<p style="margin-bottom: 0;">
@@ -43,7 +42,9 @@
 							  	<?php endforeach; ?>
 							</div>
 							<div class="col-md-4 col-sm-12 text-justify">
-								<h3>Contact Us:</h3>
+								<a href="<?= get_site_url(); ?>/contact-us/">
+									<h3>Contact Us:</h3>
+								</a>
 								<div class="footer-text">
 									<p>Don't hesitate to get in touch with us, whether you're looking for a lawyer, legal advice, or a new job. Call, Skype, or Tweet us, or find more details on our <a href="<?= get_site_url() . "/contact-us" ;?>">contact page</a>.</p>
 									<p>D: 020 3432 4020<br>
