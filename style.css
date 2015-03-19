@@ -8,6 +8,10 @@ Author URI: http://twitter.com/alexwoolley4
 
 /*NAVBAR STUFF. */
 
+#custom-bootstrap-menu {
+	padding-top: 20px;
+}
+
 #custom-bootstrap-menu.navbar-default .navbar-nav li a {
 	height: 60px;
 	padding-top: 20px;
@@ -15,7 +19,7 @@ Author URI: http://twitter.com/alexwoolley4
 
 /*Makes navbar collapse at 990px rather than Bootstrap's default*/
 
-@media (max-width: 990px) {
+@media (max-width: 1045px) {
     #custom-bootstrap-menu .navbar-header {
         float: none;
     }
@@ -68,17 +72,24 @@ Author URI: http://twitter.com/alexwoolley4
     color: rgba(28, 67, 168, 1);
     background-color: rgba(255, 255, 255, 1);
 }
-#custom-bootstrap-menu.navbar-default .navbar-nav li>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav li>a:focus {
-    color: rgba(28, 67, 168, 1);
-    background-color: rgba(245, 245, 245, 1);
+
+/*Make pointy things appear under active links on main menu, but only on desktop. Based on gunnercooke.com*/
+@media (min-width: 1045px) {
+	#custom-bootstrap-menu.navbar-default .navbar-nav .active a:after {
+		left: 50%; 
+		border: solid rgba(0,0,0,0); 
+		content: ""; 
+		height: 0; 
+		width: 0; 
+		position: absolute; 
+		pointer-events: none;
+		border-bottom-color: #1C43A8; 
+		border-width: 5px; 
+		margin-left: -8px; 
+		bottom: 0
+	}
 }
-#custom-bootstrap-menu.navbar-default .navbar-nav .active>a,
-#custom-bootstrap-menu.navbar-default .navbar-nav .active>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav .active>a:focus {
-    color: rgba(28, 67, 168, 1);
-    background-color: rgba(245, 245, 245, 1);
-}
+
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
     border-color: #f5f5f5;
 }
@@ -110,12 +121,18 @@ Author URI: http://twitter.com/alexwoolley4
 #navbar-logo {
 	max-height: 150px;
 	max-width: 200px;
-	margin-right: 40px;
+}
+@media (min-width: 430px) {
+	#navbar-logo {
+		margin-right: 40px;	
+	}
 }
 
 #custom-bootstrap-menu .navbar-brand {
 	padding-top: 8px; /*Reduce padding so larger image can be vertically centred*/
-	padding-left: 0; /*For mobile screens*/
+	padding-left: 150px;
+	border-top: solid #1C43A8 5px;
+	border-left: solid #1C43A8 5px;
 }
 
 #custom-bootstrap-menu .navbar-header button {
@@ -126,11 +143,15 @@ Author URI: http://twitter.com/alexwoolley4
 	margin-bottom: 0;
 }
 
-/*Make main menu pretty*/
-#main-menu li {
-	padding-right: 1px;
-	padding-left: 1px;
-	border-right: solid 1px #f5f5f5;
+.navbar {
+	border: 0 !important;
+}
+
+#custom-bootstrap-menu .container-fluid{
+	margin-bottom: 0;
+}
+#custom-bootstrap-menu .container-fluid {
+	border-bottom: solid #1C43A8 3px;
 }
 
 /*END NAVBAR STUFF*/
@@ -397,7 +418,7 @@ img.img-center {
 /*HOME PAGE CAROUSEL*/
 
 #carousel-home-page {
-	margin-top: 1px;
+	/*margin-top: 1px;*/
 }
 
 #floater-div {

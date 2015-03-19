@@ -17,7 +17,7 @@
 						<div class="row"><!--Nested row allows division by three-->
 							<div class="col-md-4 col-sm-12 text-justify">
 								<a href="<?= get_site_url(); ?>/igniting-the-spark/"><h3>Igniting the Spark</h3></a>
-								<h5 class="footer-sub-headings">Quarterly Interviews with our Fantastic Clients</h5>
+								<h5 class="footer-sub-headings">Regular Interviews with our Fantastic Clients</h5>
 								<div class="footer-text">
 									<p>Welcome to Ignition Law’s new ‘Igniting the Spark’ series, where we spend 5 minutes with inspiring entrepreneurs, talking about the key moments that defined their career.</p>
 									<em><a href="<?= get_site_url(); ?>/igniting-the-spark/">Read more...</a></em>
