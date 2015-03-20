@@ -17,7 +17,9 @@ function titleToSlug ( $title ) {
 function createMainMenu () {
 
 	global $main_menu_items;
-	$main_menu_items = array("Home", "What We Do", "How We Work", "About Us", "Contact Us", "Gunnercooke");
+	$main_menu_items = array("Home", 
+	"What We Do", "How We Work", "About Us", "Contact Us", "Gunnercooke"
+		);
 
 	foreach ($main_menu_items as $mmi) {
 		$slug = titleToSlug($mmi); 
