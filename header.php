@@ -39,7 +39,7 @@
 			        });
 			        //Call home page and biography carousels at custom speeds
 			        $('#carousel-home-page').carousel({
-						interval: 3000
+						interval: 3500
  					});
  					$('#carousel-biography').carousel({
 						interval: 5000
