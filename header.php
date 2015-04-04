@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?php wp_title( '|', true, 'right' ); ?>Ignition Law</title>
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -10,13 +11,12 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<!-- Own JavaScript and jQuery functions -->
 		<script type="text/javascript" src="<?=bloginfo('stylesheet_directory');?>/js/functions.js"></script>
-		<!-- Bootstrap stuff -->
-		<script type="text/javascript" src="<?=bloginfo('stylesheet_directory');?>/bootstrap/dist/js/bootstrap.js"></script>
-		<link rel="stylesheet" href="<?=bloginfo('stylesheet_directory');?>/bootstrap/dist/css/bootstrap.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-		<!-- Custom Bootstrap styling -->
-		<link rel="stylesheet" href="<?=bloginfo('stylesheet_directory');?>/bootstrap/dist/css/bootstrap.css">
+		<!-- BOOTSTRAP -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<!-- END BOOTSTRAP -->
 		<!-- Google fonts -->
 		<!-- Montserrat-->
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -50,29 +50,63 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<!-- Following based on example in http://getbootstrap.com/components/#navbar -->
-		<nav id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header navbar-right">
-			      	<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-			      	</button>
-			      	<a class="navbar-brand pull-right" href="<?=bloginfo('url');?>">
-			      		<img src="<?=bloginfo('stylesheet_directory');?>/images/logo.jpeg" id="navbar-logo">
-			      	</a>
-			    </div>
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse navbar-left" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav" id="main-menu">
-			      	<?php createMainMenu (); ?>
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-		  	</div><!-- /.container-fluid -->
-		</nav>
+
+	<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <?php createSidebarMenu(); ?>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+        	<div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+						<!-- Following loosely based on example in http://getbootstrap.com/components/#navbar -->
+						<nav id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header navbar-right">
+								<button type="button" class="navbar-toggle collapsed pull-left" id="menu-toggle" data-target="#menu-toggle">
+									<span class="sr-only">Toggle navigation</span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>	
+								</button>
+						      	<a class="navbar-brand pull-right" href="<?=bloginfo('url');?>">
+						      		<img src="<?=bloginfo('stylesheet_directory');?>/images/logo.jpeg" id="navbar-logo">
+						      	</a>
+						    </div>
+						    <!-- Collect the nav links, forms, and other content for toggling -->
+						    <div class="collapse navbar-collapse navbar-left" data-toggle="collapse" data-target=".nav-collapse" id="bs-example-navbar-collapse-1">
+						      <ul class="nav navbar-nav" id="main-menu">
+						      	<?php createMainMenu (); ?>
+						      </ul>
+						    </div><!-- /.navbar-collapse -->
+						</nav>
+					</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+	
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
 		<?php if(!is_front_page()): //So carousel doesn't have irritating padding ?>
 		<!-- Container -->
 		<div class="container-fluid" id="main-container">

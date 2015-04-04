@@ -57,6 +57,43 @@ function createMainMenu () {
 }
 
 
+function createSidebarMenu () {
+	global $sidebar_menu_items;
+	$sidebar_menu_items = array("Home", "What We Do", "How We Work", "About Us", "Contact Us", "Gunnercooke"
+	);
+	foreach ($sidebar_menu_items as $smi) {
+		$slug = titleToSlug($smi); 
+		if ($smi == "Contact Us"): ?>
+			<li>
+				<a href="<?= bloginfo('url'); ?>/<?= $slug; ?>">
+					<?= $smi; ?>
+				</a>
+				<ul>
+	                	<li>
+	                		<a href="<?= bloginfo('url'); ?>/<?= $slug; ?>">Our Contact Details</a>
+	                	</li>
+	                	<?php
+	                		$person_title = "New Client Engagement Forms: Natural Person Clients";
+	                		$corporate_title = "New Client Engagement Forms: Corporate Clients";
+	                	?>
+	                  	<li>
+	                  		<a href="<?= bloginfo('url'); ?>/<?= $slug; ?>/<?= titleToSlug($person_title); ?>"><?= $person_title; ?></a>
+	                  	</li>
+	                  	<li>
+	                  		<a href="<?= bloginfo('url'); ?>/<?= $slug; ?>/<?= titleToSlug($corporate_title); ?>"><?= $corporate_title; ?></a>
+	                  		</li>
+	                </ul>
+			</li>
+		<?php else: ?>
+			<li>
+				<a href="<?= bloginfo('url'); ?>/<?= $slug; ?>">
+					<?= $smi; ?>
+				</a>
+			</li>
+		<?php endif;
+	}
+}
+
 //This function is for use on the About Us page.
 //It takes the title of the parent page, i.e. "About Us" or "Advisory Board", and returns HTML that produces a picture of the team member, their name with a link to their individual page, and their title.
 
