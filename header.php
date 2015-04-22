@@ -63,7 +63,7 @@
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-        	<div class="container-fluid">
+        	<div class="container-fluid" id="nav-content-wrapper">
                 <div class="row">
                     <div class="col-lg-12">
 						<!-- Following loosely based on example in http://getbootstrap.com/components/#navbar -->
@@ -90,12 +90,8 @@
 					</div>
                 </div>
             </div>
+            <div class="container-fluid" id="main-container">
 
-        </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
 
 	
 
@@ -106,10 +102,3 @@
         $("#wrapper").toggleClass("toggled");
     });
     </script>
-
-		<?php if(!is_front_page()): //So carousel doesn't have irritating padding ?>
-		<!-- Container -->
-		<div class="container-fluid" id="main-container">
-			<!-- Content -->
-				<div id="content">
-		<?php endif; ?>

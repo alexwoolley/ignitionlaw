@@ -3,11 +3,8 @@
 	require_once get_stylesheet_directory() . "/header.php";
 ?>
 
-			</div>
-			<!-- /Content -->
-
-			</div>
-			<!-- /Container -->
+	</div><!--/main-container -->
+		
 
 		<!-- Page generated: <?php timer_stop(1); ?> s, <?php echo get_num_queries(); ?> queries -->
 
@@ -95,6 +92,9 @@
 
 			</div><!-- /il-footer -->
 
-		<?php wp_footer(); ?>
-	</body>
+			<?php wp_footer(); ?>
+
+		</div><!-- /#page-content-wrapper -->
+	</div><!-- /#wrapper -->
+</body>
 </html>
