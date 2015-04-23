@@ -67,15 +67,15 @@ get_header(); ?>
 </div> <!-- Carousel -->
 
 <!-- Container -->
-        <div class="container-fluid" id="main-container">
+        <!-- <div class="container-fluid" id="main-container"> -->
             <!-- Content -->
-                <div id="content">
+                <!-- <div id="content"> -->
 
 <?php
 	if (have_posts()): ?>
 		<?php while (have_posts()): the_post(); ?>
 		
-		<div class="row">
+		<div class="row" id="front-page-row">
 			<div class="col-sm-6 col-sm-offset-3 text-justify gunnercooke-curves" id="home-content">
 				<?php the_content(); ?>
 			</div>

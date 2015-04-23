@@ -1,6 +1,6 @@
-
+/*
 Theme Name: Ignition Law
-Description: Ignition Law WordPress theme
+Description: WordPress theme for Ignition Law LLP
 Version: 1
 Author: Alexander Woolley
 Author URI: http://twitter.com/alexwoolley4
@@ -27,7 +27,7 @@ Author URI: http://twitter.com/alexwoolley4
 
 /*Makes navbar collapse at 990px rather than Bootstrap's default*/
 
-@media (max-width: 1045px) {
+@media (max-width: 1080px) {
     #custom-bootstrap-menu .navbar-header {
         float: none;
     }
@@ -80,23 +80,6 @@ Author URI: http://twitter.com/alexwoolley4
     background-color: rgba(255, 255, 255, 1);
 }
 
-/*Make pointy things appear under active links on main menu, but only on desktop. Based on gunnercooke.com*/
-@media (min-width: 1045px) {
-	#custom-bootstrap-menu.navbar-default .navbar-nav .active a:after {
-		left: 50%; 
-		border: solid rgba(0,0,0,0); 
-		content: ""; 
-		height: 0; 
-		width: 0; 
-		position: absolute; 
-		pointer-events: none;
-		border-bottom-color: #1C43A8; 
-		border-width: 10px; 
-		margin-left: -12px; 
-		bottom: 0
-	}
-}
-
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
     border-color: #f5f5f5;
 }
@@ -110,14 +93,6 @@ Author URI: http://twitter.com/alexwoolley4
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #ffffff;
-}
-/*END GENERATED*/
-
-/*GENERATED FROM http://www.cssmatic.com/box-shadow*/
-.navbar {
-	-webkit-box-shadow: 0px 5px 10px 0px rgba(245,245,245,1);
-	-moz-box-shadow: 0px 5px 10px 0px rgba(245,245,245,1);
-	box-shadow: 0px 5px 10px 0px rgba(245,245,245,1);
 }
 /*END GENERATED*/
 
@@ -176,10 +151,7 @@ Author URI: http://twitter.com/alexwoolley4
 	border: 0 !important;
 }
 
-#custom-bootstrap-menu .container-fluid{
-	margin-bottom: 0;
-}
-#custom-bootstrap-menu .container-fluid {
+#nav-content-wrapper {
 	border-bottom: solid #1C43A8 3px;
 }
 
@@ -228,7 +200,7 @@ a:active{
 .navbar li a:link {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
-	font-size: 12px;	
+	font-size: 13px;	
 }
 
 #page-content-wrapper h1 {
@@ -261,6 +233,10 @@ a:active{
 	font-family: 'Open Sans', sans-serif;
 	color: #4A4A4A;
 	font-size: 16px;
+}
+
+#carousel-home-page h1 {
+	text-transform: capitalize;
 }
 
 a h1 {
@@ -634,7 +610,7 @@ img.img-center {
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 15px;
+    padding: 15px 0 0;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -719,10 +695,31 @@ img.img-center {
 	display: block;
 }
 
-#page-content-wrapper {
+#menu-toggle {
+	margin-left: 20px;
+}
+
+#nav-content-wrapper {
 	padding: 0;
 }
 
-#menu-toggle {
-	margin-left: 20px;
+#nav-cols {
+	padding: 0;
+}
+
+#nav-row {
+	padding: 0;
+	margin: 0;
+}
+
+#custom-navbar-right {
+	margin-right: 0;
+}
+
+#front-page-main-container {
+	padding: 0;
+}
+
+#front-page-row {
+	margin: 0;
 }

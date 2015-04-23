@@ -16,6 +16,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="text-justify">
+						<?php edit_post_link('Edit this entry', '<p>', '</p>'); ?>
 						<?php the_content(); ?>
 					</div>
 				</div>

@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Gunnercooke
+Template Name: Big Illustration
 */
 
 ?>
@@ -24,14 +24,19 @@ Template Name: Gunnercooke
 
 	<div class="row">
 		<div class="col-xs-12">
-			<div class="big-illustration-wrapper">					
-				<?php the_post_thumbnail ("full", array('class' => "img-responsive")); ?>
+			<div class="big-illustration-wrapper">
+				<?php 
+					$post_thumbnail_id = get_post_thumbnail_id();
+        			$post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id ); 
+				?>
+				<img class="wp-post-image" src="<?php echo $post_thumbnail_url; ?>" style="width:100%; height:auto;">
 			</div>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="col-sm-6 col-sm-offset-3 text-justify gunnercooke-curves gunnercooke-heading">
+			<?php edit_post_link('Edit this entry', '<p>', '</p>'); ?>
 			<?php the_content(); ?>
 		</div>
 	</div>

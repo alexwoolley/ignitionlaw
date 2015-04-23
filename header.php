@@ -56,6 +56,9 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
+            	<li id="sidebar-button"><a href="#" style="font-style: italic; font-size: 10px;">Close Menu</a></li>
+
+            	<!-- <button type="button" id="sidebar-button">Close Menu</button> -->
                 <?php createSidebarMenu(); ?>
             </ul>
         </div>
@@ -64,12 +67,12 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
         	<div class="container-fluid" id="nav-content-wrapper">
-                <div class="row">
-                    <div class="col-lg-12">
+                <div class="row" id="nav-row">
+                    <div class="col-lg-12" id="nav-cols">
 						<!-- Following loosely based on example in http://getbootstrap.com/components/#navbar -->
 						<nav id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
 							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header navbar-right">
+							<div class="navbar-header navbar-right" id="custom-navbar-right">
 								<button type="button" class="navbar-toggle collapsed pull-left" id="menu-toggle" data-target="#menu-toggle">
 									<span class="sr-only">Toggle navigation</span>
 							        <span class="icon-bar"></span>
@@ -90,14 +93,18 @@
 					</div>
                 </div>
             </div>
-            <div class="container-fluid" id="main-container">
-
-
-	
-
+            <?php if (is_front_page()): ?>
+            	<div class="container-fluid" id="front-page-main-container">
+            <?php else: ?>
+            	<div class="container-fluid" id="main-container">
+        	<?php endif; ?>
     <!-- Menu Toggle Script -->
     <script>
     $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#sidebar-button").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
