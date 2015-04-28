@@ -30,7 +30,7 @@
 						<?php
 							$args = array( 
 								//Get the three most recent posts, excluding the current one
-								'offset'=> 1, 
+								'exclude' => $post->ID, 
 								'numberposts' => '3' 
 							);
 							$recent_posts = wp_get_recent_posts( $args );
