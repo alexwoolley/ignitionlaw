@@ -26,6 +26,22 @@
 					<div class="text-justify">
 						<?php edit_post_link('Edit this entry', '<p>', '</p>'); ?>
 						<?php the_content(); ?>
+						<h3>Read More</h3>
+						<?php
+							$args = array( 
+								//Get the three most recent posts, excluding the current one
+								'offset'=> 1, 
+								'numberposts' => '3' 
+							);
+							$recent_posts = wp_get_recent_posts( $args );
+							foreach( $recent_posts as $recent ): ?>
+								<p>
+									<a href="<?= get_permalink($recent["ID"]); ?>">
+										<?= $recent["post_title"] ?>
+									</a>
+								</p>
+							<?php endforeach;
+						?>
 					</div>
 				</div>
 			</div>
