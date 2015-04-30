@@ -24,6 +24,9 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="text-justify">
+						<p class="breadcrumb">
+							You are here: <a href="<?php echo get_permalink( get_option('page_for_posts' ) ); ?>">Igniting the Spark</a> » <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
+						</p>
 						<?php edit_post_link('Edit this entry', '<p>', '</p>'); ?>
 						<?php the_content(); ?>
 						<h3>Read More</h3>
