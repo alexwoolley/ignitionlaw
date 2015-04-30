@@ -52,6 +52,7 @@
 			    });
 			</script>
 		<?php endif; ?>
+		<?php include_once("analyticstracking.php") ?>
 		<?php wp_head(); ?>
 	</head>
 	<body>
