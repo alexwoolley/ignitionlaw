@@ -18,9 +18,6 @@ Template Name: Biography
 			<div class="row">
 				<div class="col-xs-12 text-center masthead">
 					<h1><?php the_title(); ?></h1>
-
-			<?php endwhile; ?>
-		<?php endif; ?>
 					<h4>
 						<?php $title = get_post_meta (get_queried_object_id(), "Title", true);
 							if ($title) {
@@ -42,16 +39,10 @@ Template Name: Biography
 				</div>
 			</div>
 
-		<?php if (have_posts()): ?> 
-			<?php while (have_posts()): the_post(); ?>
-
 			<div class="row">
 				<div class="col-sm-4">
 					<?= the_post_thumbnail("full", array('class' => 'img-responsive gunnercooke-curves-images')); ?>
 				</div>
-
-			<?php endwhile; ?>
-		<?php endif; ?>
 
 				<div class="col-sm-8">
 					<div class="bio-contact"><!--Nested div necessary for reasons of padding and margins -->
@@ -120,10 +111,6 @@ Template Name: Biography
 			</div><!--/row -->
 
 		<br>
-		
-		<!-- This loop gets the content, i.e. the person's biography -->
-		<?php if (have_posts()): ?>
-			<?php while (have_posts()): the_post(); ?>
 
 			<div class="row">
 				<div class="col-xs-12 text-justify">
