@@ -35,18 +35,10 @@ Template Name: Biography
 			</div><!-- /row -->
 			<div class="row">
 				<div class="col-xs-12">
-					<p class="breadcrumb">
-						<?php 
-						// if there is a parent, display the link
-						$parent_title = get_the_title( $post->post_parent );
-						if ( $parent_title != the_title( ' ', ' ', false ) ): ?>
-							You are here: <a href="<?= get_permalink( $post->post_parent ); ?>" title="<?= $parent_title;?>"><?= $parent_title; ?></a> »
-						<?php endif;
-						// then go on to the current page link
-						?>
-						<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-						<?php the_title(); ?></a>
-					</p>				
+					<?php 
+						$post_parent_id = $post->post_parent;
+						getBreadcrumb( $post_parent_id );
+					?>			
 				</div>
 			</div>
 

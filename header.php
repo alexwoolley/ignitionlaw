@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<?php if is_front_page(): ?>
+		<?php if (is_front_page()): ?>
 			<meta name="description" content="We are entrepreneurs who enjoy being lawyers. With decades of commercial experience at the highest level, we provide top legal advice without the fat fees.">
 		<?php endif; ?>
 		<title><?php wp_title( '|', true, 'right' ); ?>Ignition Law</title>

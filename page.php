@@ -16,8 +16,15 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="text-justify">
-						<?php edit_post_link('Edit this entry', '<p>', '</p>'); ?>
-						<?php the_content(); ?>
+						<?php
+							//Get breadcrumb
+							$post_parent_id = $post->post_parent;
+							getBreadcrumb( $post_parent_id );
+							//Get link for editing
+							edit_post_link('Edit this entry', '<p>', '</p>');
+							//Get content of page
+							the_content(); 
+						?>
 					</div>
 				</div>
 			</div>

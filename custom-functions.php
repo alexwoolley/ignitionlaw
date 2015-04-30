@@ -150,5 +150,27 @@ function getPeople ( $parent_page ) {
 	}
 }
 
+function getBreadcrumb ( $post_parent_id ) { ?>
+	<p class="breadcrumb">
+		<?php 
+		// if there is a parent, display the link
+		$parent_title = get_the_title( $post_parent_id );
+		if ( $parent_title != the_title( ' ', ' ', false ) ): ?>
+			You are here: <a href="<?= get_permalink( $post_parent_id ); ?>" title="<?= $parent_title;?>">
+				<?php
+					if ($parent_title == "Advisory Board"): ?>
+						About Us
+					<?php else:
+						echo $parent_title;
+					endif;
+				?>
+			</a> »
+		<?php endif;
+		// then go on to the current page link
+		?>
+		<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+		<?php the_title(); ?></a>
+	</p>
+<?php }
 
 ?>
