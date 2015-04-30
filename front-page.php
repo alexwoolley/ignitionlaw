@@ -6,7 +6,7 @@ get_header(); ?>
 
 <!-- Carousel modified from http://bootstrapbay.com/blog/bootstrap-3-carousel-tutorial/ -->
 <!-- See also http://parkhurstdesign.com/improved-carousels-twitter-bootstrap/ and http://jockstothecore.com/proper-implementation-of-background-images-with-text-inside-responsive-carousels/-->
-<div id="carousel-home-page" class="carousel slide" data-ride="carousel">
+<div id="carousel-home-page" class="carousel slide" data-ride="carousel" data-interval="false">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#carousel-home-page" data-slide-to="0" class="active"></li>
@@ -19,10 +19,12 @@ get_header(); ?>
   <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/home_background.jpg) center center; background-size:cover;" class="slider-size">
+            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/home_background_test.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
-                    <div class="carousel-caption">
-                        <h1 style="display:none;">Placeholder so iPads actually display this image</h1>
+                    <div class="carousel-caption" id="first-front-page-carousel-caption">
+                        <h1>a very</h1>
+                        <h1 style="color: #C5C5C5">different</h1>
+                        <h1>law firm</h1>
                     </div>
                 </div>
             </div>

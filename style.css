@@ -446,6 +446,13 @@ img.img-center {
 	font-family: 'Montserrat', sans-serif;
 }
 
+#first-front-page-carousel-caption h1 {
+	text-transform: lowercase;
+	font-size: 65px;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+}
+
 /*END HOME PAGE CAROUSEL*/
 
 .big-illustration-wrapper {
@@ -722,4 +729,11 @@ img.img-center {
 
 #front-page-row {
 	margin: 0;
+}
+
+#page-content-wrapper .breadcrumb {
+	font-size: 14px;
+	font-style: italic;
+	background-color: transparent;
+	padding: 0;
 }

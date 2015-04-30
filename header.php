@@ -6,7 +6,6 @@
 		<title><?php wp_title( '|', true, 'right' ); ?>Ignition Law</title>
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css">
 		<!-- jQuery -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<!-- Own JavaScript and jQuery functions -->
@@ -17,6 +16,7 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<!-- END BOOTSTRAP -->
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css">
 		<!-- Google fonts -->
 		<!-- Montserrat-->
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -39,7 +39,9 @@
 			        });
 			        //Call home page and biography carousels at custom speeds
 			        $('#carousel-home-page').carousel({
-						interval: 3500
+						// interval: 3500
+						pause: true,
+    					interval: false
  					});
  					$('#carousel-biography').carousel({
 						interval: 5000
