@@ -19,7 +19,7 @@ get_header(); ?>
   <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/home_background_test.jpg) center center; background-size:cover;" class="slider-size">
+            <div style="background:url(<?=bloginfo('stylesheet_directory');?>/images/home_background.jpg) center center; background-size:cover;" class="slider-size">
                 <div class="container">
                     <div class="carousel-caption" id="first-front-page-carousel-caption">
                         <h1>a very</h1>
