@@ -41,7 +41,7 @@ Template Name: Biography
 
 			<div class="row">
 				<div class="col-sm-4">
-					<?= the_post_thumbnail("full", array('class' => 'img-responsive gunnercooke-curves-images')); ?>
+					<?= the_post_thumbnail("full", array('class' => 'img-responsive gunnercooke-curves-images desaturate')); ?>
 				</div>
 
 				<div class="col-sm-8">

@@ -9,7 +9,7 @@ Template Name: About us
 <?php get_header(); ?>
 
 <div class="row">
-	<div class="col-sm-6 col-sm-offset-3 gunnercooke-curves">
+	<div class="col-sm-8 col-sm-offset-2 gunnercooke-curves">
 
 
 		<?php if (have_posts()): ?>

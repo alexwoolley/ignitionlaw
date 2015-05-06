@@ -55,4 +55,6 @@
 	<?php endwhile; ?>
 <?php endif; ?>
 
+<?php comments_template(); // Get wp-comments.php template ?>
+
 <?php get_footer(); ?>

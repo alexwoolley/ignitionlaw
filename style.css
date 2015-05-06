@@ -197,6 +197,12 @@ a:active{
 	font-size: 16px;
 }
 
+#page-content-wrapper td {
+	font-family: 'Open Sans', sans-serif;
+	color: #68645F;
+	font-size: 16px;
+}
+
 .navbar li a:link {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -263,6 +269,31 @@ a h3 {
 
 .wpcf7 textarea {
 	font-family: 'Open Sans', sans-serif;
+}
+
+#about-us-table td {
+	font-size: 14px;
+	padding: 0 5px 0 0;
+}
+
+#about-us-table tr {
+	border-bottom: dashed #333 1px;
+}
+
+#about-us-table {
+	margin-bottom: 10px;
+}
+
+/*Only show the fun borders on tablets and up*/
+@media (min-width: 768px) {
+	.about-us-card {
+		border: solid 1px #1C43A8;
+		margin-bottom: 5px;
+	}
+}
+
+.about-us-card-text {
+	padding: 0 5px;
 }
 
 /*END FONTS*/
@@ -522,6 +553,12 @@ img.img-center {
 	-webkit-box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
 	-moz-box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
 	box-shadow: inset 5px 5px 30px 0px rgba(245,245,245,1), 5px 0px 30px 0px rgba(245,245,245,1);
+}
+
+.gunnercooke-curves-no-shadow {
+	-webkit-border-top-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	border-top-left-radius: 20px;
 }
 
 .gunnercooke-heading {

@@ -114,36 +114,64 @@ function getPeople ( $parent_page ) {
 	});
 
 	foreach ($children as $child) { ?>
-		<div class="col-sm-4 col-xs-6">
-			<?php
-				$child_id = $child->ID;
-				$child_post_title = $child->post_title;
-				$url_string_0 = titleToSlug($parent_page);
-				$url_string_1 = titleToSlug($child_post_title);
-				$link = get_site_url() . "/" . $url_string_0 . "/" . $url_string_1;
-			?>
-			<a href="<?= $link; ?>">
+		<div class="col-md-4 col-xs-6">
+			<div class="about-us-card gunnercooke-curves-no-shadow">
 				<?php
-					echo get_the_post_thumbnail( $child_id, "medium", array('class' => 'img-responsive gunnercooke-curves-images') );
+					$child_id = $child->ID;
+					$child_post_title = $child->post_title;
+					$url_string_0 = titleToSlug($parent_page);
+					$url_string_1 = titleToSlug($child_post_title);
+					$link = get_site_url() . "/" . $url_string_0 . "/" . $url_string_1;
 				?>
-			</a>
-			<div class="text-center">
-				<h4>
-					<?php $names = explode(" ", $child_post_title); ?>
-					<a href="<?= $link; ?>" class="about-us-names">
-						<?php foreach ($names as $name) {
-							echo $name . "<br>"; //Splitting the names over two lines is to prevent irritating flow issues on smaller screens. It would probably be better to do this using jQuery's width() and only split the names onto two lines when necessary, but for the time being this will have to do.
-						}
-						?>
-					</a>
-				</h4>
-			</div>
-			<?php
-				$postid = url_to_postid( get_site_url() ."/" . get_the_title() ."/" . $url_string_1 ); 
-				$job_title = get_post_meta( $postid, "Title", true);
-			?>
-			<div class="text-center">
-				<p><?= $job_title; ?></p>
+				<a href="<?= $link; ?>">
+					<?php
+						echo get_the_post_thumbnail( $child_id, "medium", array('class' => 'img-responsive gunnercooke-curves-no-shadow desaturate') );
+					?>
+				</a>
+				<div class="about-us-card-text">
+					<h4 class="text-center">
+						<?php $names = explode(" ", $child_post_title); ?>
+						<!-- Names on one line for tablet and up -->
+						<a href="<?= $link; ?>" class="about-us-names hidden-xs">
+							<?php echo $child_post_title; ?>
+						</a>
+						<!-- Names over two lines for phones to prevent flow problems -->
+						<a href="<?= $link; ?>" class="about-us-names visible-xs-inline">
+							<?php  foreach ($names as $name) {
+								echo $name . "<br>"; 
+							}
+							?>
+						</a>
+					</h4>
+					<?php
+						$postid = url_to_postid( get_site_url() ."/" . get_the_title() ."/" . $url_string_1 ); 
+						$job_title = get_post_meta( $postid, "Title", true);
+					?>
+					<p class="text-center visible-xs-block"><?= $job_title; ?></p>
+					<div class="hidden-xs">
+						<table id="about-us-table">
+							<tbody>
+								<tr>
+									<td class="first-column">Position:</td>
+									<td>Partner</td>
+								</tr>
+								<tr>
+									<td>Previous Clubs:</td>
+									<td>Clifford Chance, IMG</td>
+								</tr>
+								<tr>
+									<td>Skills:</td>
+									<td>Commercial, IP, Dispute Resolution / Regulatory</td>
+								</tr>
+								<tr>
+									<td>Specialisms:</td>
+									<td>Sponsorship, Talent Management, Media &amp; Broadcasting</td>
+								</tr>						
+							</tbody>
+						</table>
+						<p><em><a href="<?= $link; ?>"> Full bio...</a></em></p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<?php
