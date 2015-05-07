@@ -41,13 +41,39 @@ if ( post_password_required() ) {
 	<?php endif; ?>
 
 	<?php 
+
+		$commenter = wp_get_current_commenter();
+		$req = get_option( 'require_name_email' );
+		$aria_req = ( $req ? " aria-required='true'" : '' );
+
+		$fields =  array(
+
+		  'author' =>
+		    '<div class="form-group"><p class="comment-form-author"><label for="author">' . __( 'Your Name', 'domainreference' ) . '</label> ' .
+		    ( $req ? '<span class="required">*</span>' : '' ) .
+		    '<input id="author" class="form-control" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+		    '"' . $aria_req . ' /></p></div>',
+
+		  'email' =>
+		    '<div class="form-group"><p class="comment-form-email"><label for="email">' . __( 'Your Email', 'domainreference' ) . '</label> ' .
+		    ( $req ? '<span class="required">*</span>' : '' ) .
+		    '<input id="email" class="form-control" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+		    '" size="30"' . $aria_req . ' /></p></div>',
+
+		  'url' =>
+		    '<div class="form-group"><p class="comment-form-url"><label for="url">' . __( 'Your Website', 'domainreference' ) . '</label>' .
+		    '<input id="url" class="form-control" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
+		    '" size="30" /></p></div>',
+		);
 		$args = array(
 			'title_reply' => __( 'Leave a Comment' ),
 			'class_submit'      => 'btn btn-primary',
-			// TODO: sort out styling to make it consistent with Contact Us page button
-			'comment_field' =>  '<div class="form-group"><textarea id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></div>',
+			'comment_field' =>  '<div class="form-group"><p><label for="comment">' . _x( 'Your Comment', 'noun' ) .
+    '</label><textarea id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></p></div>',
 			'comment_notes_after' => '',
+			'fields' => apply_filters( 'comment_form_default_fields', $fields ),
 		);
+
 
 		comment_form( $args ); 
 	?>
