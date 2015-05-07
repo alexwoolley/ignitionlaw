@@ -789,8 +789,16 @@ img.img-center {
 }
 
 #page-content-wrapper .breadcrumb {
-	font-size: 14px;
-	font-style: italic;
 	background-color: transparent;
 	padding: 0;
+	margin-bottom: 5px;
+}
+
+.ignition-meta {
+	margin-bottom: 20px;
+	font-style: italic;
+}
+
+#page-content-wrapper .ignition-meta p {
+	font-size: 14px;
 }

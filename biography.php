@@ -34,7 +34,7 @@ Template Name: Biography
 				<div class="col-xs-12">
 					<?php 
 						$post_parent_id = $post->post_parent;
-						getBreadcrumb( $post_parent_id );
+						getIgnitionMeta( $post_parent_id );
 					?>			
 				</div>
 			</div>

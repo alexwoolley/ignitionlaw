@@ -19,9 +19,7 @@
 						<?php
 							//Get breadcrumb
 							$post_parent_id = $post->post_parent;
-							getBreadcrumb( $post_parent_id );
-							//Get link for editing
-							edit_post_link('Edit this entry', '<p>', '</p>');
+							getIgnitionMeta( $post_parent_id );
 							//Get content of page
 							the_content(); 
 						?>

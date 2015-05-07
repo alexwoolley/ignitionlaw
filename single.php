@@ -24,10 +24,23 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="text-justify">
-						<p class="breadcrumb">
-							You are here: <a href="<?php echo get_permalink( get_option('page_for_posts' ) ); ?>">Igniting the Spark</a> » <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
-						</p>
-						<?php edit_post_link('Edit this entry', '<p>', '</p>'); ?>
+						<?php getIgnitionMeta(); ?>
+						<!-- <div class="ignition-meta">
+							<p class="breadcrumb">
+								You are here: <a href="<?php echo get_permalink( get_option('page_for_posts' ) ); ?>">Igniting the Spark</a> » <?php echo the_title(); ?>
+							</p>
+							<p>
+								Posted on
+								<?php 
+									echo get_the_time('jS F Y');
+									if (get_comments_number() > 0):
+										echo ' &bull; ';
+										comments_popup_link( 'No comments yet', '1 comment', '% comments', 'comments-link', 'Comments are off for this post');
+									endif;
+									edit_post_link('Edit this entry', ' &bull; '); 
+								?>
+							</p>
+						</div> -->
 						<?php the_content(); ?>
 						<h3>Read More</h3>
 						<?php
@@ -45,6 +58,7 @@
 								</p>
 							<?php endforeach;
 						?>
+						<?php comments_template(); ?>
 					</div>
 				</div>
 			</div>
@@ -54,7 +68,5 @@
 
 	<?php endwhile; ?>
 <?php endif; ?>
-
-<?php comments_template(); // Get wp-comments.php template ?>
 
 <?php get_footer(); ?>

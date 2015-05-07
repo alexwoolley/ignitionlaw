@@ -194,11 +194,46 @@ function getBreadcrumb ( $post_parent_id ) { ?>
 				?>
 			</a> »
 		<?php endif;
-		// then go on to the current page link
-		?>
-		<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-		<?php the_title(); ?></a>
+		// then go on to the current page
+		the_title(); ?>
 	</p>
+<?php }
+
+function getIgnitionMeta ( $post_parent_id = 1 ) { ?>
+	<div class="ignition-meta">
+		<p class="breadcrumb">
+		<?php if (is_page()):
+			$parent_title = get_the_title( $post_parent_id );
+			if ( $parent_title != the_title( ' ', ' ', false ) ): ?>
+				You are here: <a href="<?= get_permalink( $post_parent_id ); ?>" title="<?= $parent_title;?>">
+					<?php
+						if ($parent_title == "Advisory Board"): ?>
+							About Us
+						<?php else:
+							echo $parent_title;
+						endif;
+					?>
+				</a> »
+			<?php endif;
+			// then go on to the current page
+			the_title();
+			edit_post_link('Edit this entry', ' &bull; '); ?>
+			</p>
+		<?php elseif (is_single()): ?>
+			You are here: <a href="<?php echo get_permalink( get_option('page_for_posts' ) ); ?>"><?php echo get_the_title( get_option('page_for_posts' ) ); ?></a> » <?php echo the_title(); ?>
+			</p>
+			<p>
+			Posted on
+				<?php echo get_the_time('jS F Y');
+					if (get_comments_number() > 0):
+						echo ' &bull; ';
+						comments_popup_link( 'No comments yet', '1 comment', '% comments', 'comments-link', 'Comments are off for this post');
+					endif;
+					edit_post_link('Edit this entry', ' &bull; '); 
+				?>
+			</p>
+		<?php endif; ?>
+	</div>
 <?php }
 
 ?>
