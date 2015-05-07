@@ -42,22 +42,27 @@
 							</p>
 						</div> -->
 						<?php the_content(); ?>
-						<h3>Read More</h3>
-						<?php
-							$args = array( 
-								//Get the three most recent posts, excluding the current one
-								'exclude' => $post->ID, 
-								'numberposts' => '3' 
-							);
-							$recent_posts = wp_get_recent_posts( $args );
-							foreach( $recent_posts as $recent ): ?>
-								<p>
-									<a href="<?= get_permalink($recent["ID"]); ?>">
-										<?= $recent["post_title"] ?>
-									</a>
-								</p>
-							<?php endforeach;
-						?>
+						<div class="read-more-invite">
+							<h3>Read More</h3>
+							<?php
+								$prev_post = get_adjacent_post(false, '', true);
+								$next_post = get_adjacent_post(false, '', false);
+								if ($next_post): 
+									$next_post_url = get_permalink($next_post->ID); 
+									$next_post_title = $next_post->post_title; 
+								?>
+									<p>Next Post: 
+										<a href="<?php echo $next_post_url; ?>"><?php echo $next_post_title; ?></a>
+									</p>
+								<?php endif;
+								if ($prev_post): 
+									$prev_post_url = get_permalink($prev_post->ID); 
+									$prev_post_title = $prev_post->post_title; ?>
+									<p>Previous Post: 
+										<a href="<?php echo $prev_post_url; ?>"><?php echo $prev_post_title; ?></a>
+									</p>
+								<?php endif; ?>
+						</div>
 						<?php comments_template(); ?>
 					</div>
 				</div>

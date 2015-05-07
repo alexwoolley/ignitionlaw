@@ -791,7 +791,7 @@ img.img-center {
 #page-content-wrapper .breadcrumb {
 	background-color: transparent;
 	padding: 0;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
 }
 
 .ignition-meta {
@@ -801,4 +801,16 @@ img.img-center {
 
 #page-content-wrapper .ignition-meta p {
 	font-size: 14px;
+}
+
+.read-more-invite {
+	margin: 50px 0;
+	padding: 20px 0;
+	border-style: dotted;
+	border-width: 1px 0;
+	border-color: #1C43A8;
+}
+
+.comment-list {
+	margin-bottom: 50px;
 }

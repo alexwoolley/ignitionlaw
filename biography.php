@@ -114,7 +114,6 @@ Template Name: Biography
 
 			<div class="row">
 				<div class="col-xs-12 text-justify">
-					<?php edit_post_link('Edit this entry', '<p>', '</p>'); ?>
 					<?php the_content(); ?>
 				</div>
 			</div>

@@ -199,12 +199,16 @@ function getBreadcrumb ( $post_parent_id ) { ?>
 	</p>
 <?php }
 
-function getIgnitionMeta ( $post_parent_id = 1 ) { ?>
+
+
+
+function getIgnitionMeta ( $post_parent_id = -1) { ?>
 	<div class="ignition-meta">
 		<p class="breadcrumb">
 		<?php if (is_page()):
 			$parent_title = get_the_title( $post_parent_id );
-			if ( $parent_title != the_title( ' ', ' ', false ) ): ?>
+			if ( $parent_title != get_the_title() ): ?>
+
 				You are here: <a href="<?= get_permalink( $post_parent_id ); ?>" title="<?= $parent_title;?>">
 					<?php
 						if ($parent_title == "Advisory Board"): ?>
@@ -214,16 +218,16 @@ function getIgnitionMeta ( $post_parent_id = 1 ) { ?>
 						endif;
 					?>
 				</a> »
+				<?php the_title(); // then go on to the current page ?>
+				 &bull; 
 			<?php endif;
-			// then go on to the current page
-			the_title();
-			edit_post_link('Edit this entry', ' &bull; '); ?>
+			edit_post_link('Edit this entry'); ?>
 			</p>
 		<?php elseif (is_single()): ?>
 			You are here: <a href="<?php echo get_permalink( get_option('page_for_posts' ) ); ?>"><?php echo get_the_title( get_option('page_for_posts' ) ); ?></a> » <?php echo the_title(); ?>
 			</p>
 			<p>
-			Posted on
+				Posted on
 				<?php echo get_the_time('jS F Y');
 					if (get_comments_number() > 0):
 						echo ' &bull; ';
